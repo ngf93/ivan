@@ -1,0 +1,111 @@
+$violet: #4D2077;
+$dark: #3C3939;
+$dark2: #585858;
+$white: white;
+$blue: #4083D1;
+$transparent: transparent;
+p {
+    opacity: 1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.19));
+}
+
+.switch {
+    color: $white;
+    background-color: $transparent;
+    border: none;
+    padding: 0;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $white;
+        height: 1px;
+        width: 0;
+        transition: width 0.5s;
+        -webkit-transition: width 0.5s;
+        -moz-transition: width 0.5s;
+        -ms-transition: width 0.5s;
+        -o-transition: width 0.5s;
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+    &.active {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.fs {
+    &-14 {
+        font-size: 14px;
+    }
+    &-20 {
+        font-size: 20px;
+    }
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.rounded-4 {
+    border-radius: 10px;
+}
+
+.c-violet {
+    color: $violet;
+}
+
+.c-blue {
+    color: $blue;
+}
+
+.c-gray {
+    color: $dark2;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    &.rounded-3 {
+        &:hover {
+            background-color: $violet;
+            color: $white;
+        }
+    }
+}
+
+.shadow {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn-violet {
+    background-color: $violet;
+    font-size: 20px;
+    color: $white;
+    border-radius: 10px;
+    &:hover {
+        background-color: lighten($violet, 5);
+        color: $white;
+    }
+}
+
+.img {
+    padding-top: 85%;
+}
+
+footer {
+    background-color: $violet;
+}

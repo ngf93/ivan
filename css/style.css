@@ -1,1 +1,103 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+p {
+  opacity: 1;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.19));
+}
+
+.switch {
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  height: 1px;
+  width: 0;
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -ms-transition: width 0.5s;
+  -o-transition: width 0.5s;
+}
+
+.switch:hover::after {
+  width: 100%;
+}
+
+.switch.active::after {
+  width: 100%;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.rounded-4 {
+  border-radius: 10px;
+}
+
+.c-violet {
+  color: #4D2077;
+}
+
+.c-blue {
+  color: #4083D1;
+}
+
+.c-gray {
+  color: #585858;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a.rounded-3:hover {
+  background-color: #4D2077;
+  color: white;
+}
+
+.shadow {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn-violet {
+  background-color: #4D2077;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn-violet:hover {
+  background-color: #5a258b;
+  color: white;
+}
+
+.img {
+  padding-top: 85%;
+}
+
+footer {
+  background-color: #4D2077;
+}
