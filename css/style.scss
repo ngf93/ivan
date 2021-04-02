@@ -1,8 +1,9 @@
-$violet: #4D2077;
-$dark: #3C3939;
-$dark2: #585858;
+$accent: #4D2077;
+$primary: #3C3939;
+$gray: #585858;
 $white: white;
 $blue: #4083D1;
+$light-blue: #F1F8FF;
 $transparent: transparent;
 p {
     opacity: 1;
@@ -10,10 +11,33 @@ p {
 
 body {
     font-family: 'Roboto', sans-serif;
+    line-height: normal;
 }
 
 header {
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.19));
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    &:hover {
+        color: inherit;
+    }
+    &.rounded-3 {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid $transparent;
+        transition: all 0.5s;
+        &:hover {
+            background-color: #F6EDFF;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+        &:active {
+            background-color: $accent;
+            color: $white;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+    }
 }
 
 .switch {
@@ -60,52 +84,145 @@ header {
     font-weight: 500;
 }
 
-.rounded-4 {
-    border-radius: 10px;
-}
-
-.c-violet {
-    color: $violet;
-}
-
-.c-blue {
-    color: $blue;
-}
-
-.c-gray {
-    color: $dark2;
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit;
-    &.rounded-3 {
-        &:hover {
-            background-color: $violet;
-            color: $white;
-        }
+.c {
+    &-accent {
+        color: $accent;
+    }
+    &-primary {
+        color: $primary;
+    }
+    &-blue {
+        color: $blue;
+    }
+    &-gray {
+        color: $gray;
     }
 }
 
-.shadow {
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+.bg {
+    &-blue {
+        background-color: $light-blue;
+    }
 }
 
-.btn-violet {
-    background-color: $violet;
-    font-size: 20px;
-    color: $white;
+.shadow-box {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-4 {
     border-radius: 10px;
-    &:hover {
-        background-color: lighten($violet, 5);
+    overflow: hidden;
+}
+
+.btn {
+    font-weight: 500;
+    &-lg {
+        padding: 10px 32px;
+    }
+    &-sm {
+        padding: 10px 16px;
+    }
+    &-accent {
+        background-color: $accent;
         color: $white;
+        border-radius: 10px;
+        &:hover {
+            background-color: #7F47B4;
+            color: $white;
+        }
+        &:active {
+            background-color: #3D1B5C;
+        }
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgba($accent, 0.3);
+        }
+        &:disabled {
+            background-color: #B0B0B0;
+        }
+    }
+    &-white {
+        background-color: $white;
+        color: $primary;
     }
 }
 
 .img {
     padding-top: 85%;
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 footer {
-    background-color: $violet;
+    background-color: $accent;
+}
+
+.main-1 {
+    background-image: url('../images/img/hero.jpeg');
+    background-size: cover;
+}
+
+.popular-categories {
+    .img {
+        &:hover {
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+        }
+    }
+    a {
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+
+.popular-list {
+    a.fw-medium {
+        line-height: 20px !important;
+    }
+}
+
+.auction {
+    .img {
+        padding-top: 0;
+        max-height: 200px !important;
+    }
+}
+
+@media (min-width: 1484px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+.border {
+    &-bottom {
+        border-bottom-color: #BCBCBC !important;
+    }
+}
+
+input[type=date] {
+    // background: $white url('../images/icons/calendar.svg') no-repeat center right padding-box;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-image: url('../images/icons/calendar.svg');
+    background-position: 94% center;
+    &::-webkit-calendar-picker-indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        color: transparent;
+        background-color: transparent;
+    }
 }

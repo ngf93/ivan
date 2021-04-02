@@ -13,88 +13,238 @@
 <body>
 
     <header class="container py-3">
-        <a href="index.html">
-            <img src="images/img/logo.svg" alt="Ivan">
-        </a>
-
-        <a href="">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <nav class="d-flex flex-wrap align-items-center">
+            <a href="index.html">
+                <img src="images/img/logo.svg" alt="Ivan">
+            </a>
+            <a class="mx-4" href=""><svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 7.33331L14.6667 1.33331L8.66667 14L7.33333 8.66665L2 7.33331Z" fill="#4D2077" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>Казань<svg class="ms-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </a>
+            <a href=""><svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6H21" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 18H21" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> Меню</a>
+            <!-- messages -->
+            <a href="" class="ms-auto">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M22 6L12 13L2 6" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-        </a>
-        <a href="">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </a>
+            <!-- favorites -->
+            <a href="" class="mx-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.84 4.60999C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.60999L12 5.66999L10.94 4.60999C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.60999C2.1283 5.64169 1.54871 7.04096 1.54871 8.49999C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.49999C22.4518 7.77751 22.3095 7.0621 22.0329 6.39464C21.7563 5.72718 21.351 5.12075 20.84 4.60999V4.60999Z" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-        </a>
-
-        <a href="">Вход/регистрация<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M10 17L15 12L10 7" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M15 12H3" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </a>
+            <!-- login and signin -->
+            <a href="">Вход/регистрация<svg class="ms-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 17L15 12L10 7" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 12H3" stroke="#4D2077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             </a>
+        </nav>
     </header>
 
     <main class="container">
 
-        <section class="position-relative py-4 mb-5">
-            <img class="h-100 w-100 top-0 bottom-0 position-absolute" src="images/img/hero.jpeg" alt="">
+        <section class="position-relative py-4 mb-5 main-1">
+            <!-- <img class="h-100 w-100 top-0 bottom-0 position-absolute" src="images/img/hero.jpeg" alt=""> -->
             <button class="switch active position-relative">Заказчикам</button>
             <button class="switch position-relative">Исполнителям</button>
+            <div>
+                <div>
+                    <button class="btn btn-accent fs-6">Найти</button>
+                </div>
+                <button class="btn btn-white">
+                <svg class="me-2" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.125 6.66669C13.125 11.3334 7.5 15.3334 7.5 15.3334C7.5 15.3334 1.875 11.3334 1.875 6.66669C1.875 5.07539 2.46763 3.54926 3.52252 2.42405C4.57742 1.29883 6.00816 0.666687 7.5 0.666687C8.99184 0.666687 10.4226 1.29883 11.4775 2.42405C12.5324 3.54926 13.125 5.07539 13.125 6.66669Z" stroke="#4D2077" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 8.66669C8.53553 8.66669 9.375 7.77126 9.375 6.66669C9.375 5.56212 8.53553 4.66669 7.5 4.66669C6.46447 4.66669 5.625 5.56212 5.625 6.66669C5.625 7.77126 6.46447 8.66669 7.5 8.66669Z" stroke="#4D2077" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>Показать на карте</button>
+            </div>
         </section>
 
-
+        <!-- список категорий -->
         <section class="categories-list mb-5">
             <h2 class="mb-5">Список категорий</h2>
-            <ul class="list-unstyled fw-medium c-violet text-decoration-none text-center row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xxl-6 g-2 g-sm-3 g-xxl-4">
+            <ul class="list-unstyled fw-medium c-accent text-decoration-none text-center row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xxl-6 g-2 g-sm-3 g-xxl-4">
                 <li>
-                    <a class="rounded-3 shadow d-block p-3 h-100" href="">Тракторы</a>
+                    <a class="rounded-3 shadow-box p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Тракторы</span>
+                    </a>
                 </li>
                 <li>
-                    <a class="rounded-3 shadow d-block p-3 h-100" href="">Техника для обработки почвы</a>
+                    <a class="rounded-3 shadow-box p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Техника для обработки почвы</span>
+                    </a>
                 </li>
                 <li>
-                    <a class="rounded-3 shadow d-block p-3 h-100" href="">Техника для сада и огорода</a>
+                    <a class="rounded-3 shadow-box p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Техника для сада и огорода</span>
+                    </a>
                 </li>
                 <li>
-                    <a class="rounded-3 shadow d-block p-3 h-100" href="">Экскаваторы</a>
+                    <a class="rounded-3 shadow-box p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Экскаваторы</span>
+                    </a>
                 </li>
                 <li>
-                    <a class="rounded-3 shadow d-block p-3 h-100" href="">Тракторы</a>
+                    <a class="rounded-3 shadow-box p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Тракторы</span>
+                    </a>
                 </li>
                 <li>
-                    <a class="rounded-3 shadow d-block p-3 h-100" href="">Техника для обработки почвы</a>
+                    <a class="rounded-3 shadow-box d-block p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Техника для обработки почвы</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="rounded-3 shadow-box p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Тракторы</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="rounded-3 shadow-box p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Техника для обработки почвы</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="rounded-3 shadow-box p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Техника для сада и огорода</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="rounded-3 shadow-box p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Экскаваторы</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="rounded-3 shadow-box p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Тракторы</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="rounded-3 shadow-box d-block p-3 h-100 d-flex" href="">
+                        <span class="m-auto">Техника для обработки почвы</span>
+                    </a>
                 </li>
             </ul>
         </section>
 
+        <!-- популярные предложения спецтехники -->
         <section class="popular-list mb-5">
-            <h2>Популярные предложения</h2>
-            <button class="btn btn-violet">Показать ещё</button>
+            <h2 class="mb-4 mb-lg-5">Популярные предложения</h2>
+
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gx-2 gy-3 g-sm-3 g-xxl-4 mb-4 mb-lg-5">
+                <!-- card -->
+                <div>
+                    <div class="card shadow-box rounded-4 h-100 border-0">
+                        <div class="img">
+                            <img src="images/img/category2.jpeg" alt="">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title fw-medium">
+                                <a href="">Экскаватор-погрузчик с гидромолотом</a>
+                            </h6>
+                            <div class="d-flex flex-wrap justify-content-center justify-content-xxl-between align-items-center">
+                                <img class="mb-2" src="images/img/rate.jpg" alt="">
+                                <a href="" class="mb-2 fs-14 c-blue text-nowrap">4 отзывов</a>
+                            </div>
+                            <div class="fs-14 c-gray mb-1">5 км от Вас</div>
+                            <div class="fw-medium">500 руб./час</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div>
+                    <div class="card shadow-box rounded-4 h-100 border-0">
+                        <div class="img">
+                            <img src="images/img/category.jpeg" alt="">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title fw-medium">
+                                <a href="">Эвакуатор до 5 т</a>
+                            </h6>
+                            <div class="d-flex flex-wrap justify-content-center justify-content-xxl-between align-items-center">
+                                <img class="mb-2" src="images/img/rate.jpg" alt="">
+                                <a href="" class="mb-2 fs-14 c-blue text-nowrap">14 отзывов</a>
+                            </div>
+                            <div class="fs-14 c-gray mb-1">15 км от Вас</div>
+                            <div class="fw-medium">1500 руб./час</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div>
+                    <div class="card shadow-box rounded-4 h-100 border-0">
+                        <div class="img">
+                            <img src="images/img/category3.jpg" alt="">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title fw-medium">
+                                <a href="">Китайские вилочные погрузчики</a>
+                            </h6>
+                            <div class="d-flex flex-wrap justify-content-center justify-content-xxl-between align-items-center">
+                                <img class="mb-2" src="images/img/rate.jpg" alt="">
+                                <a href="" class="mb-2 fs-14 c-blue text-nowrap">10 отзывов</a>
+                            </div>
+                            <div class="fs-14 c-gray mb-1">10 км от Вас</div>
+                            <div class="fw-medium">700 руб./час</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-accent btn-lg d-flex mx-auto">Показать ещё</button>
+        </section>
+
+        <!-- найти на карте -->
+        <section class="find-on-map mb-5">
+            <h2 class="mb-4 mb-lg-5">Найти на карте</h2>
+            <div class="input-group">
+                <select class="form-select" aria-label="Выбор категории">
+                    <option selected>Любая категория</option>
+                    <option value="Автокраны">Автокраны</option>
+                    <option value="Бульдозеры">Бульдозеры</option>
+                    <option value="Гидромолоты">Гидромолоты</option>
+                </select>
+                <input type="text" class="form-control" placeholder="Поиск по предложениям...">
+                <select class="form-select" aria-label="Радиус, метро, район">
+                    <option selected>Радиус/Метро/Район</option>
+                    <option value="Автокраны">Автокраны</option>
+                    <option value="Бульдозеры">Бульдозеры</option>
+                    <option value="Гидромолоты">Гидромолоты</option>
+                </select>
+                <button class="btn btn-accent">Показать на карте</button>
+            </div>
+            <img class="w-100" src="images/img/map.jpg" alt="">
         </section>
 
         <!-- популярные категории -->
         <section class="popular-categories mb-5">
-            <h2 class="mb-5">Популярные категории</h2>
+            <h2 class="mb-4 mb-lg-5">Популярные категории</h2>
             <ul class="list-unstyled fw-medium fs-20 text-decoration-none row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xxl-6 g-2 g-sm-3 g-xxl-4">
                 <li class="position-relative">
-                    <div class="img position-relative mb-2">
-                        <img class="position-absolute top-0 h-100 w-100 rounded-4" src="images/img/category.jpeg" alt="">
+                    <div class="img mb-2">
+                        <img class="rounded-4" src="images/img/map.jpg" alt="">
                     </div>
                     <a class="stretched-link" href="">Тракторы</a>
                 </li>
                 <li class="position-relative">
-                    <div class="img position-relative mb-2">
-                        <img class="position-absolute top-0 h-100 w-100 rounded-4" src="images/img/category2.jpeg" alt="">
+                    <div class="img mb-2">
+                        <img class=" rounded-4" src="images/img/category2.jpeg" alt="">
                     </div>
                     <a class="stretched-link" href="">Экскаваторы</a>
                 </li>
             </ul>
         </section>
 
-        <!-- аукцион -->
+        <!-- аукцион текстовка -->
         <section class="auction text-center row row-cols-lg-2 align-items-center mb-5">
             <div>
                 <img class="w-100" src="images/img/auction.png" alt="">
@@ -104,43 +254,148 @@
                 <h5>Вы не нашли подходящего исполнителя? </h5>
                 <p>И нет сомнений, что некоторые особенности внутренней политики являются только методом политического участия и объединены в целые кластеры себе подобных. Кстати, базовые сценарии поведения пользователей лишь добавляют фракционных разногласий
                     и преданы социально-демократической анафеме.</p>
-                <a href="" class="btn btn-violet">Подробнее</a>
+                <a href="" class="btn btn-accent">Подробнее</a>
             </div>
         </section>
 
+        <!-- аукцион объявлений -->
+        <section class="mb-5 auction">
+            <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between align-items-center mb-4 mb-lg-5">
+                <h2 class="mb-0 me-auto">Новости</h2>
+                <select class="form-select border-0 w-auto me-2" aria-label="Выбор категории">
+                    <option selected>Любая категория</option>
+                    <option value="Автокраны">Автокраны</option>
+                    <option value="Бульдозеры">Бульдозеры</option>
+                    <option value="Гидромолоты">Гидромолоты</option>
+                </select>
+                <select class="form-select border-0 w-auto" aria-label="Радиус, метро, район">
+                    <option selected>Радиус/Метро/Район</option>
+                </select>
+            </div>
+            <div class="container">
+                <div class="row shadow-box rounded-4 py-3 d-flex flex-wrap flex-lg-nowrap align-items-center mb-4">
+                    <div class="img col-lg-2">
+                        <img src="images/img/map.jpg" alt="">
+                    </div>
+                    <div class="col-lg-5">
+                        <h5 class="mb-1">Выкопать яму под колодец</h5>
+                        <time class="c-gray">3 часа назад</time>
+                        <p class="mt-2">Повседневная практика показывает, что граница обучения кадров позволяет выполнить важные задания по разработке распределения внутренних резервов и ресурсов.</p>
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <div class="d-flex mb-2">
+                            <span class="me-4 c-primary col-3">Заказчик:</span>
+                            <span class="fw-medium col-8">Максим В</span>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <span class="me-4 c-primary col-3">Адрес:</span>
+                            <span class="fw-medium">ул. Гарифьянова, д.12 к.32/2</span>
+                        </div>
+                        <div class="d-flex justify-contet-between align-items-center flex-wrap">
+                            <span class="c-gray me-2 mb-1">Рейтинг заказчика:</span>
+                            <img class="mb-1" src="images/img/rate.jpg" alt="">
+                            <a href="" class="c-blue">4 отзывов</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-flex align-items-center">
+                        <button class="btn btn-accent btn-sm me-auto">Откликнуться</button>
+                        <div class="c-gray">12 откликов</div>
+                    </div>
+                </div>
+                <form class="row bg-blue rounded-3 py-3 p-lg-4 shadow-box">
+
+                    <div class="col-lg-6 mb-3">
+                        <div class="col-lg-10">
+                            <div class="d-flex flex-wrap align-items-start align-items-lg-center">
+                                <!-- ссылка на мою страницу -->
+                                <h5>Иван С</h5>
+                                <img class="mx-lg-4" src="images/img/rate.jpg" alt="">
+                                <a href="" class="c-blue">4 отзывов</a>
+                            </div>
+                            <fieldset class="mb-3">
+                                <label class="form-label me-4" for="offer">Ваше предложение:</label>
+                                <select id="offer" class="form-select form-select-sm w-auto d-inline-block" aria-label="Выбор категории">
+                                    <option selected>Эвакуатор до 5 т</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="mb-3 d-flex flex-wrap">
+                                <label class="form-label me-4 col-12" for="price">Стоимость:</label>
+                                <input id="price" type="number" class="form-control col-6 form-control-sm w-auto me-lg-2 d-inline-block" value="1500" placeholder="Цена">
+                                <select class="form-select form-select-sm w-auto d-inline-block" aria-label="Выбор категории">
+                                    <option selected>руб./час</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="mb- d-flex">
+                                <label class="form-label me-4" for="date">Дата:</label>
+                                <input type="date" id="date" class="form-control form-control-sm w-auto me-lg-2 d-inline-block" value="2021-04-16" placeholder="Цена">
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <fieldset class="col-lg-6">
+                        <label for="message" class="form-label">Комментарий:</label>
+                        <textarea class="form-control" name="" id="message" cols="30" rows="5" placeholder="Введите текст..."></textarea>
+                    </fieldset>
+                    <div>
+                        <button type="button" class="btn btn-lg btn-accent d-flex mx-auto mt-3 mt-lg-5">Отправить</button>
+                    </div>
+            </div>
+            </form>
+
+
+        </section>
+
+        <!-- новости -->
         <section class="news-list mb-5">
-            <h2 class="mb-3 mb-lg-5">Новости</h2>
-            <ul class="list-unstyled">
-                <li class="row align-items-start">
+            <h2 class="mb-4 mb-lg-5">Новости</h2>
+            <div class="mb-4">
+                <div class="row align-items-start">
                     <div class="col-sm-5 col-xl-3 mb-3">
-                        <img class="rounded-4 w-100 h-100" src="images/img/new.jpeg" alt="">
+                        <img class="rounded-4 w-100 h-100" src="images/img/map.jpg" alt="">
                     </div>
                     <div class="col-sm-7 col-xl-6">
                         <time class="c-gray" datetime="2021-03-31">31.03.21</time>
-                        <h5>Как определить лучшего исполнителя</h5>
+                        <h5 class="mt-lg-3">Как определить лучшего исполнителя</h5>
                         <p>Есть над чем задуматься: сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и объективно рассмотрены соответствующими инстанциями. В своём стремлении повысить качество жизни, они забывают, что высокотехнологичная
                             концепция общественного уклада влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.</p>
                         <a class="c-blue" href="new.html">Подробнее<svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.29167 12H27.7083" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M20 6L28 12L20 18" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            </a>
+                        </a>
                     </div>
-                </li>
-            </ul>
-            <button class="btn btn-violet">Все новости</button>
+                </div>
+                <div class="row align-items-start">
+                    <div class="col-sm-5 col-xl-3 mb-3">
+                        <img class="rounded-4 w-100 h-100" src="images/img/new.jpeg" alt="">
+                    </div>
+                    <div class="col-sm-7 col-xl-6">
+                        <time class="c-gray" datetime="2021-03-31">31.03.21</time>
+                        <h5 class="mt-lg-3">Как определить лучшего исполнителя</h5>
+                        <p>Есть над чем задуматься: сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и объективно рассмотрены соответствующими инстанциями. В своём стремлении повысить качество жизни, они забывают, что высокотехнологичная
+                            концепция общественного уклада влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.</p>
+                        <a class="c-blue" href="new.html">Подробнее<svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.29167 12H27.7083" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 6L28 12L20 18" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-accent btn-lg mx-auto d-flex">Все новости</button>
         </section>
 
     </main>
 
-    <footer class="text-white py-3">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-xl-5 fs-20">
-                    <address class="mb-0 fw-bold">@ 2021 Название компании</address>
+    <!-- подвал -->
+    <footer>
+        <div class="container text-white">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-xl-5 fs-20 my-3">
+                    <address class="mb-0 fw-bold">@ 2021 Ivan</address>
                     <a href="" target="_blank">Политика конфиденциальности</a>
                 </div>
-                <div class="col-xl-5">
+                <div class="col-xl-5 my-3 d-flex">
                     <span class="text-uppercase fs-14 me-2">Создание и продвижение сайтов</span>
                     <img src="images/img/asm-promo.png" alt="">
                 </div>
