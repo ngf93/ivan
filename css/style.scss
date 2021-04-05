@@ -149,6 +149,10 @@ a {
         background-color: $white;
         color: $primary;
     }
+    &-outline {
+        color: $primary;
+        border: 1px solid $primary;
+    }
 }
 
 .img {
@@ -203,6 +207,9 @@ footer {
 .form-control {
     &:focus {
         box-shadow: 0 0 0 0.25rem rgba($accent, 0.3);
+    }
+    &::placeholder {
+        color: $gray;
     }
 }
 
@@ -259,16 +266,43 @@ input[type=date] {
     background-position: 94% center;
     position: relative;
     &::-webkit-calendar-picker-indicator {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 0;
-        height: 0;
-        color: transparent;
-        background-color: transparent;
-        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.page-item {
+    margin-right: 4px;
+    &:last-of-type {
+        margin-right: 0;
+    }
+    .page-link {
+        color: $accent;
+        border-radius: 10px !important;
+        border-color: $transparent;
+        // padding: 10px 15px;
+        line-height: 20px;
+        &:focus {
+            background-color: lighten($accent, 65%);
+            box-shadow: 0 0 0 0.25rem rgba($accent, 0.3);
+        }
+        &:hover {
+            background-color: lighten($accent, 65%);
+        }
+    }
+    &.active {
+        .page-link {
+            background-color: $accent;
+            border-color: $accent;
+        }
+    }
+    &.disabled {
+        .page-link {
+            border-color: $transparent;
+        }
+        svg path {
+            stroke: $gray;
+            opacity: 0.8;
+        }
     }
 }
 
@@ -280,5 +314,14 @@ input[type=date] {
     }
     .btn-lg {
         font-size: 16px;
+    }
+    .input-group>.form-control,
+    .input-group>.form-select {
+        width: 100%;
+    }
+    .page-item {
+        .page-link {
+            font-size: 1rem;
+        }
     }
 }
