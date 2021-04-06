@@ -1,6 +1,6 @@
 $accent: #4D2077;
 $primary: #3C3939;
-$gray: #585858;
+$gray: #999999;
 $white: white;
 $blue: #4083D1;
 $light-blue: #F1F8FF;
@@ -11,7 +11,7 @@ p {
 
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: normal;
+    // line-height: normal;
 }
 
 header {
@@ -122,7 +122,8 @@ a {
 .btn {
     font-weight: 500;
     &-lg {
-        padding: 10px 32px;
+        padding: 11px 32px 15px 32px;
+        line-height: 1em;
     }
     &-sm {
         padding: 10px 16px;

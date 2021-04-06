@@ -4,7 +4,6 @@ p {
 
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: normal;
 }
 
 header {
@@ -102,7 +101,7 @@ a.rounded-3:active, a.rounded-3:focus {
 }
 
 .c-gray {
-  color: #585858;
+  color: #999999;
 }
 
 .bg-blue {
@@ -124,7 +123,8 @@ a.rounded-3:active, a.rounded-3:focus {
 }
 
 .btn-lg {
-  padding: 10px 32px;
+  padding: 11px 32px 15px 32px;
+  line-height: 1em;
 }
 
 .btn-sm {
@@ -217,22 +217,22 @@ footer {
 
 .form-select::-webkit-input-placeholder,
 .form-control::-webkit-input-placeholder {
-  color: #585858;
+  color: #999999;
 }
 
 .form-select:-ms-input-placeholder,
 .form-control:-ms-input-placeholder {
-  color: #585858;
+  color: #999999;
 }
 
 .form-select::-ms-input-placeholder,
 .form-control::-ms-input-placeholder {
-  color: #585858;
+  color: #999999;
 }
 
 .form-select::placeholder,
 .form-control::placeholder {
-  color: #585858;
+  color: #999999;
 }
 
 .bg-blue .form-select:focus,
@@ -321,7 +321,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .page-item.disabled svg path {
-  stroke: #585858;
+  stroke: #999999;
   opacity: 0.8;
 }
 
