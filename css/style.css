@@ -11,6 +11,10 @@ header {
           filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.19));
 }
 
+.categories-list a {
+  line-height: 19px;
+}
+
 a {
   color: inherit;
   text-decoration: inherit;
@@ -21,7 +25,7 @@ a:hover {
 }
 
 a:hover.c-blue {
-  color: #2b6ab3;
+  color: #1a90ff;
 }
 
 a.rounded-3 {
@@ -97,7 +101,7 @@ a.rounded-3:active, a.rounded-3:focus {
 }
 
 .c-blue {
-  color: #4083D1;
+  color: #4DA9FF;
 }
 
 .c-gray {
@@ -205,7 +209,7 @@ footer {
   color: #4D2077;
 }
 
-.popular-list a.fw-medium {
+.popular-list .h6 {
   line-height: 20px !important;
 }
 
@@ -237,8 +241,8 @@ footer {
 
 .bg-blue .form-select:focus,
 .bg-blue .form-control:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(64, 131, 209, 0.3);
-          box-shadow: 0 0 0 0.25rem rgba(64, 131, 209, 0.3);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(77, 169, 255, 0.3);
+          box-shadow: 0 0 0 0.25rem rgba(77, 169, 255, 0.3);
 }
 
 .find-on-map .input-group {
@@ -271,6 +275,10 @@ footer {
 
 .border-bottom {
   border-bottom-color: #BCBCBC !important;
+}
+
+span.checked {
+  color: #FFD600;
 }
 
 input[type=date] {

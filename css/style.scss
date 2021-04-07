@@ -2,8 +2,9 @@ $accent: #4D2077;
 $primary: #3C3939;
 $gray: #999999;
 $white: white;
-$blue: #4083D1;
+$blue: #4DA9FF;
 $light-blue: #F1F8FF;
+$yellow: #FFD600;
 $transparent: transparent;
 p {
     opacity: 1;
@@ -11,11 +12,16 @@ p {
 
 body {
     font-family: 'Roboto', sans-serif;
-    // line-height: normal;
 }
 
 header {
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.19));
+}
+
+.categories-list {
+    a {
+        line-height: 19px;
+    }
 }
 
 a {
@@ -199,7 +205,7 @@ footer {
 }
 
 .popular-list {
-    a.fw-medium {
+    .h6 {
         line-height: 20px !important;
     }
 }
@@ -257,6 +263,10 @@ footer {
     &-bottom {
         border-bottom-color: #BCBCBC !important;
     }
+}
+
+span.checked {
+    color: $yellow;
 }
 
 input[type=date] {
