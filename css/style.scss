@@ -1,4 +1,4 @@
-$accent: #4D2077;
+$accent: #FF6600;
 $primary: #3C3939;
 $gray: #999999;
 $white: white;
@@ -139,7 +139,7 @@ a {
         color: $white;
         border-radius: 10px;
         &:hover {
-            background-color: #7F47B4;
+            background-color: lighten($accent, 5);
             color: $white;
         }
         &:active {
@@ -177,7 +177,7 @@ a {
 }
 
 footer {
-    background-color: $accent;
+    background-color: $primary
 }
 
 .main-1 {
