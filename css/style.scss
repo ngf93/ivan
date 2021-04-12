@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 $accent: #FF6600;
 $primary: #3C3939;
 $gray: #999999;
@@ -9,9 +10,10 @@ $yellow: #FFD600;
 $transparent: transparent;
 body {
     font-family: 'Roboto', sans-serif;
+    color: $primary;
 }
 
-::selection {
+ ::selection {
     color: $white;
     background-color: $accent;
 }
@@ -55,6 +57,12 @@ header {
 .main-1 {
     background-image: url('../images/img/hero.jpeg');
     background-size: cover;
+    background-position: center;
+}
+
+.logo-bg {
+    background: radial-gradient(38.15% 646.72% at 50.08% 50%, #ACACAC 0%, rgba(255, 251, 251, 0) 100%);
+    filter: blur(4px);
 }
 
 .main-2 {
@@ -126,8 +134,26 @@ header {
     }
 }
 
+.news-list {
+    img {
+        height: 272px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
 // *** HOME PAGE end *** //
 // *** Utilities *** //
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
 .fs {
     &-14 {
         font-size: 14px;
@@ -320,7 +346,13 @@ footer {
 }
 
 // MEDIA QUERIES start
-@media screen and (max-width: 786px) {
+@media (min-width: 1488px) {
+    .container {
+        max-width: 1440px + 24;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
     .popular-categories {
         .fs-20 {
             font-size: 14px;
@@ -330,7 +362,8 @@ footer {
         font-size: 16px;
     }
     .input-group>.form-control,
-    .input-group>.form-select {
+    .input-group>.form-select,
+    .input-group>.btn {
         width: 100%;
     }
     .page-item {
@@ -338,10 +371,22 @@ footer {
             font-size: 1rem;
         }
     }
-}
-
-@media (min-width: 1484px) {
-    .container {
-        max-width: 1440px;
+    .news-list {
+        img: {
+            height: 50vw;
+        }
     }
 }
+
+@media (max-width: 575.98px) {
+    .find-on-map {
+        .input-group {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {}
+
+// @media (max-width: 1199.98px) {}
+// @media (max-width: 1399.98px) {}
