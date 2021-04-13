@@ -163,8 +163,13 @@ h6 {
     }
 }
 
-.fw-medium {
-    font-weight: 500;
+.fw {
+    &-5 {
+        font-weight: 500;
+    }
+    &-6 {
+        font-weight: 600;
+    }
 }
 
 .c {
@@ -345,10 +350,120 @@ footer {
     background-color: $primary
 }
 
+.form-check {
+    display: flex;
+    padding: 0;
+    & &-input {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #C4C4C4;
+        border-radius: 5px;
+        float: none;
+        margin: 0;
+        margin-right: 16px;
+        &:checked {
+            background-color: $accent;
+            border-color: $accent;
+            background-image: url('../images/icons/check.svg');
+        }
+        &:focus {
+            border-color: $accent;
+            box-shadow: 0 0 0 0.25rem rgba($accent, 0.4);
+        }
+    }
+}
+
+.modal {
+    &-content {
+        .nav {
+            button {
+                padding: 0 0 12px 0;
+                &.active {
+                    color: $accent;
+                    border-bottom: 1px solid $accent;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+        .btn-group {
+            .btn-check {
+                &:checked {
+                    +.btn {
+                        background-color: rgba(0, 0, 0, 0.05);
+                    }
+                }
+                &:focus+.btn,
+                .btn:focus {
+                    box-shadow: none;
+                }
+            }
+            .btn {
+                border: 0.5px solid #C4C4C4;
+                font-weight: normal;
+                padding: 4px 16px;
+            }
+        }
+        .btn-outline {
+            border: 0.5px solid #C4C4C4;
+        }
+    }
+}
+
+// MAP
+.map-container {
+    .ymaps-2-1-78-controls__control_toolbar,
+    .ymaps-2-1-78-map-copyrights-promo,
+    .ymaps-2-1-78-controls__control {
+        display: none !important;
+    }
+    .map-placemark {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        pointer-events: none;
+        background-image: url('../images/icons/map-pin.svg');
+    }
+    .map-circle {
+        border-radius: 50%;
+        display: block;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        height: 300px;
+        width: 300px;
+        background-color: rgba(255, 102, 0, 0.22);
+        border: 1px solid $accent;
+    }
+}
+
 // MEDIA QUERIES start
 @media (min-width: 1488px) {
     .container {
         max-width: 1440px + 24;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .modal {
+        &-dialog {
+            max-width: 944px;
+        }
+        &-content {
+            .btn-group {
+                .btn {
+                    padding: 4px 10px;
+                }
+            }
+        }
     }
 }
 
@@ -361,18 +476,18 @@ footer {
     .btn-lg {
         font-size: 16px;
     }
-    .input-group>.form-control,
-    .input-group>.form-select,
-    .input-group>.btn {
-        width: 100%;
-    }
+    // .input-group>.form-control,
+    // .input-group>.form-select,
+    // .input-group>.btn {
+    //     width: 100%;
+    // }
     .page-item {
         .page-link {
             font-size: 1rem;
         }
     }
     .news-list {
-        img: {
+        img {
             height: 50vw;
         }
     }
@@ -386,7 +501,29 @@ footer {
     }
 }
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    .map-container {
+        height: 200px;
+        .map-circle {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .modal {
+        &-content {
+            .nav {
+                button {
+                    padding-bottom: 8px;
+                }
+            }
+            .btn-group {
+                .btn {
+                    padding: 4px 10px;
+                }
+            }
+        }
+    }
+}
 
 // @media (max-width: 1199.98px) {}
 // @media (max-width: 1399.98px) {}
