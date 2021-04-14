@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 $accent: #FF6600;
+$black: black;
 $primary: #3C3939;
 $gray: #999999;
 $light-gray: #F6F6F6;
 $white: white;
 $blue: #4DA9FF;
+$dark-blue: #03588C;
 $light-blue: #F1F8FF;
 $yellow: #FFD600;
 $transparent: transparent;
@@ -19,7 +21,11 @@ body {
 }
 
 header {
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.19));
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.z-index-10 {
+    z-index: 10;
 }
 
 // *** HOME PAGE start *** //
@@ -145,11 +151,17 @@ header {
 // *** HOME PAGE end *** //
 // *** Utilities *** //
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
@@ -172,6 +184,10 @@ h6 {
     }
 }
 
+.ff-2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .c {
     &-accent {
         color: $accent;
@@ -182,8 +198,14 @@ h6 {
     &-blue {
         color: $blue;
     }
+    &-dark-blue {
+        color: $dark-blue;
+    }
     &-gray {
         color: $gray;
+    }
+    &-black {
+        color: $black;
     }
 }
 
@@ -250,6 +272,13 @@ a {
     &-outline {
         color: $primary;
         border: 1px solid $primary;
+    }
+    &-fav {
+        &.active {
+            svg {
+                fill: $accent;
+            }
+        }
     }
 }
 
@@ -445,6 +474,21 @@ footer {
     }
 }
 
+.my-tabs {
+    button {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #656565;
+        padding-bottom: 20px;
+        border-bottom: 2px solid $transparent;
+        &.active {
+            color: $black;
+            border-bottom-color: $accent;
+        }
+    }
+}
+
 // MEDIA QUERIES start
 @media (min-width: 1488px) {
     .container {
@@ -476,11 +520,11 @@ footer {
     .btn-lg {
         font-size: 16px;
     }
-    // .input-group>.form-control,
-    // .input-group>.form-select,
-    // .input-group>.btn {
-    //     width: 100%;
-    // }
+    .input-group>.form-control,
+    .input-group>.form-select,
+    .input-group>.btn {
+        width: 100%;
+    }
     .page-item {
         .page-link {
             font-size: 1rem;

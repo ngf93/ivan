@@ -15,8 +15,12 @@ body {
 }
 
 header {
-  -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.19));
-          filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.19));
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.z-index-10 {
+  z-index: 10;
 }
 
 .switch {
@@ -131,11 +135,17 @@ header {
 }
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
@@ -156,6 +166,10 @@ h6 {
   font-weight: 600;
 }
 
+.ff-2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .c-accent {
   color: #FF6600;
 }
@@ -168,8 +182,16 @@ h6 {
   color: #4DA9FF;
 }
 
+.c-dark-blue {
+  color: #03588C;
+}
+
 .c-gray {
   color: #999999;
+}
+
+.c-black {
+  color: black;
 }
 
 a {
@@ -248,6 +270,10 @@ a:hover.c-blue {
 .btn-outline {
   color: #3C3939;
   border: 1px solid #3C3939;
+}
+
+.btn-fav.active svg {
+  fill: #FF6600;
 }
 
 .img {
@@ -462,6 +488,20 @@ footer {
   border: 1px solid #FF6600;
 }
 
+.my-tabs button {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #656565;
+  padding-bottom: 20px;
+  border-bottom: 2px solid transparent;
+}
+
+.my-tabs button.active {
+  color: black;
+  border-bottom-color: #FF6600;
+}
+
 @media (min-width: 1488px) {
   .container {
     max-width: 1464px;
@@ -483,6 +523,11 @@ footer {
   }
   .btn-lg {
     font-size: 16px;
+  }
+  .input-group > .form-control,
+  .input-group > .form-select,
+  .input-group > .btn {
+    width: 100%;
   }
   .page-item .page-link {
     font-size: 1rem;
