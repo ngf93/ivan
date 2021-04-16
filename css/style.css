@@ -24,7 +24,7 @@ header {
 }
 
 .switch {
-  color: white;
+  color: #3C3939;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -35,7 +35,7 @@ header {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: white;
+  background-color: #FF6600;
   height: 1px;
   width: 0;
   transition: width 0.5s;
@@ -47,6 +47,10 @@ header {
 
 .switch:hover::after {
   width: 100%;
+}
+
+.switch.active {
+  color: #FF6600;
 }
 
 .switch.active::after {
@@ -83,6 +87,7 @@ header {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
+  background-color: #FF6600;
 }
 
 .categories-list a:hover, .categories-list a:active, .categories-list a:focus {
