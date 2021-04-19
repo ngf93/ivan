@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персональная страница</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#f25c05">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- шапка -->
+    <header class="py-3 fs-20">
+        <div class="container">
+            <nav class="d-flex flex-wrap align-items-center">
+                <!-- расположение -->
+                <a href="" class="me-3">
+                    <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 7.33331L14.6667 1.33331L8.66667 14L7.33333 8.66665L2 7.33331Z" fill="#FF6600" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>Казань<svg class="ms-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6L8 10L12 6" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <!-- меню -->
+                <a href=""><svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6H21" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 18H21" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> Меню</a>
+                <!-- logo -->
+                <a class="mx-auto" href="index.html">
+                    <svg width="52" height="55" viewBox="0 0 52 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.55993 38.201C6.3466 38.121 6.13327 38.0144 5.9466 37.8277C5.6266 37.5077 5.4666 37.1344 5.4666 36.7077V22.8144C5.49327 22.3877 5.65327 22.0144 5.9466 21.6944C6.13327 21.5077 6.3466 21.401 6.55993 21.321V20.9744H5.4666H5.3866H1.75993H1.67993H0.266602V21.241C0.613268 21.2944 0.933268 21.4277 1.17327 21.6944C1.49327 22.0144 1.65327 22.3877 1.65327 22.8144V36.7077C1.6266 37.1344 1.4666 37.5077 1.17327 37.8277C0.906602 38.0944 0.613268 38.2277 0.266602 38.281V38.5477H1.67993H1.75993H5.35993H5.4666H6.55993V38.201Z" fill="black"/>
+                        <path d="M22.2401 20.9733L16.9067 33.2133L12.6401 22.84C12.4534 22.3333 12.4801 21.96 12.7201 21.6667C12.9334 21.4267 13.1734 21.2933 13.4401 21.2667V21H6.56006V21.32C6.77339 21.3733 6.98673 21.48 7.22673 21.6133C7.62673 21.8533 7.97339 22.2533 8.24006 22.84L15.5201 38.5467L16.1067 38.52C16.1067 38.52 17.1734 35.88 17.2267 35.7733L24.1334 20.9733H22.2401V20.9733Z" fill="black"/>
+                        <path d="M50.6935 21H50.6134H47.1735H47.1201H46.0535V21.32C46.2935 21.4 46.4801 21.5067 46.6668 21.6933C46.9601 21.9867 47.1201 22.36 47.1201 22.7867V32.7067L36.0001 21C35.3601 21 34.4801 21 34.4801 21V36.7867C34.4801 37.2133 34.3201 37.56 34.0268 37.8533C33.8668 38.0133 33.6801 38.1467 33.4668 38.2V38.5467H34.4801H34.5601H38.0001H38.0801H39.1468V38.2267C38.9335 38.1467 38.7201 38.04 38.5335 37.8533C38.2401 37.56 38.0801 37.1867 38.0801 36.7867L38.0535 26.84L50.3468 38.5467H50.7468C50.7468 38.5467 50.6668 36.3333 50.6668 35.72V22.8133C50.6934 22.3867 50.8534 22.0133 51.1468 21.72C51.3068 21.56 51.4934 21.4533 51.6801 21.3733V21H50.6935Z" fill="black"/>
+                        <path d="M26.6399 38.28V38.5467H33.5466V38.2C33.3599 38.1467 33.1732 38.0667 32.9866 37.9333C32.7199 37.7733 32.4799 37.5333 32.2666 37.2133L25.3866 20.9467L23.0399 25.6667L25.8666 32.5733H19.8132L19.2266 33.64H26.2666L27.5732 36.84C27.7332 37.2933 27.7066 37.64 27.4666 37.88C27.2266 38.1467 26.9599 38.28 26.6399 38.28Z" fill="black"/>
+                        <path d="M5.11984 19.0267H46.8799H50.1599C47.1999 8.46666 37.4932 0.679993 25.9999 0.679993C14.5065 0.679993 4.79984 8.46666 1.83984 19.0267H5.11984Z" fill="#F25C05"/>
+                        <path d="M45.0934 40.3333C41.3067 46.9733 34.1867 51.4533 26 51.4533C17.8134 51.4533 10.6934 46.9733 6.90672 40.3333H3.38672C7.41338 48.76 16.0534 54.6 26 54.6C35.9467 54.6 44.5867 48.76 48.6134 40.3333H45.0934Z" fill="black"/>
+                    </svg>
+                </a>
+                <!-- messages -->
+                <a href="messages.html" class="m">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 6L12 13L2 6" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <!-- favorites -->
+                <a href="favorites.html" class="mx-4 me-5">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.84 4.60999C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.60999L12 5.66999L10.94 4.60999C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.60999C2.1283 5.64169 1.54871 7.04096 1.54871 8.49999C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.49999C22.4518 7.77751 22.3095 7.0621 22.0329 6.39464C21.7563 5.72718 21.351 5.12075 20.84 4.60999V4.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <!-- login and signin -->
+                <a href="" class="d-flex align-items-center">
+                    <span class="d-none d-md-block">Вход/регистрация</span>
+                    <svg class="ms-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 17L15 12L10 7" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 12H3" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row">
+            <!-- left column -->
+            <div class="mb-4 col-lg-5">
+                <!-- picture -->
+                <div class="row mb-4 pb-4 border-bottom">
+                    <div class="col-lg-5">
+                        <div class="rounded-4" style="height: 232px;">
+                            <img class="w-100 h-100" src="images/img/user.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 pt-3">
+                        <div class="d-flex align-items-center">
+                            <div class="h5 mb-0">Анатолий Ш.</div>
+                            <button class="btn py-0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M19.4 15C19.2669 15.3016 19.2272 15.6362 19.286 15.9606C19.3448 16.285 19.4995 16.5843 19.73 16.82L19.79 16.88C19.976 17.0657 20.1235 17.2863 20.2241 17.5291C20.3248 17.7719 20.3766 18.0322 20.3766 18.295C20.3766 18.5578 20.3248 18.8181 20.2241 19.0609C20.1235 19.3037 19.976 19.5243 19.79 19.71C19.6043 19.896 19.3837 20.0435 19.1409 20.1441C18.8981 20.2448 18.6378 20.2966 18.375 20.2966C18.1122 20.2966 17.8519 20.2448 17.6091 20.1441C17.3663 20.0435 17.1457 19.896 16.96 19.71L16.9 19.65C16.6643 19.4195 16.365 19.2648 16.0406 19.206C15.7162 19.1472 15.3816 19.1869 15.08 19.32C14.7842 19.4468 14.532 19.6572 14.3543 19.9255C14.1766 20.1938 14.0813 20.5082 14.08 20.83V21C14.08 21.5304 13.8693 22.0391 13.4942 22.4142C13.1191 22.7893 12.6104 23 12.08 23C11.5496 23 11.0409 22.7893 10.6658 22.4142C10.2907 22.0391 10.08 21.5304 10.08 21V20.91C10.0723 20.579 9.96512 20.258 9.77251 19.9887C9.5799 19.7194 9.31074 19.5143 9 19.4C8.69838 19.2669 8.36381 19.2272 8.03941 19.286C7.71502 19.3448 7.41568 19.4995 7.18 19.73L7.12 19.79C6.93425 19.976 6.71368 20.1235 6.47088 20.2241C6.22808 20.3248 5.96783 20.3766 5.705 20.3766C5.44217 20.3766 5.18192 20.3248 4.93912 20.2241C4.69632 20.1235 4.47575 19.976 4.29 19.79C4.10405 19.6043 3.95653 19.3837 3.85588 19.1409C3.75523 18.8981 3.70343 18.6378 3.70343 18.375C3.70343 18.1122 3.75523 17.8519 3.85588 17.6091C3.95653 17.3663 4.10405 17.1457 4.29 16.96L4.35 16.9C4.58054 16.6643 4.73519 16.365 4.794 16.0406C4.85282 15.7162 4.81312 15.3816 4.68 15.08C4.55324 14.7842 4.34276 14.532 4.07447 14.3543C3.80618 14.1766 3.49179 14.0813 3.17 14.08H3C2.46957 14.08 1.96086 13.8693 1.58579 13.4942C1.21071 13.1191 1 12.6104 1 12.08C1 11.5496 1.21071 11.0409 1.58579 10.6658C1.96086 10.2907 2.46957 10.08 3 10.08H3.09C3.42099 10.0723 3.742 9.96512 4.0113 9.77251C4.28059 9.5799 4.48572 9.31074 4.6 9C4.73312 8.69838 4.77282 8.36381 4.714 8.03941C4.65519 7.71502 4.50054 7.41568 4.27 7.18L4.21 7.12C4.02405 6.93425 3.87653 6.71368 3.77588 6.47088C3.67523 6.22808 3.62343 5.96783 3.62343 5.705C3.62343 5.44217 3.67523 5.18192 3.77588 4.93912C3.87653 4.69632 4.02405 4.47575 4.21 4.29C4.39575 4.10405 4.61632 3.95653 4.85912 3.85588C5.10192 3.75523 5.36217 3.70343 5.625 3.70343C5.88783 3.70343 6.14808 3.75523 6.39088 3.85588C6.63368 3.95653 6.85425 4.10405 7.04 4.29L7.1 4.35C7.33568 4.58054 7.63502 4.73519 7.95941 4.794C8.28381 4.85282 8.61838 4.81312 8.92 4.68H9C9.29577 4.55324 9.54802 4.34276 9.72569 4.07447C9.90337 3.80618 9.99872 3.49179 10 3.17V3C10 2.46957 10.2107 1.96086 10.5858 1.58579C10.9609 1.21071 11.4696 1 12 1C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V3.09C14.0013 3.41179 14.0966 3.72618 14.2743 3.99447C14.452 4.26276 14.7042 4.47324 15 4.6C15.3016 4.73312 15.6362 4.77282 15.9606 4.714C16.285 4.65519 16.5843 4.50054 16.82 4.27L16.88 4.21C17.0657 4.02405 17.2863 3.87653 17.5291 3.77588C17.7719 3.67523 18.0322 3.62343 18.295 3.62343C18.5578 3.62343 18.8181 3.67523 19.0609 3.77588C19.3037 3.87653 19.5243 4.02405 19.71 4.21C19.896 4.39575 20.0435 4.61632 20.1441 4.85912C20.2448 5.10192 20.2966 5.36217 20.2966 5.625C20.2966 5.88783 20.2448 6.14808 20.1441 6.39088C20.0435 6.63368 19.896 6.85425 19.71 7.04L19.65 7.1C19.4195 7.33568 19.2648 7.63502 19.206 7.95941C19.1472 8.28381 19.1869 8.61838 19.32 8.92V9C19.4468 9.29577 19.6572 9.54802 19.9255 9.72569C20.1938 9.90337 20.5082 9.99872 20.83 10H21C21.5304 10 22.0391 10.2107 22.4142 10.5858C22.7893 10.9609 23 11.4696 23 12C23 12.5304 22.7893 13.0391 22.4142 13.4142C22.0391 13.7893 21.5304 14 21 14H20.91C20.5882 14.0013 20.2738 14.0966 20.0055 14.2743C19.7372 14.452 19.5268 14.7042 19.4 15V15Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                        </div>
+                        <div class="c-dark-blue mb-2">Частное лицо</div>
+                        <div class="mb-1">Зарегистрирован на сайте с марта 2021 года</div>
+                        <div class="d-flex align-items-baseline">
+                            <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                        <path d="M14 6.66663C14 11.3333 8 15.3333 8 15.3333C8 15.3333 2 11.3333 2 6.66663C2 5.07533 2.63214 3.5492 3.75736 2.42399C4.88258 1.29877 6.4087 0.666626 8 0.666626C9.5913 0.666626 11.1174 1.29877 12.2426 2.42399C13.3679 3.5492 14 5.07533 14 6.66663Z" fill="#03588C" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 8.66663C9.10457 8.66663 10 7.7712 10 6.66663C10 5.56206 9.10457 4.66663 8 4.66663C6.89543 4.66663 6 5.56206 6 6.66663C6 7.7712 6.89543 8.66663 8 8.66663Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0">
+                                        <rect width="16" height="16" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                            <span>г. Казань, м. Площадь Тукая</span>
+                        </div>
+                        <div class="mt-auto d-flex align-items-baseline">
+                            <!-- rating -->
+                            <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20 me-4">
+                                <span class="checked">&#9733;</span>
+                                <span class="checked">&#9733;</span>
+                                <span class="checked">&#9733;</span>
+                                <span class="checked">&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                            <a href="" class="fs-14 c-blue text-nowrap">4 отзывов</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <!-- offer -->
+                        <button class="nav-link active" id="offer-tab" data-bs-toggle="pill" data-bs-target="#offer" type="button" role="tab" aria-controls="offer" aria-selected="true">Мои предложения</button>
+                        <!-- announcement -->
+                        <button class="nav-link" id="announcement-tab" data-bs-toggle="pill" data-bs-target="#announcement" type="button" role="tab" aria-controls="announcement" aria-selected="false">Мои объявления</button>
+                        <!-- reviews -->
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="pill" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Мои отзывы</button>
+                        <!-- favorites -->
+                        <button class="nav-link" id="favorites-tab" data-bs-toggle="pill" data-bs-target="#favorites" type="button" role="tab" aria-controls="favorites" aria-selected="false">Избранное</button>
+                        <!-- messages -->
+                        <button class="nav-link" id="messages-tab" data-bs-toggle="pill" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Сообщения</button>
+                        <!-- settings -->
+                        <button class="nav-link" id="settings-tab" data-bs-toggle="pill" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Настройки</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content col-lg-7" id="v-pills-tabContent">
+                <!-- offer -->
+                <div class="tab-pane fade show active" id="offer" role="tabpanel" aria-labelledby="offer-tab">
+                    <!-- right column -->
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="mb-0">Мои предложения</h2>
+                        <div class="d-flex c-accent fw-5">
+                            <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 12H19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Добавить</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-11 mx-auto row row-cols-2 row-cols-sm-3 gx-2 gy-3 g-sm-3 g-xxl-4 mb-4 mb-lg-5 justify-content-arou pt-5">
+                        <div>
+                            <div class="card shadow-box rounded-4 h-100 border-0">
+                                <div class="img">
+                                    <button class="position-absolute btn p-1 z-index-10 end-0 bottom-0 m-2">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="16" cy="16" r="16" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M16 21.3333H22" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19 10.3333C19.2652 10.0681 19.6249 9.91913 20 9.91913C20.1857 9.91913 20.3696 9.95571 20.5412 10.0268C20.7128 10.0978 20.8687 10.202 21 10.3333C21.1313 10.4647 21.2355 10.6206 21.3066 10.7921C21.3776 10.9637 21.4142 11.1476 21.4142 11.3333C21.4142 11.5191 21.3776 11.703 21.3066 11.8745C21.2355 12.0461 21.1313 12.202 21 12.3333L12.6667 20.6667L10 21.3333L10.6667 18.6667L19 10.3333Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>   
+                                    </button>
+                                    <img src="images/img/category.jpeg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column text-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title fw-5" href="">Экскаватор-погрузчик с гидромолотом</a>
+                                    <div class="fw-5">500 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card shadow-box rounded-4 h-100 border-0">
+                                <div class="img">
+                                    <button class="position-absolute btn p-1 z-index-10 end-0 bottom-0 m-2">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#3C3939" fill-opacity="0.6"/>
+                        <path d="M16 21.3333H22" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 10.3333C19.2652 10.0681 19.6249 9.91913 20 9.91913C20.1857 9.91913 20.3696 9.95571 20.5412 10.0268C20.7128 10.0978 20.8687 10.202 21 10.3333C21.1313 10.4647 21.2355 10.6206 21.3066 10.7921C21.3776 10.9637 21.4142 11.1476 21.4142 11.3333C21.4142 11.5191 21.3776 11.703 21.3066 11.8745C21.2355 12.0461 21.1313 12.202 21 12.3333L12.6667 20.6667L10 21.3333L10.6667 18.6667L19 10.3333Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>   
+                </button>
+                                    <img src="images/img/category.jpeg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column text-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title fw-5" href="">Экскаватор-погрузчик с гидромолотом</a>
+                                    <div class="fw-5">500 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card shadow-box rounded-4 h-100 border-0">
+                                <div class="img">
+                                    <button class="position-absolute btn p-1 z-index-10 end-0 bottom-0 m-2">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#3C3939" fill-opacity="0.6"/>
+                        <path d="M16 21.3333H22" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 10.3333C19.2652 10.0681 19.6249 9.91913 20 9.91913C20.1857 9.91913 20.3696 9.95571 20.5412 10.0268C20.7128 10.0978 20.8687 10.202 21 10.3333C21.1313 10.4647 21.2355 10.6206 21.3066 10.7921C21.3776 10.9637 21.4142 11.1476 21.4142 11.3333C21.4142 11.5191 21.3776 11.703 21.3066 11.8745C21.2355 12.0461 21.1313 12.202 21 12.3333L12.6667 20.6667L10 21.3333L10.6667 18.6667L19 10.3333Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>   
+                </button>
+                                    <img src="images/img/category.jpeg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column text-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title fw-5" href="">Экскаватор-погрузчик с гидромолотом</a>
+                                    <div class="fw-5">500 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-lg btn-outline-2 w-100">Добавить предложение</button>
+                </div>
+                <!-- announcement -->
+                <div class="tab-pane fade" id="announcement" role="tabpanel" aria-labelledby="announcement-tab">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="mb-0">Мои объявления</h2>
+                        <div class="d-flex c-accent fw-5">
+                            <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 12H19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Добавить</span>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 g-2 gy-3 pt-5">
+                        <div class="row rounded-4 shadow-box p-4">
+                            <div class="col-4">
+                                <img class="w-100 h-100" src="images/img/map.jpg" alt="">
+                            </div>
+                            <div class="col-8">
+                                <div class="d-flex justify-content-between">
+                                    <div class="h5 mb-1">Выкопать яму под колодец</div>
+                                    <div class="text-success">12 откликов</div>
+                                </div>
+                                <time class="c-gray">3 часа назад</time>
+
+                                <div class="d-flex align-items-center c-accent">
+                                    <span class="me-2">Все детали</span>
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.5 12H19.5" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.5 5L19.5 12L12.5 19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- reviews -->
+                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <div>
+                        <h2 class="mb-4">Мои отзывы</h2>
+
+                    </div>
+                    <nav>
+                        <div class="nav my-tabs ff-2 flex-nowrap text-nowra" id="nav-tab" role="tablist">
+                            <button class="btn active rounded-0 flex-fill" id="offers-tab" data-bs-toggle="tab" data-bs-target="#offers" type="button" role="tab" aria-controls="offers" aria-selected="true">Ждут оценки</button>
+                            <button class="btn rounded-0 flex-fill" id="announcements-tab" data-bs-toggle="tab" data-bs-target="#announcements" type="button" role="tab" aria-controls="announcements" aria-selected="false">Оставленные</button>
+                        </div>
+                    </nav>
+                    <div>
+                        <div class="d-flex align-items-center py-4 border-bottom">
+                            <div class="rounded-circle me-2 me-md-4">
+                                <img src="images/img/category4.jpeg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-between align-items-baseline flex-wrap">
+                                <div>
+                                    <div class="fs-20">Константин Ф.</div>
+                                    <!-- link -->
+                                    <div class="c-blue d-flex align-items-baseline">
+                                        <svg class="flex-shrink-0 me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                        <path d="M14.4152 1.38101C12.8295 -0.351715 10.1439 -0.47093 8.41097 1.11506L0.747415 8.12856L1.38501 8.82524L9.04857 1.81175C9.69986 1.21567 10.5442 0.909059 11.4264 0.947969C13.2514 1.02881 14.6631 2.57117 14.5823 4.39641C14.5432 5.27845 14.163 6.0925 13.5116 6.68857L4.97723 14.499C4.11285 15.2901 2.7661 15.2304 1.9751 14.366C1.18225 13.4997 1.24162 12.1569 2.10811 11.3639L10.2942 3.87227C10.4803 3.70197 10.7211 3.61423 10.9736 3.6255C11.495 3.64858 11.8984 4.08923 11.8753 4.61076C11.8641 4.86279 11.7554 5.09537 11.5693 5.26567L4.2541 11.9603L4.8917 12.657L12.2069 5.96233C12.5791 5.62171 12.7964 5.15656 12.8187 4.65254C12.865 3.60976 12.0584 2.72819 11.0153 2.68198C10.5113 2.65969 10.0288 2.83494 9.65661 3.17556L1.47051 10.6672C0.219086 11.8125 0.133083 13.7521 1.27842 15.0036C2.42199 16.2532 4.36737 16.3373 5.61482 15.1957L14.1492 7.38529C15.8779 5.80323 15.9972 3.10973 14.4152 1.38101Z" fill="#4CA9FF"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0">
+                                        <rect width="16" height="16" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                        <span>Экскаватор-погрузчик с гидромолотом</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-accent">Написать отзыв</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- favorites -->
+                <div class="tab-pane fade" id="favorites" role="tabpanel" aria-labelledby="favorites-tab">...</div>
+                <!-- messages -->
+                <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+                <!-- settings -->
+                <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+            </div>
+    </main>
+
+    <!-- подвал -->
+    <footer>
+        <div class="container text-white">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-5 fs-20 my-3 my-lg-4">
+                    <address class="mb-0 fw-bold">@ 2021 Ivan</address>
+                    <a href="" target="_blank">Политика конфиденциальности</a>
+                </div>
+                <div class="col-md-5 my-3 my-lg-4 d-flex justify-content-lg-end">
+                    <a class="d-flex align-items-center" href="https://asmpromo.ru/" target="_blank" rel="noopener noreferrer">
+                        <span class="text-uppercase fs-14 me-2">Создание и продвижение сайтов</span>
+                        <img src="images/img/asm-promo.png" alt="AsmPromo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
