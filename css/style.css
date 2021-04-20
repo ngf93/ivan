@@ -96,10 +96,6 @@ header {
   outline: none;
 }
 
-.find-on-map .input-group {
-  margin-bottom: -10px;
-}
-
 .find-on-map .input-group .form-select,
 .find-on-map .input-group .form-control {
   border-color: #FF6600;
@@ -580,6 +576,12 @@ footer {
 @media (max-width: 575.98px) {
   .find-on-map .input-group {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 465px) {
+  .modal-dialog {
+    max-width: 458px;
   }
 }
 

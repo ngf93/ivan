@@ -62,14 +62,14 @@
                     </svg>
                 </a>
                 <!-- login and signin -->
-                <a href="" class="d-flex align-items-center">
+                <button class="d-flex align-items-center btn p-0" data-bs-toggle="modal" data-bs-target="#logInModal">
                     <span class="d-none d-md-block">Вход/регистрация</span>
                     <svg class="ms-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M10 17L15 12L10 7" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M15 12H3" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                </a>
+                </button>
             </nav>
         </div>
     </header>
@@ -238,7 +238,10 @@
                         </div>
                         <button class="btn btn-accent px-4">Показать на карте</button>
                     </div>
-                    <img class="w-100 mb-3" src="images/img/map.jpg" alt="">
+                    <!-- map -->
+                    <div class="w-100 position-relative map-container">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af7cb7e62a63d014db98068fcd38a8b959bb35574d74be36291d89d97f49b8108&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+                    </div>
                 </section>
 
                 <!-- популярные предложения спецтехники -->
@@ -788,6 +791,59 @@
             </form>
         </div>
     </div>
+
+
+    <!-- LOGIN Modal -->
+    <div class="modal fade" id="logInModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-2">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="logInModalLabel">Вход</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control mb-3" type="tel" placeholder="Номер телефона">
+                    <div class="position-relative mb-3">
+                        <input class="form-control" type="password" placeholder="Пароль">
+                        <button class="btn p-0 position-absolute end-0 me-3 h-100 top-0">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.41268 9.41334C9.22958 9.60984 9.00878 9.76744 8.76345 9.87676C8.51812 9.98607 8.25328 10.0448 7.98474 10.0496C7.7162 10.0543 7.44946 10.0049 7.20042 9.90433C6.95139 9.80374 6.72516 9.65403 6.53525 9.46411C6.34533 9.27419 6.19561 9.04797 6.09502 8.79893C5.99443 8.5499 5.94503 8.28315 5.94977 8.01461C5.95451 7.74607 6.01329 7.48124 6.1226 7.23591C6.23191 6.99057 6.38952 6.76977 6.58602 6.58667M11.9593 11.96C10.8197 12.8287 9.43209 13.3099 7.99935 13.3333C3.33268 13.3333 0.666016 8.00001 0.666016 8.00001C1.49528 6.4546 2.64544 5.10441 4.03935 4.04001L11.9593 11.96ZM6.59935 2.82667C7.05824 2.71926 7.52806 2.66557 7.99935 2.66667C12.666 2.66667 15.3327 8.00001 15.3327 8.00001C14.928 8.75708 14.4454 9.46983 13.8927 10.1267L6.59935 2.82667Z" stroke="#3C3939" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.666016 0.666656L15.3327 15.3333" stroke="#3C3939" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="form-check">
+                        <input id="remPass" type="checkbox" class="form-check-input me-2">
+                        <label for="remPass">Запомнить пароль</label>
+                    </div>
+                </div>
+                <div class="modal-footer flex-column border-0">
+                    <button class="btn btn-accent px-5">Войти</button>
+                    <button class="btn c-blue fw-5" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#passRecModal">Забыли пароль?</button>
+                    <button class="btn c-blue fw-5" data-bs-dismiss="modal">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PASSWORD Modal -->
+    <div class="modal fade" id="passRecModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="passRecModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-2">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="passRecModalLabel">Восстановление пароля</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control mb-3" type="tel" placeholder="Номер телефона">
+                </div>
+                <div class="modal-footer flex-column border-0">
+                    <button class="btn btn-accent px-4">Сбросить текущий пароль</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
