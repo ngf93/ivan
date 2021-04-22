@@ -10,6 +10,7 @@ $dark-blue: #03588C;
 $light-blue: #F1F8FF;
 $yellow: #FFD600;
 $transparent: transparent;
+// *******************************************
 body {
     font-family: 'Roboto', sans-serif;
     color: $primary;
@@ -310,8 +311,19 @@ img {
     }
 }
 
+.img-upload {
+    .img-drop {
+        border-color: $blue !important;
+    }
+    input[type=file] {
+        opacity: 0;
+        position: absolute;
+    }
+}
+
 .form-select,
 .form-control {
+    border-color: #D2D2D2;
     &:focus {
         box-shadow: 0 0 0 0.25rem rgba($accent, 0.3);
     }
@@ -398,18 +410,30 @@ footer {
         width: 24px;
         height: 24px;
         border: 1px solid #C4C4C4;
-        border-radius: 5px;
         float: none;
         margin: 0;
         margin-right: 16px;
+        &:focus {
+            border-color: $accent;
+            box-shadow: 0 0 0 0.25rem rgba($accent, 0.4);
+        }
+    }
+    & &-input[type=checkbox] {
+        border-radius: 5px;
         &:checked {
             background-color: $accent;
             border-color: $accent;
             background-image: url('../images/icons/check.svg');
         }
-        &:focus {
+    }
+    & &-input[type=radio] {
+        border-radius: 50%;
+        background-color: $light-gray;
+        &:checked {
             border-color: $accent;
-            box-shadow: 0 0 0 0.25rem rgba($accent, 0.4);
+            background-color: rgba($accent, 0.3);
+            background-image: url('../images/icons/checked-radio.svg');
+            background-size: contain;
         }
     }
 }
@@ -499,6 +523,9 @@ footer {
             color: $black;
             border-bottom-color: $accent;
         }
+        &:focus {
+            box-shadow: none;
+        }
     }
 }
 
@@ -568,6 +595,29 @@ footer {
         width: 100%;
         object-fit: cover;
     }
+}
+
+.table-striped>tbody {
+    background-color: rgba($accent, 0.24);
+}
+
+.table> :not(caption)>*>* {
+    padding: 7px 16px;
+}
+
+.table-striped>tbody th {
+    font-weight: normal;
+    color: $primary;
+}
+
+.table-striped>tbody td {
+    text-align: right;
+    font-weight: 500;
+    color: $black;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #F0F0F0;
 }
 
 // MEDIA QUERIES start
