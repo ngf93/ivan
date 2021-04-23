@@ -10,6 +10,7 @@ $dark-blue: #03588C;
 $light-blue: #F1F8FF;
 $yellow: #FFD600;
 $transparent: transparent;
+$danger: #EB1919;
 // *******************************************
 body {
     font-family: 'Roboto', sans-serif;
@@ -223,6 +224,36 @@ a {
     }
 }
 
+.text-danger {
+    color: $danger !important;
+}
+
+.text-dashed {
+    border-bottom: 1px dashed $blue !important;
+    &:hover {
+        color: $blue;
+    }
+}
+
+.unconfirmed {
+    .unc-svg {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 10px solid $white;
+            top: -11px;
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+        }
+    }
+    >div {
+        top: -96px;
+    }
+}
+
 .bg {
     &-blue {
         background-color: $light-blue;
@@ -398,6 +429,19 @@ input[type=date] {
     }
 }
 
+.messages-list {
+    >div {
+        background-color: rgba($accent, 0.05);
+    }
+    .rounded-circle {
+        width: 64px;
+        height: 64px;
+    }
+    .fs-20 {
+        line-height: 20px;
+    }
+}
+
 footer {
     background-color: $primary
 }
@@ -512,6 +556,7 @@ footer {
 }
 
 .my-tabs {
+    border-bottom: 1px solid #D2D2D2;
     button {
         font-weight: 600;
         font-size: 20px;
@@ -525,6 +570,19 @@ footer {
         }
         &:focus {
             box-shadow: none;
+        }
+    }
+    &-2 {
+        .nav-link {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            border: none;
+            text-align: left;
+            background-color: $transparent;
+            &.active {
+                color: $accent;
+            }
         }
     }
 }
@@ -628,6 +686,9 @@ footer {
 }
 
 @media (min-width: 991.98px) {
+    .messages-list .text-truncate {
+        max-width: 64px;
+    }
     .modal {
         &-dialog {
             max-width: 944px;

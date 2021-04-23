@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Персональная страница</title>
+    <title>Личная страница диспетчера</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- favicon -->
@@ -63,12 +63,11 @@
                 </a>
                 <!-- login and signin -->
                 <a href="" class="d-flex align-items-center">
-                    <span class="d-none d-md-block">Вход/регистрация</span>
-                    <svg class="ms-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M10 17L15 12L10 7" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M15 12H3" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
+                    <span class="d-none d-md-block">Владимир Ш.</span>
                 </a>
             </nav>
         </div>
@@ -76,41 +75,63 @@
 
     <main class="container py-5">
         <div class="row">
+
             <!-- left column -->
             <div class="mb-4 col-lg-5">
-                <!-- picture -->
-                <div class="row mb-4 pb-4 border-bottom">
+                <!-- personal info -->
+                <div class="row mb-3">
+                    <!-- picture -->
                     <div class="col-lg-5">
                         <div class="rounded-4" style="height: 232px;">
-                            <img class="w-100 h-100" src="images/img/user.jpg" alt="">
+                            <img class="w-100 h-100" src="https://randomuser.me/api/portraits/men/8.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-7 pt-3">
+                        <!-- company or user name with settings btn -->
                         <div class="d-flex align-items-center">
-                            <div class="h5 mb-0">Анатолий Ш.</div>
+                            <!-- name -->
+                            <div class="h5 mb-0">Владимир Ш.</div>
+                            <!-- settings -->
                             <button class="btn py-0">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M19.4 15C19.2669 15.3016 19.2272 15.6362 19.286 15.9606C19.3448 16.285 19.4995 16.5843 19.73 16.82L19.79 16.88C19.976 17.0657 20.1235 17.2863 20.2241 17.5291C20.3248 17.7719 20.3766 18.0322 20.3766 18.295C20.3766 18.5578 20.3248 18.8181 20.2241 19.0609C20.1235 19.3037 19.976 19.5243 19.79 19.71C19.6043 19.896 19.3837 20.0435 19.1409 20.1441C18.8981 20.2448 18.6378 20.2966 18.375 20.2966C18.1122 20.2966 17.8519 20.2448 17.6091 20.1441C17.3663 20.0435 17.1457 19.896 16.96 19.71L16.9 19.65C16.6643 19.4195 16.365 19.2648 16.0406 19.206C15.7162 19.1472 15.3816 19.1869 15.08 19.32C14.7842 19.4468 14.532 19.6572 14.3543 19.9255C14.1766 20.1938 14.0813 20.5082 14.08 20.83V21C14.08 21.5304 13.8693 22.0391 13.4942 22.4142C13.1191 22.7893 12.6104 23 12.08 23C11.5496 23 11.0409 22.7893 10.6658 22.4142C10.2907 22.0391 10.08 21.5304 10.08 21V20.91C10.0723 20.579 9.96512 20.258 9.77251 19.9887C9.5799 19.7194 9.31074 19.5143 9 19.4C8.69838 19.2669 8.36381 19.2272 8.03941 19.286C7.71502 19.3448 7.41568 19.4995 7.18 19.73L7.12 19.79C6.93425 19.976 6.71368 20.1235 6.47088 20.2241C6.22808 20.3248 5.96783 20.3766 5.705 20.3766C5.44217 20.3766 5.18192 20.3248 4.93912 20.2241C4.69632 20.1235 4.47575 19.976 4.29 19.79C4.10405 19.6043 3.95653 19.3837 3.85588 19.1409C3.75523 18.8981 3.70343 18.6378 3.70343 18.375C3.70343 18.1122 3.75523 17.8519 3.85588 17.6091C3.95653 17.3663 4.10405 17.1457 4.29 16.96L4.35 16.9C4.58054 16.6643 4.73519 16.365 4.794 16.0406C4.85282 15.7162 4.81312 15.3816 4.68 15.08C4.55324 14.7842 4.34276 14.532 4.07447 14.3543C3.80618 14.1766 3.49179 14.0813 3.17 14.08H3C2.46957 14.08 1.96086 13.8693 1.58579 13.4942C1.21071 13.1191 1 12.6104 1 12.08C1 11.5496 1.21071 11.0409 1.58579 10.6658C1.96086 10.2907 2.46957 10.08 3 10.08H3.09C3.42099 10.0723 3.742 9.96512 4.0113 9.77251C4.28059 9.5799 4.48572 9.31074 4.6 9C4.73312 8.69838 4.77282 8.36381 4.714 8.03941C4.65519 7.71502 4.50054 7.41568 4.27 7.18L4.21 7.12C4.02405 6.93425 3.87653 6.71368 3.77588 6.47088C3.67523 6.22808 3.62343 5.96783 3.62343 5.705C3.62343 5.44217 3.67523 5.18192 3.77588 4.93912C3.87653 4.69632 4.02405 4.47575 4.21 4.29C4.39575 4.10405 4.61632 3.95653 4.85912 3.85588C5.10192 3.75523 5.36217 3.70343 5.625 3.70343C5.88783 3.70343 6.14808 3.75523 6.39088 3.85588C6.63368 3.95653 6.85425 4.10405 7.04 4.29L7.1 4.35C7.33568 4.58054 7.63502 4.73519 7.95941 4.794C8.28381 4.85282 8.61838 4.81312 8.92 4.68H9C9.29577 4.55324 9.54802 4.34276 9.72569 4.07447C9.90337 3.80618 9.99872 3.49179 10 3.17V3C10 2.46957 10.2107 1.96086 10.5858 1.58579C10.9609 1.21071 11.4696 1 12 1C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V3.09C14.0013 3.41179 14.0966 3.72618 14.2743 3.99447C14.452 4.26276 14.7042 4.47324 15 4.6C15.3016 4.73312 15.6362 4.77282 15.9606 4.714C16.285 4.65519 16.5843 4.50054 16.82 4.27L16.88 4.21C17.0657 4.02405 17.2863 3.87653 17.5291 3.77588C17.7719 3.67523 18.0322 3.62343 18.295 3.62343C18.5578 3.62343 18.8181 3.67523 19.0609 3.77588C19.3037 3.87653 19.5243 4.02405 19.71 4.21C19.896 4.39575 20.0435 4.61632 20.1441 4.85912C20.2448 5.10192 20.2966 5.36217 20.2966 5.625C20.2966 5.88783 20.2448 6.14808 20.1441 6.39088C20.0435 6.63368 19.896 6.85425 19.71 7.04L19.65 7.1C19.4195 7.33568 19.2648 7.63502 19.206 7.95941C19.1472 8.28381 19.1869 8.61838 19.32 8.92V9C19.4468 9.29577 19.6572 9.54802 19.9255 9.72569C20.1938 9.90337 20.5082 9.99872 20.83 10H21C21.5304 10 22.0391 10.2107 22.4142 10.5858C22.7893 10.9609 23 11.4696 23 12C23 12.5304 22.7893 13.0391 22.4142 13.4142C22.0391 13.7893 21.5304 14 21 14H20.91C20.5882 14.0013 20.2738 14.0966 20.0055 14.2743C19.7372 14.452 19.5268 14.7042 19.4 15V15Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                </button>
+                            </button>
                         </div>
-                        <div class="c-dark-blue mb-2">Частное лицо</div>
-                        <div class="mb-1">Зарегистрирован на сайте с марта 2021 года</div>
-                        <div class="d-flex align-items-baseline">
-                            <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0)">
-                                        <path d="M14 6.66663C14 11.3333 8 15.3333 8 15.3333C8 15.3333 2 11.3333 2 6.66663C2 5.07533 2.63214 3.5492 3.75736 2.42399C4.88258 1.29877 6.4087 0.666626 8 0.666626C9.5913 0.666626 11.1174 1.29877 12.2426 2.42399C13.3679 3.5492 14 5.07533 14 6.66663Z" fill="#03588C" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M8 8.66663C9.10457 8.66663 10 7.7712 10 6.66663C10 5.56206 9.10457 4.66663 8 4.66663C6.89543 4.66663 6 5.56206 6 6.66663C6 7.7712 6.89543 8.66663 8 8.66663Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0">
-                                        <rect width="16" height="16" fill="white"/>
-                                        </clipPath>
-                                        </defs>
-                                    </svg>
-                            <span>г. Казань, м. Площадь Тукая</span>
+                        <!-- member type -->
+                        <div class="c-dark-blue mb-2">Организация</div>
+                        <!-- on site since -->
+                        <div class="mb-1">На сайте с февраля 2021 года</div>
+                        <!-- phone -->
+                        <div class="mb-1">
+                            <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6669 11.28V13.28C14.6677 13.4657 14.6297 13.6494 14.5553 13.8195C14.4809 13.9897 14.3718 14.1424 14.235 14.2679C14.0982 14.3934 13.9367 14.489 13.7608 14.5485C13.5849 14.6079 13.3985 14.63 13.2136 14.6133C11.1622 14.3904 9.19161 13.6894 7.46028 12.5667C5.8495 11.5431 4.48384 10.1774 3.46028 8.56665C2.3336 6.82745 1.63244 4.84731 1.41361 2.78665C1.39695 2.60229 1.41886 2.41649 1.47795 2.24107C1.53703 2.06564 1.63199 1.90444 1.75679 1.76773C1.88159 1.63102 2.03348 1.52179 2.20281 1.447C2.37213 1.37221 2.55517 1.33349 2.74028 1.33332H4.74028C5.06382 1.33013 5.37748 1.4447 5.62279 1.65567C5.8681 1.86664 6.02833 2.15961 6.07361 2.47998C6.15803 3.12003 6.31458 3.74847 6.54028 4.35332C6.62998 4.59193 6.64939 4.85126 6.59622 5.10057C6.54305 5.34988 6.41952 5.57872 6.24028 5.75998L5.39361 6.60665C6.34265 8.27568 7.72458 9.65761 9.39361 10.6067L10.2403 9.75998C10.4215 9.58074 10.6504 9.45722 10.8997 9.40405C11.149 9.35088 11.4083 9.37029 11.6469 9.45998C12.2518 9.68568 12.8802 9.84224 13.5203 9.92665C13.8441 9.97234 14.1399 10.1355 14.3513 10.385C14.5627 10.6345 14.6751 10.953 14.6669 11.28Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <a href="tel:+7(917)123-45-67">+7 (917) 123-45-67</a>
                         </div>
+                        <!-- unconfirmed email -->
+                        <div class="mb-2 position-relative unconfirmed">
+                            <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99967 10.6666C9.47243 10.6666 10.6663 9.47274 10.6663 7.99998C10.6663 6.52722 9.47243 5.33331 7.99967 5.33331C6.52692 5.33331 5.33301 6.52722 5.33301 7.99998C5.33301 9.47274 6.52692 10.6666 7.99967 10.6666Z" stroke="#EB1919" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.6663 5.33333V8.66666C10.6663 9.19709 10.8771 9.7058 11.2521 10.0809C11.6272 10.4559 12.1359 10.6667 12.6663 10.6667C13.1968 10.6667 13.7055 10.4559 14.0806 10.0809C14.4556 9.7058 14.6663 9.19709 14.6663 8.66666V7.99999C14.6663 6.49535 14.1572 5.03498 13.2219 3.85635C12.2866 2.67772 10.98 1.85014 9.51477 1.50819C8.0495 1.16624 6.51164 1.33002 5.15125 1.9729C3.79086 2.61579 2.68795 3.69996 2.02185 5.04914C1.35576 6.39832 1.16566 7.93315 1.48246 9.40407C1.79926 10.875 2.60433 12.1955 3.76677 13.1508C4.9292 14.1062 6.38064 14.6402 7.88506 14.6661C9.38948 14.692 10.8584 14.2082 12.053 13.2933" stroke="#EB1919" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <a class="me-3 text-danger" href="mailto:viktor_d@yandex.ru">viktor_d@yandex.ru</a>
+                            <span class="unc-svg position-relative">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00001C14.6663 4.31811 11.6816 1.33334 7.99967 1.33334C4.31778 1.33334 1.33301 4.31811 1.33301 8.00001C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="#EB1919" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 5.33334V8.00001" stroke="#EB1919" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 10.6667H8.00667" stroke="#EB1919" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <!-- unconfirmed email tooltip -->
+                            <div class="rounded-4 shadow-box pt-2 pb-3 px-3 fs-14 position-absolute bg-white c-primary">
+                                <div>Неподтвержденная<br/> электронная почта</div>
+                                <button class="border-0 fs-14 btn p-0 c-blue text-dashed rounded-0">Отправить сообщение на почту</button>
+                            </div>
+                        </div>
+
+                        <!-- rating and reviews -->
                         <div class="mt-auto d-flex align-items-baseline">
                             <!-- rating -->
                             <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20 me-4">
@@ -120,12 +141,17 @@
                                 <span class="checked">&#9733;</span>
                                 <span>&#9733;</span>
                             </div>
-                            <a href="" class="fs-14 c-blue text-nowrap">4 отзывов</a>
+                            <!-- reviews link -->
+                            <a href="reviews.html" class="fs-14 c-blue text-nowrap">4 отзывов</a>
                         </div>
                     </div>
+                    <!-- <div>
+                        <hr class="border-bottom">
+                    </div> -->
                 </div>
+                <!-- tabs buttons list -->
                 <div class="d-flex align-items-start">
-                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="nav ff-2 flex-column my-tabs-2 me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <!-- offer -->
                         <button class="nav-link active" id="offer-tab" data-bs-toggle="pill" data-bs-target="#offer" type="button" role="tab" aria-controls="offer" aria-selected="true">Мои предложения</button>
                         <!-- announcement -->
@@ -148,13 +174,13 @@
                     <!-- right column -->
                     <div class="d-flex justify-content-between align-items-center">
                         <h2 class="mb-0">Мои предложения</h2>
-                        <div class="d-flex c-accent fw-5">
+                        <a href="create-proposal.html" class="d-flex c-accent fw-5">
                             <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M5 12H19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <span>Добавить</span>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-11 mx-auto row row-cols-2 row-cols-sm-3 gx-2 gy-3 g-sm-3 g-xxl-4 mb-4 mb-lg-5 justify-content-arou pt-5">
                         <div>
@@ -212,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-lg btn-outline-2 w-100">Добавить предложение</button>
+                    <a href="create-proposal.html" class="btn btn-lg btn-outline-2 w-100">Добавить предложение</a>
                 </div>
                 <!-- announcement -->
                 <div class="tab-pane fade" id="announcement" role="tabpanel" aria-labelledby="announcement-tab">
@@ -501,15 +527,15 @@
                             </button>
                         </div>
                         <fieldset class="form-check mb-3">
-                            <input name="role-choose" id="executor" type="radio" class="form-check-input me-2">
-                            <label for="executor">Исполнитель</label>
+                            <input name="role-choose" id="implementer" type="radio" class="form-check-input me-2">
+                            <label for="implementer">Исполнитель</label>
                         </fieldset>
                         <fieldset class="form-check mb-3">
                             <input name="role-choose" id="customer" type="radio" class="form-check-input me-2">
                             <label for="customer">Заказчик</label>
                         </fieldset>
                         <fieldset class="form-check">
-                            <input name="role-choose" id="dispatcher" type="radio" class="form-check-input me-2">
+                            <input name="role-choose" id="dispatcher" type="radio" class="form-check-input me-2" checked>
                             <label for="dispatcher">Диспетчер</label>
                         </fieldset>
                     </fieldset>
@@ -545,11 +571,11 @@
                             <label for="private">Частное лицо</label>
                         </fieldset>
                         <fieldset class="form-check mb-3">
-                            <input name="member-type" id="individual " type="radio" class="form-check-input me-2">
-                            <label for="individual ">Индивидульный предприниматель</label>
+                            <input name="member-type" id="individual" type="radio" class="form-check-input me-2">
+                            <label for="individual">Индивидульный предприниматель</label>
                         </fieldset>
                         <fieldset class="form-check">
-                            <input name="member-type" id="company" type="radio" class="form-check-input me-2">
+                            <input name="member-type" id="company" type="radio" class="form-check-input me-2" checked>
                             <label for="company">Организация</label>
                         </fieldset>
                     </fieldset>
@@ -583,11 +609,11 @@
                         <legend class="h5 mb-4 c-black">Смена пароля</legend>
                         <fieldset class="d-flex flex-column flex-xxl-row align-items-xxl-center mb-3">
                             <label for="current-pass" class="col-xxl-5 mb-2">Текущий пароль</label>
-                            <input id="current-pass" type="text" class="form-control" placeholder="Имя">
+                            <input id="current-pass" type="text" class="form-control" placeholder="Текущий пароль">
                         </fieldset>
                         <fieldset class="d-flex flex-column flex-xxl-row align-items-xxl-center mb-3">
                             <label for="new-pass" class="col-xxl-5 mb-2">Новый пароль</label>
-                            <input id="new-pass" type="text" class="form-control" placeholder="Фамилия">
+                            <input id="new-pass" type="text" class="form-control" placeholder="Новый пароль">
                         </fieldset>
                         <button class="btn btn-accent px-5">Сохранить</button>
                     </fieldset>
@@ -603,6 +629,7 @@
                     <button class="btn btn-lg btn-outline-2">Сохранить все данные</button>
                 </div>
             </div>
+        </div>
     </main>
 
     <!-- подвал -->
