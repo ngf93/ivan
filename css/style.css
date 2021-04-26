@@ -234,7 +234,7 @@ a:hover.c-blue {
 }
 
 .unconfirmed > div {
-  top: -96px;
+  bottom: 34px;
 }
 
 .bg-blue {
@@ -697,6 +697,17 @@ footer {
      object-fit: cover;
 }
 
+.proposal-page .my-tabs {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.proposal-page .my-tabs::-webkit-scrollbar {
+  display: none;
+}
+
 .table-striped > tbody {
   background-color: rgba(255, 102, 0, 0.24);
 }
@@ -765,6 +776,15 @@ footer {
 @media (max-width: 575.98px) {
   .find-on-map .input-group {
     margin-bottom: 0;
+  }
+  .page-item {
+    margin-right: 1px;
+  }
+  .gallery-top {
+    height: 200px;
+  }
+  .gallery-thumbs {
+    height: 80px;
   }
 }
 
