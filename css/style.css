@@ -343,6 +343,7 @@ img {
 
 .img-upload .img-drop {
   border-color: #4DA9FF !important;
+  padding: 90px;
 }
 
 .img-upload input[type=file] {

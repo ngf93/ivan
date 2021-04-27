@@ -345,6 +345,7 @@ img {
 .img-upload {
     .img-drop {
         border-color: $blue !important;
+        padding: 90px;
     }
     input[type=file] {
         opacity: 0;

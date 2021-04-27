@@ -86,7 +86,7 @@
                             </div>
                         </div>
                         <div class="col-lg-7 pt-3 c-black">
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center mb-1">
                                 <div class="h5 mb-0">Анатолий Ш.</div>
                                 <button class="btn py-0">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +96,7 @@
                                 </button>
                             </div>
                             <!-- member type -->
-                            <div class="c-dark-blue mb-2">Организация</div>
+                            <!-- <div class="c-dark-blue mb-2">Организация</div> -->
                             <!-- on site since -->
                             <div class="mb-1">На сайте с февраля 2021 года</div>
                             <!-- phone -->
@@ -133,10 +133,19 @@
                 </div>
                 <!-- right column -->
                 <div class="col-lg-6">
-                    <h1 class="h2 mb-4 mb-md-5">Новое предложение</h1>
+                    <div class="d-flex flex-column-reverse flex-md-row flex-wrap justify-content-between mb-4">
+                        <h1 class="h2">Новое предложение</h1>
+                        <a href="#" class="fw-5 d-inline-flex align-items-center">
+                            <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12H5" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 19L5 12L12 5" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Все предложения</span>
+                        </a>
+                    </div>
                     <!-- category -->
-                    <fieldset class="d-flex flex-column flex-xxl-row align-items-cente mb-3">
-                        <label for="proposal-cat" class="fs-20 c-black me-4 mb-2">Категория</label>
+                    <fieldset class="d-flex flex-column flex-sm-row align-items-cente mb-3">
+                        <label for="proposal-cat" class="fs-20 c-black me-4 mb-2 col-sm-2">Категория</label>
                         <select id="proposal-cat" class="form-select" required>
                             <option value="">Спецтехника</option>
                             <option value="">Инструменты</option>
@@ -144,14 +153,32 @@
                         </select>
                     </fieldset>
                     <!-- title -->
-                    <fieldset class="d-flex flex-column flex-xxl-row align-items-cent mb-4">
-                        <label for="proposal-title" class="fs-20 c-black me-4 mb-2">Название</label>
+                    <fieldset class="d-flex flex-column flex-sm-row align-items-cent mb-3">
+                        <label for="proposal-title" class="fs-20 c-black me-4 mb-2 col-sm-2">Название</label>
                         <input id="proposal-title" type="text" class="form-control" placeholder="Например, экскаватор-погрузчик" required>
                     </fieldset>
+                    <!-- VIN только для спецтехники! -->
+                    <fieldset class="d-flex flex-column flex-sm-row align-items-cent mb-4">
+                        <label for="proposal-vin" class="fs-20 c-black me-4 mb-2 text-nowrap col-sm-2">VIN-код</label>
+                        <input id="proposal-vin" type="number" class="form-control" placeholder="Например, XTA210990Y2766389" required>
+                    </fieldset>
                     <!-- photo -->
-                    <fieldset class="img-upload d-flex flex-column flex-xxl-row align-items-start mb-3 mb-md-4">
-                        <label for="" class="fs-20 c-black mb-3 me-4">Загрузите фотографию:</label>
-                        <div class="img-drop position-relative rounded-3 border p-5">
+                    <fieldset class="img-upload d-flex flex-column mb-3 mb-md-4">
+                        <div class="d-flex flex-wrap justify-content-between mb-3 mb-md-4">
+                            <label for="" class="fs-20 c-black me-4">Загрузите фотографию:</label>
+                            <div class="position-relative c-accent fw-5">
+                                <input type="file" class="w-100 h-100" multiple>
+                                <span class="d-flex align-items-center">
+                                    <svg class="me-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5 12H19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Добавить</span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- drop img -->
+                        <div class="img-drop position-relative rounded-3 border align-self-start">
                             <input type="file" class="top-0 start-0 w-100 h-100">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M35 25V31.6667C35 32.5507 34.6488 33.3986 34.0237 34.0237C33.3986 34.6488 32.5507 35 31.6667 35H8.33333C7.44928 35 6.60143 34.6488 5.97631 34.0237C5.35119 33.3986 5 32.5507 5 31.6667V25" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -159,30 +186,20 @@
                                 <path d="M20 25V5" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <div class="position-relative c-accent fw-5 ms-auto">
-                            <input type="file" class="w-100 h-100" multiple>
-                            <span class="d-flex align-items-center">
-                                <svg class="me-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M5 12H19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>Добавить</span>
-                            </span>
-                        </div>
                     </fieldset>
                     <!-- description -->
-                    <fieldset class="d-flex flex-column flex-xxl-row align-items-start mb-4">
-                        <label for="proposal-desc" class="fs-20 c-black me-4 mb-2">Описание</label>
+                    <fieldset class="d-flex flex-column flex-sm-row align-items-start mb-4">
+                        <label for="proposal-desc" class="fs-20 c-black me-4 mb-2 col-sm-2">Описание</label>
                         <textarea id="proposal-desc" rows="4" class="form-control" placeholder="Начните ввод..."></textarea>
                     </fieldset>
                     <!-- address edit -->
                     <fieldset class="d-flex flex-column mb-4">
                         <div class="d-flex flex-column flex-xxl-row align-items- mb-4">
-                            <label for="proposal-address" class="fs-20 c-black me-4 mb-2">Адрес</label>
+                            <label for="proposal-address" class="fs-20 c-black me-4 mb-2 col-sm-2">Адрес</label>
                             <!-- search input -->
                             <div class="input-group flex-nowrap">
                                 <input class="form-control col-10" type="search" id="proposal-address" placeholder="Улица и номер дома">
-                                <button class="w-auto btn btn-accent px-2 col-2 col-lg-1" type="button">
+                                <button class="w-auto btn btn-accent px-2 px-md-4 col-2 col-lg-1" type="button">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M19.0001 19L14.6501 14.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -198,10 +215,10 @@
                     </fieldset>
                     <!-- price -->
                     <fieldset class="mb-4 d-flex flex-wrap align-items-sm-center">
-                        <label class="form-label me-4 mb-sm-0 col-12 col-sm-auto fs-20 c-black" for="price">Стоимость:</label>
-                        <div class="row gx-2">
+                        <label class="form-label me-4 mb-sm-0 col-12 col-sm-auto fs-20 c-black col-sm-2" for="price">Стоимость:</label>
+                        <div class="row gx-2 gx-md-3">
                             <div class="col-6">
-                                <input id="price" type="number" class="form-control form-control-sm me-lg-2 d-inline-block" value="1500" placeholder="Цена" required>
+                                <input id="price" type="number" class="form-control form-control-sm d-inline-block" value="1500" placeholder="Цена" required>
                             </div>
                             <div class="col-6">
                                 <select class="form-select form-select-sm d-inline-block" aria-label="Выбор категории" required>
@@ -212,7 +229,7 @@
                         </div>
                     </fieldset>
                     <!-- parameters -->
-                    <fieldset class="mb-5">
+                    <fieldset class="mb-5 col-lg-10">
                         <legend class="h5 mb-3">Параметры</legend>
                         <fieldset class="mb-3">
                             <label for="parameters-name" class="c-black mb-2">Введите название параметра:</label>
@@ -230,9 +247,7 @@
                             <span>Добавить параметр</span>
                         </button>
                     </fieldset>
-                    <div class="text-center">
-                        <button class="mt-auto btn btn-lg btn-accent">Опубликовать</button>
-                    </div>
+                    <button class="mt-auto btn btn-lg btn-accent w-100">Опубликовать</button>
                 </div>
             </div>
         </div>
