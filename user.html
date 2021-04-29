@@ -74,155 +74,178 @@
         </div>
     </header>
 
-    <main>
-        <div class="container py-5">
-            <div class="row row-cols-lg-2">
-                <!-- left column -->
-                <div class="mb-4">
+    <main class="container py-5 my-xl-5">
+        <div class="row">
+            <!-- USER INFO -->
+            <div class="mb-4 col-lg-5">
+                <div class="d-flex flex-wrap mb-4 pb-4 border-bottom">
                     <!-- picture -->
-                    <div class="ro mb-4">
-                        <div class="col-lg-5 rounded-4" style="height: 232px;">
-                            <img src="images/img/user.jpg" alt="">
+                    <div class="col-lg-5 rounded-4 user-prof-img me-xxl-3">
+                        <img class="w-100 h-100" src="images/img/user.jpg" alt="">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="d-flex flex-wrap align-items-baseline justify-content-between">
+                            <div class="h5 me-3">Геннадий С</div>
+                            <div class="c-dark-blue mb-2">Организация</div>
                         </div>
-                        <div class="col-lg-7 pt-3">
-                            <div class="h5">Геннадий С</div>
-                            <!-- <div class="c-dark-blue mb-2">Частное лицо</div> -->
-                            <div class="mb-1">На сайте с марта 2021 года</div>
-                            <!-- <div class="d-flex align-items-baseline">
-                                <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0)">
-                                        <path d="M14 6.66663C14 11.3333 8 15.3333 8 15.3333C8 15.3333 2 11.3333 2 6.66663C2 5.07533 2.63214 3.5492 3.75736 2.42399C4.88258 1.29877 6.4087 0.666626 8 0.666626C9.5913 0.666626 11.1174 1.29877 12.2426 2.42399C13.3679 3.5492 14 5.07533 14 6.66663Z" fill="#03588C" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M8 8.66663C9.10457 8.66663 10 7.7712 10 6.66663C10 5.56206 9.10457 4.66663 8 4.66663C6.89543 4.66663 6 5.56206 6 6.66663C6 7.7712 6.89543 8.66663 8 8.66663Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0">
-                                        <rect width="16" height="16" fill="white"/>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <span>г. Казань, м. Площадь Тукая</span>
-                            </div> -->
-                            <div class="mt-auto d-flex align-items-baseline">
-                                <!-- rating -->
-                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20 me-4">
-                                    <span class="checked">&#9733;</span>
-                                    <span class="checked">&#9733;</span>
-                                    <span class="checked">&#9733;</span>
-                                    <span class="checked">&#9733;</span>
-                                    <span>&#9733;</span>
-                                </div>
-                                <a href="" class="fs-14 c-blue text-nowrap">4 отзывов</a>
+                        <div class="mb-3">На сайте с марта 2021 года</div>
+                        <div class="mb-3">
+                            <p class="mb-2">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 6L9 17L4 12" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span>Номер телефона</span>
+                            </p>
+                            <p class="mb-0">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 6L9 17L4 12" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span>Электронная почта</span>
+                            </p>
+                        </div>
+                        <div class="mt-auto d-flex align-items-baseline">
+                            <!-- rating -->
+                            <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20 me-4">
+                                <span class="checked">&#9733;</span>
+                                <span class="checked">&#9733;</span>
+                                <span class="checked">&#9733;</span>
+                                <span class="checked">&#9733;</span>
+                                <span>&#9733;</span>
                             </div>
+                            <a href="" class="fs-14 c-blue text-nowrap">4 отзывов</a>
                         </div>
                     </div>
                     <div>
-                        <h5 class="mb-3">Подтверждённая информация</h5>
-                        <p class="mb-2">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Номер телефона</span>
-                        </p>
-                        <p class="mb-0">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20 6L9 17L4 12" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Электронная почта</span>
-                        </p>
-
-
-
-
-                        <button class="btn btn-lg btn-accent mt-4">Написать сообщение</button>
+                        <hr class="col-12 m-0 border-bottom" />
                     </div>
                 </div>
-                <!-- right column -->
-                <div>
-                    <nav>
-                        <div class="nav my-tabs ff-2 flex-wrap text-nowra" id="nav-tab" role="tablist">
-                            <button class="btn active rounded-0 flex-fill" id="offers-tab" data-bs-toggle="tab" data-bs-target="#offers" type="button" role="tab" aria-controls="offers" aria-selected="true">Актуальные предложения</button>
-                            <button class="btn rounded-0 flex-fill" id="announcements-tab" data-bs-toggle="tab" data-bs-target="#announcements" type="button" role="tab" aria-controls="announcements" aria-selected="false">Актуальные объявления</button>
-                        </div>
-                    </nav>
-                    <div class="tab-content py-4" id="nav-tabContent">
-                        <!-- current offers -->
-                        <div class="tab-pane show active" id="offers" role="tabpanel" aria-labelledby="offers-tab">
-                            <!-- empty offers -->
-                            <p class="fs-20">Здесь пока нет предложений.</p>
-                            <div class="row row-cols-2 row-cols-sm-3 g-2 gy-3">
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button" autocomplete="off">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/category.jpeg" alt="">
-                                        </div>
-                                        <div class="card-body d-flex flex-column text-center p-2 pb-3 p-xl-3">
-                                            <a class="card-title fw-5" href="">Экскаватор-погрузчик с гидромолотом</a>
-                                            <div class="mt-auto d-flex flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">5 км от Вас</div>
-                                            <div class="fw-5">500 руб./час</div>
-                                        </div>
-                                    </div>
+                <!-- TABS BUTTONS LIST -->
+                <div class="nav ff-2 flex-column my-tabs-2 me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <!-- offers -->
+                    <button class="nav-link active px-0 py-2" id="offers-tab" data-bs-toggle="pill" data-bs-target="#offers" type="button" role="tab" aria-controls="offers" aria-selected="true">Предложения</button>
+                    <!-- announcements -->
+                    <button class="nav-link px-0 py-2" id="announcements-tab" data-bs-toggle="pill" data-bs-target="#announcements" type="button" role="tab" aria-controls="announcements" aria-selected="false">Объявления</button>
+                    <!-- reviews -->
+                    <button class="nav-link px-0 py-2" id="reviews-tab" data-bs-toggle="pill" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Отзывы</button>
+                </div>
+                <!-- send message btn -->
+                <button class="btn btn-lg btn-accent mt-4">Написать сообщение</button>
+            </div>
+            <!-- TABS CONTENT -->
+            <div class="tab-content col-lg-7" id="v-pills-tabContent">
+                <!-- OFFERS TAB CONTENT -->
+                <div class="tab-pane fade show active col-xl-11 ms-auto" id="offers" role="tabpanel" aria-labelledby="offers-tab">
+                    <h2 class="mb-3">Актуальные предложения</h2>
+                    <!-- empty offers -->
+                    <p class="fs-20">У пользователя пока нет размещенных предложений.</p>
+                    <!-- offers list -->
+                    <div class="row row-cols-2 row-cols-sm-3 g-2 gx-xxl-4 gy-3">
+                        <!-- card -->
+                        <div>
+                            <div class="card shadow-box rounded-4 h-100 border-0">
+                                <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button" autocomplete="off">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <div class="img">
+                                    <img src="images/img/category.jpeg" alt="">
                                 </div>
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button" autocomplete="off">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/category2.jpeg" alt="">
+                                <div class="card-body d-flex flex-column text-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title fw-5" href="">Экскаватор-погрузчик с гидромолотом</a>
+                                    <div class="mt-auto d-flex flex-column justify-content-center align-items-center">
+                                        <!-- rating -->
+                                        <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
                                         </div>
-                                        <div class="card-body d-flex flex-column text-center p-2 pb-3 p-xl-3">
-                                            <a class="card-title fw-5" href="">Эвакуатор до 5 т</a>
-                                            <div class="mt-auto d-flex flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="" class="fs-14 c-blue text-nowrap">4 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">15 км от Вас</div>
-                                            <div class="fw-5">1500 руб./час</div>
-                                        </div>
+                                        <a href="" class="fs-14 c-blue text-nowrap">14 отзывов</a>
                                     </div>
+                                    <div class="fs-14 c-gray mb-1">5 км от Вас</div>
+                                    <div class="fw-5">500 руб./час</div>
                                 </div>
                             </div>
                         </div>
-                        <!-- actual announcements -->
-                        <div class="tab-pane" id="announcements" role="tabpanel" aria-labelledby="announcements-tab">
-                            <!-- empty announcements -->
-                            <p class="fs-20">Здесь пока нет объявлений.</p>
-                            <div class="row row-cols-1 g-2 gy-3">
-                                <!-- announcement 1 -->
-                                <div class="row rounded-4 shadow-box p-4">
-                                    <div class="col-4">
-                                        <img class="w-100 h-100" src="images/img/map.jpg" alt="">
+                        <!-- card -->
+                        <div>
+                            <div class="card shadow-box rounded-4 h-100 border-0">
+                                <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button" autocomplete="off">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <div class="img">
+                                    <img src="images/img/category2.jpeg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column text-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title fw-5" href="">Эвакуатор до 5 т</a>
+                                    <div class="mt-auto d-flex flex-column justify-content-center align-items-center">
+                                        <!-- rating -->
+                                        <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
+                                        </div>
+                                        <a href="" class="fs-14 c-blue text-nowrap">4 отзывов</a>
                                     </div>
-                                    <div class="col-8">
-                                        <div class="h5 mb-1 c-blue">Выкопать яму под колодец</div>
-                                        <time class="c-gray">3 часа назад</time>
+                                    <div class="fs-14 c-gray mb-1">15 км от Вас</div>
+                                    <div class="fw-5">1500 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div>
+                            <div class="card shadow-box rounded-4 h-100 border-0">
+                                <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button" autocomplete="off">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <div class="img">
+                                    <img src="images/img/category2.jpeg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column text-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title fw-5" href="">Эвакуатор до 5 т</a>
+                                    <div class="mt-auto d-flex flex-column justify-content-center align-items-center">
+                                        <!-- rating -->
+                                        <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
+                                        </div>
+                                        <a href="" class="fs-14 c-blue text-nowrap">4 отзывов</a>
+                                    </div>
+                                    <div class="fs-14 c-gray mb-1">15 км от Вас</div>
+                                    <div class="fw-5">1500 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ANNOUNCEMENT TAB CONTENT -->
+                <div class="tab-pane fade col-xl-11 ms-auto" id="announcements" role="tabpanel" aria-labelledby="announcements-tab">
+                    <h2 class="mb-3">Актуальные объявления</h2>
+                    <!-- empty announcements -->
+                    <p class="fs-20">У пользователя пока нет размещенных объявлений.</p>
+                    <!-- announcements list -->
+                    <div class="">
+                        <!-- announcement 1 -->
+                        <div class="d-flex flex-wrap rounded-4 shadow-box p-4">
+                            <div class="col-4 announcements-img me-lg-3">
+                                <img class="w-100 h-100" src="images/img/map.jpg" alt="">
+                            </div>
+                            <div class="col-8 d-flex flex-fill flex-column">
+                                <div class="h5 mb-1 c-blue">Выкопать яму под колодец</div>
+                                <time class="c-gray">3 часа назад</time>
+                                <div class="mt-auto d-flex flex-wrap justify-content-between align-items-end">
+                                    <div>
                                         <div class="d-flex">
                                             <span class="me-2 me-lg-4 c-primary">Дата исполнения:</span>
                                             <span class="fw-5">25.04.21</span>
@@ -231,18 +254,160 @@
                                             <span class="me-2 me-lg-4 c-primary">Адрес:</span>
                                             <span class="fw-5">ул. Гарифьянова, д.12 к.32/2</span>
                                         </div>
-                                        <div class="d-flex align-items-center c-accent">
-                                            <span class="me-2">Подробнее</span>
-                                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M5.5 12H19.5" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M12.5 5L19.5 12L12.5 19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center c-accent">
+                                        <span class="me-2">Подробнее</span>
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.5 12H19.5" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.5 5L19.5 12L12.5 19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- REVIEWS TAB CONTENT -->
+                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h2 class="mb-3">Отзывы <span>Геннадий С</span></h2>
+                        <button class="btn btn-outline-2 px-4 mb-3">Написать отзыв</button>
+                    </div>
+                    <!-- empty announcements -->
+                    <p class="fs-20">У пользователя пока нет отзывов.</p>
+                    <!-- reviews list -->
+                    <div class="reviews-list">
+                        <!-- review 1 -->
+                        <div class="d-flex py-4 border-bottom">
+                            <div class="rounded-circle flex-shrink-0 me-2 me-sm-4">
+                                <img class="w-100 h-100" src="images/img/user.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <!-- name -->
+                                    <div class="h5 mb-1 me-1">Геннадий Л.</div>
+                                    <!-- link -->
+                                    <div class="c-blue d-flex align-items-baseline">
+                                        <svg class="flex-shrink-0 me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path d="M14.4152 1.38101C12.8295 -0.351715 10.1439 -0.47093 8.41097 1.11506L0.747415 8.12856L1.38501 8.82524L9.04857 1.81175C9.69986 1.21567 10.5442 0.909059 11.4264 0.947969C13.2514 1.02881 14.6631 2.57117 14.5823 4.39641C14.5432 5.27845 14.163 6.0925 13.5116 6.68857L4.97723 14.499C4.11285 15.2901 2.7661 15.2304 1.9751 14.366C1.18225 13.4997 1.24162 12.1569 2.10811 11.3639L10.2942 3.87227C10.4803 3.70197 10.7211 3.61423 10.9736 3.6255C11.495 3.64858 11.8984 4.08923 11.8753 4.61076C11.8641 4.86279 11.7554 5.09537 11.5693 5.26567L4.2541 11.9603L4.8917 12.657L12.2069 5.96233C12.5791 5.62171 12.7964 5.15656 12.8187 4.65254C12.865 3.60976 12.0584 2.72819 11.0153 2.68198C10.5113 2.65969 10.0288 2.83494 9.65661 3.17556L1.47051 10.6672C0.219086 11.8125 0.133083 13.7521 1.27842 15.0036C2.42199 16.2532 4.36737 16.3373 5.61482 15.1957L14.1492 7.38529C15.8779 5.80323 15.9972 3.10973 14.4152 1.38101Z" fill="#4CA9FF"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="16" height="16" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>Экскаватор-погрузчик с гидромолотом</span>
+                                    </div>
+                                </div>
+                                <!-- rating -->
+                                <div class="mb-2">
+                                    <span>Оценка:</span>
+                                    <div class="ms-3 d-inline-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                        <span class="checked">&#9733;</span>
+                                        <span class="checked">&#9733;</span>
+                                        <span class="checked">&#9733;</span>
+                                        <span class="checked">&#9733;</span>
+                                        <span>&#9733;</span>
+                                    </div>
+                                </div>
+                                <!-- text -->
+                                <p class="m-0">Через несколько недель мне позвонила то ли заведующая магазина, то ли директор, поблагодарила за отзыв и сказала, что он был зачитан на собрании</p>
+                            </div>
+                        </div>
+                        <!-- review 2 -->
+                        <div class="d-flex py-4 border-bottom">
+                            <div class="rounded-circle flex-shrink-0 me-2 me-sm-4">
+                                <img class="w-100 h-100" src="images/img/ivanc.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <!-- name -->
+                                    <div class="h5 mb-1 me-1">Анатолий Ж.</div>
+                                    <!-- link -->
+                                    <div class="c-blue d-flex align-items-baseline">
+                                        <svg class="flex-shrink-0 me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path d="M14.4152 1.38101C12.8295 -0.351715 10.1439 -0.47093 8.41097 1.11506L0.747415 8.12856L1.38501 8.82524L9.04857 1.81175C9.69986 1.21567 10.5442 0.909059 11.4264 0.947969C13.2514 1.02881 14.6631 2.57117 14.5823 4.39641C14.5432 5.27845 14.163 6.0925 13.5116 6.68857L4.97723 14.499C4.11285 15.2901 2.7661 15.2304 1.9751 14.366C1.18225 13.4997 1.24162 12.1569 2.10811 11.3639L10.2942 3.87227C10.4803 3.70197 10.7211 3.61423 10.9736 3.6255C11.495 3.64858 11.8984 4.08923 11.8753 4.61076C11.8641 4.86279 11.7554 5.09537 11.5693 5.26567L4.2541 11.9603L4.8917 12.657L12.2069 5.96233C12.5791 5.62171 12.7964 5.15656 12.8187 4.65254C12.865 3.60976 12.0584 2.72819 11.0153 2.68198C10.5113 2.65969 10.0288 2.83494 9.65661 3.17556L1.47051 10.6672C0.219086 11.8125 0.133083 13.7521 1.27842 15.0036C2.42199 16.2532 4.36737 16.3373 5.61482 15.1957L14.1492 7.38529C15.8779 5.80323 15.9972 3.10973 14.4152 1.38101Z" fill="#4CA9FF"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="16" height="16" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>Выкопать яму под колодец</span>
+                                    </div>
+                                </div>
+                                <!-- rating -->
+                                <div class="mb-2">
+                                    <span>Оценка:</span>
+                                    <div class="ms-3 d-inline-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                        <span class="checked">&#9733;</span>
+                                        <span class="checked">&#9733;</span>
+                                        <span class="checked">&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                    </div>
+                                </div>
+                                <!-- text -->
+                                <p class="m-0">Наша компания впервые обратилась к фирме N около полугода назад с задачей разработать продающий сайт, который реально генерирует продажи, а не просто висит мертвым грузом, проедая бюджет. Результаты превзошли ожидания:
+                                    рост продаж за первый квартал составил +96%, и это в “мертвый сезон”, когда обычно у нас убыток. Планируем заказать фирме N еще несколько сайтов для смежных проектов.</p>
+                            </div>
+                        </div>
+                        <!-- review 3 -->
+                        <div class="d-flex py-4 border-bottom">
+                            <div class="rounded-circle flex-shrink-0 me-2 me-sm-4">
+                                <img class="w-100 h-100" src="images/img/category4.jpeg" alt="">
+                            </div>
+                            <div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <!-- name -->
+                                    <div class="h5 mb-1 me-1">Иннокеннтий К.</div>
+                                </div>
+                                <!-- rating -->
+                                <div class="mb-2">
+                                    <span>Оценка:</span>
+                                    <div class="ms-3 d-inline-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                        <span class="checked">&#9733;</span>
+                                        <span class="checked">&#9733;</span>
+                                        <span class="checked">&#9733;</span>
+                                        <span>&#9733;</span>
+                                        <span>&#9733;</span>
+                                    </div>
+                                </div>
+                                <!-- text -->
+                                <p class="m-0">Наткнулся на книгу случайно, название улыбнуло. Не знаю, кого может торкнуть этот бред, разве что задротов типа автора отзыва №3</p>
+                            </div>
+                        </div>
+                        <!-- reviews list end -->
+                    </div>
+                    <!-- pagination -->
+                    <nav class="fs-20 mt-4 mt-lg-5" aria-label="Навигация по страницам объявлений аукциона">
+                        <ul class="pagination flex-wrap justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 13L1 7L7 1" stroke="#797979" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 13L7 7L1 1" stroke="#797979" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

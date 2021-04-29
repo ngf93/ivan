@@ -698,6 +698,16 @@ footer {
      object-fit: cover;
 }
 
+.user-prof-img {
+  width: 213px;
+  height: 213px;
+}
+
+.announcements-img {
+  width: 185px;
+  height: 136px;
+}
+
 .proposal-page .my-tabs {
   overflow-x: scroll;
   -ms-overflow-style: none;
@@ -786,6 +796,10 @@ footer {
   }
   .gallery-thumbs {
     height: 80px;
+  }
+  .user-prof-img {
+    width: 100px;
+    height: 100px;
   }
 }
 
