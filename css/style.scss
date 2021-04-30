@@ -308,10 +308,20 @@ a {
     &-outline {
         color: $primary;
         border: 1px solid $primary;
+        &:disabled {
+            background-color: grayscale($accent);
+            color: $white;
+            border-color: grayscale($accent);
+        }
     }
     &-outline-2 {
         color: $accent;
         border: 1px solid $accent;
+        &:disabled {
+            background-color: grayscale($accent);
+            color: $white;
+            border-color: grayscale($accent);
+        }
     }
     &-fav {
         &.active {
@@ -320,6 +330,11 @@ a {
             }
         }
     }
+}
+
+.bg-block {
+    background-color: rgba($black, 0.6);
+    z-index: 9;
 }
 
 img {
@@ -430,9 +445,14 @@ input[type=date] {
     }
 }
 
-.messages-list {
+.dialogue-list {
     >div {
-        background-color: rgba($accent, 0.05);
+        background-color: $white;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        &.unread {
+            background-color: rgba($accent, 0.05);
+            box-shadow: none;
+        }
     }
     .rounded-circle {
         width: 64px;

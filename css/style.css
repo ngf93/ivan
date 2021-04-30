@@ -304,13 +304,30 @@ a:hover.c-blue {
   border: 1px solid #3C3939;
 }
 
+.btn-outline:disabled {
+  background-color: gray;
+  color: white;
+  border-color: gray;
+}
+
 .btn-outline-2 {
   color: #FF6600;
   border: 1px solid #FF6600;
 }
 
+.btn-outline-2:disabled {
+  background-color: gray;
+  color: white;
+  border-color: gray;
+}
+
 .btn-fav.active svg {
   fill: #FF6600;
+}
+
+.bg-block {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9;
 }
 
 img {
@@ -445,16 +462,24 @@ input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0.8;
 }
 
-.messages-list > div {
-  background-color: rgba(255, 102, 0, 0.05);
+.dialogue-list > div {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-.messages-list .rounded-circle {
+.dialogue-list > div.unread {
+  background-color: rgba(255, 102, 0, 0.05);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.dialogue-list .rounded-circle {
   width: 64px;
   height: 64px;
 }
 
-.messages-list .fs-20 {
+.dialogue-list .fs-20 {
   line-height: 20px;
 }
 
