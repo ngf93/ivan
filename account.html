@@ -578,7 +578,7 @@
                     <h2 class="mb-4">Настройки профиля</h2>
                     <form action="">
                         <!-- member type -->
-                        <fieldset class="mb-4">
+                        <fieldset class="mb-40">
                             <legend class="h5 mb-3 mb-md-4 c-black">Выберите тип представителя</legend>
                             <fieldset class="form-check mb-3">
                                 <input name="member-type" id="private" type="radio" class="form-check-input me-2" required>
@@ -594,35 +594,36 @@
                             </fieldset>
                         </fieldset>
                         <!-- contacts info -->
-                        <fieldset class="col-xxl-8 mb-4 mb-xxl-5">
+                        <fieldset class="col-xl-10 col-xxl-8 mb-40">
                             <legend class="h5 mb-4 c-black">Контактная информация</legend>
-                            <fieldset class="d-flex flex-column flex-xxl-row align-items-xxl-center mb-3">
-                                <label for="name" class="col-xxl-5 mb-2">Имя</label>
+                            <fieldset class="d-flex flex-column flex-lg-row align-items-lg-center mb-3">
+                                <label for="name" class="col-lg-4 mb-2 mb-lg-0">Имя</label>
                                 <input id="name" type="text" class="form-control" placeholder="Имя" required>
                             </fieldset>
-                            <fieldset class="d-flex flex-column flex-xxl-row align-items-xxl-center mb-3">
-                                <label for="surname" class="col-xxl-5 mb-2">Фамилия</label>
+                            <fieldset class="d-flex flex-column flex-lg-row align-items-lg-center mb-3">
+                                <label for="surname" class="col-lg-4 mb-2 mb-lg-0">Фамилия</label>
                                 <input id="surname" type="text" class="form-control" placeholder="Фамилия" required>
                             </fieldset>
-                            <fieldset class="d-flex flex-column flex-xxl-row align-items-xxl-center mb-3">
-                                <label for="patronymic" class="col-xxl-5 mb-2">Отчество</label>
+                            <fieldset class="d-flex flex-column flex-lg-row align-items-lg-center mb-3">
+                                <label for="patronymic" class="col-lg-4 mb-2 mb-lg-0">Отчество</label>
                                 <input id="patronymic" type="text" class="form-control" placeholder="Отчество" required>
                             </fieldset>
-                            <fieldset class="d-flex flex-column flex-xxl-row align-items-xxl-center mb-3">
-                                <label for="tel" class="col-xxl-5 mb-2">Телефон</label>
+                            <fieldset class="d-flex flex-column flex-lg-row align-items-lg-center mb-3">
+                                <label for="tel" class="col-lg-4 mb-2 mb-lg-0">Телефон</label>
                                 <input id="tel" type="tel" class="form-control" placeholder="Телефон" required>
                             </fieldset>
-                            <fieldset class="d-flex flex-column flex-xxl-row align-items-xxl-center mb-4">
-                                <label for="email" class="col-xxl-5 mb-2">Электронная почта</label>
+                            <fieldset class="d-flex flex-column flex-lg-row align-items-lg-center mb-4">
+                                <label for="email" class="col-lg-4 mb-2 mb-lg-0">Электронная почта</label>
                                 <input id="email" type="email" class="form-control" placeholder="Электронная почта" required>
                             </fieldset>
                             <button class="btn btn-accent px-5">Сохранить</button>
                         </fieldset>
                         <!-- password change -->
-                        <fieldset class="col-xxl-8 mb-4 mb-xxl-5">
+                        <fieldset class="col-xl-10 col-xxl-8 mb-40">
                             <legend class="h5 mb-4 c-black">Смена пароля</legend>
-                            <fieldset class="d-flex flex-column flex-xxl-row align-items-xxl-center mb-3">
-                                <label for="current-pass" class="col-xxl-5 mb-2">Текущий пароль</label>
+                            <!-- current pass -->
+                            <fieldset class="d-flex flex-column flex-lg-row align-items-lg-center mb-3">
+                                <label for="current-pass" class="col-lg-4 mb-2 mb-lg-0">Текущий пароль</label>
                                 <div class="position-relative flex-fill">
                                     <input type="password" class="form-control" placeholder="Текущий пароль" id="current-pass">
                                     <button data-state="invisible" type="button" class="btn p-0 px-2 position-absolute end-0 top-0 bg-white h-100 pass_btn">
@@ -633,8 +634,9 @@
                                     </button>
                                 </div>
                             </fieldset>
-                            <fieldset class="d-flex flex-column flex-xxl-row align-items-xxl-center mb-3">
-                                <label for="new-pass" class="col-xxl-5 mb-2">Новый пароль</label>
+                            <!-- new pass -->
+                            <fieldset class="d-flex flex-column flex-lg-row align-items-lg-center mb-4">
+                                <label for="new-pass" class="col-lg-4 mb-2 mb-lg-0">Новый пароль</label>
                                 <div class="position-relative flex-fill">
                                     <input type="password" class="form-control" placeholder="Новый пароль" id="new-pass">
                                     <button data-state="invisible" type="button" class="btn p-0 px-2 position-absolute end-0 top-0 bg-white h-100 pass_btn">
@@ -648,11 +650,11 @@
                             <button class="btn btn-accent px-5">Сохранить</button>
                         </fieldset>
                         <!-- delete account -->
-                        <fieldset class="col-xxl-8 mb-4 mb-xxl-5">
+                        <fieldset class="col-xl-10 col-xxl-8 mb-4 mb-xxl-5">
                             <legend class="h5 mb-4 c-black">Удаление профиля</legend>
                             <div class="d-flex align-items-start justify-content-between">
                                 <p class="mb-1">Всё содержимое будет стёрто.</p>
-                                <button class="btn p-0 mb-1 text-danger">Удалить</button>
+                                <button data-bs-toggle="modal" data-bs-target="#deleteAccount" type="button" class="btn p-0 mb-1 text-danger">Удалить</button>
                             </div>
                         </fieldset>
                         <!-- save changes -->
@@ -680,6 +682,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="deleteAccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteAccountLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteAccountLabel">Вы уверены, что хотите удалить Вашу учетную запись?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Все Ваши данные будут утеряны безвозвратно.</p>
+                    <!-- </div> -->
+                    <!-- <div class="modal-footer"> -->
+                    <button type="button" class="btn px-4 btn-danger">Удалить</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>

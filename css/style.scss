@@ -317,11 +317,17 @@ a {
     &-outline-2 {
         color: $accent;
         border: 1px solid $accent;
+        &:hover {
+            color: darken($accent, 1);
+        }
         &:disabled {
             background-color: grayscale($accent);
             color: $white;
             border-color: grayscale($accent);
         }
+    }
+    &-danger {
+        background-color: $danger;
     }
     &-fav {
         &.active {
@@ -329,6 +335,12 @@ a {
                 fill: $accent;
             }
         }
+    }
+}
+
+.mb {
+    &-40 {
+        margin-bottom: 40px;
     }
 }
 
@@ -538,6 +550,10 @@ footer {
         .btn-outline {
             border: 0.5px solid #C4C4C4;
         }
+    }
+    &-header,
+    &-footer {
+        border: none;
     }
 }
 
