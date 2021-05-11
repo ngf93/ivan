@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="position-relative">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body class="">
     <!-- шапка -->
     <header class="py-3 fs-20">
         <div class="container">
@@ -48,8 +48,15 @@
                         <path d="M45.0934 40.3333C41.3067 46.9733 34.1867 51.4533 26 51.4533C17.8134 51.4533 10.6934 46.9733 6.90672 40.3333H3.38672C7.41338 48.76 16.0534 54.6 26 54.6C35.9467 54.6 44.5867 48.76 48.6134 40.3333H45.0934Z" fill="black"/>
                     </svg>
                 </a>
+                <!-- search -->
+                <a href="search.html">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 21L16.65 16.65" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
                 <!-- messages -->
-                <a title="Сообщения" href="messages.html">
+                <a class="ms-4" title="Сообщения" href="messages.html">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M22 6L12 13L2 6" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -76,7 +83,7 @@
 
     <main>
         <nav class="container mx-auto">
-            <div class=" mx-auto col-lg-10 nav nav-tabs text-body position-abslute border-0 py-4" style="z-index: 30;" id="nav-tab" role="tablist">
+            <div class=" mx-auto nav nav-tabs text-body position-abslute border-0 py-4" style="z-index: 30;" id="nav-tab" role="tablist">
                 <button class="switch active position-relative me-3 mb-4 active" id="customer-tab" data-bs-toggle="tab" data-bs-target="#customer" type="button" role="tab" aria-controls="customer" aria-selected="true">Заказчикам</button>
                 <button class="switch position-relative mb-4" id="implementer-tab" data-bs-toggle="tab" data-bs-target="#implementer" type="button" role="tab" aria-controls="implementer" aria-selected="false">Исполнителям</button>
             </div>
@@ -110,6 +117,11 @@
                 </section> -->
                 <section class="position-relative py-5">
                     <div class="container flex-column d-flex pb-5">
+                        <div class="d-none d-lg-flex flex-wrap mx-auto mb-3">
+                            <img src="images/img/hero-img-1.png" alt="">
+                            <img src="images/img/logo-lg.svg" alt="">
+                            <img src="images/img/hero-img-2.png" alt="">
+                        </div>
                         <div class="mx-lg-auto col-lg-10 d-flex flex-column">
                             <div class="input-group flex-column flex-sm-row">
                                 <select class="form-select mb-2 mb-md-0" aria-label="Выбор категории">
@@ -133,8 +145,8 @@
                 </section>
 
                 <!-- список категорий -->
-                <section class="categories-list container py-5">
-                    <h2 class="mb-4 mb-lg-5">Список категорий</h2>
+                <section class="categories-list container pb-5 d-none d-md-block">
+                    <!-- <h2 class="mb-4 mb-lg-5">Список категорий</h2> -->
                     <ul class="fs-20 list-unstyled fw-5 text-decoration-none text-center row row-cols-1 row-cols-sm-3 row-cols-xxl-3 g-3 g-sm-3 g-xxl-4 text-white">
                         <li>
                             <a class="shadow-box p-3 py-lg-4 h-100 d-flex flex-column align-items-center" href="category.html">
@@ -195,122 +207,164 @@
                         </li>
                     </ul>
                 </section>
-
-                <!-- аукцион текстовка -->
-                <section class="auction bg-gray text-center py-5">
-                    <div class="container">
-                        <div class="row row-cols-lg-2 align-items-center">
-                            <div>
-                                <img class="w-100" src="images/img/auction.png" loading="lazy">
+                <div class="d-flex flex-column">
+                    <!-- популярные предложения спецтехники -->
+                    <section class="popular-list bg-gray py-5">
+                        <div class="container pe-0 my-lg-5">
+                            <div class="d-flex justify-content-between mb-4 mb-lg-5">
+                                <h2 class="mb-0 d-none d-md-block">Популярные предложения</h2>
+                                <div class="d-flex w-100 overflow-x-scroll">
+                                    <button class="rounded-pill px-3 py-1 me-3 border-0 shadow-box">Любая категория</button>
+                                    <button class="rounded-pill px-3 py-1 me-3 border-0 shadow-box">Инструменты</button>
+                                    <button class="rounded-pill px-3 py-1 me-3 border-0 shadow-box">Техника</button>
+                                    <button class="rounded-pill px-3 py-1 border-0 shadow-box">Материалы</button>
+                                </div>
                             </div>
-                            <div class="py-lg-5">
-                                <h2 class="mb-4 mt-5">Аукцион</h2>
-                                <h5 class="mb-4">Вы не нашли подходящего исполнителя? </h5>
-                                <p class="col-xl-10 mx-auto mb-5">И нет сомнений, что некоторые особенности внутренней политики являются только методом политического участия и объединены в целые кластеры себе подобных. Кстати, базовые сценарии поведения пользователей лишь добавляют фракционных
-                                    разногласий и преданы социально-демократической анафеме.</p>
-                                <a href="auction.html" aria-label="Перейти на страницу Аукцион" class="btn btn-accent btn-lg mb-5">Подробнее</a>
+                            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gx-2 gy-3 g-sm-3 g-xxl-4 mb-4 mb-lg-5 pe-3">
+                                <!-- card -->
+                                <div>
+                                    <div class="card shadow-box rounded-4 h-100 border-0">
+                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button" autocomplete="off">
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                        <div class="img">
+                                            <img src="images/img/category.jpeg" alt="">
+                                        </div>
+                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
+                                            <a class="card-title c-blue fw-5" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
+                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
+                                                <!-- rating -->
+                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                                    <span class="checked">&#9733;</span>
+                                                    <span class="checked">&#9733;</span>
+                                                    <span class="checked">&#9733;</span>
+                                                    <span class="checked">&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                </div>
+                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
+                                            </div>
+                                            <div class="fs-14 c-gray mb-1">5 км от Вас</div>
+                                            <div class="fw-5">500 руб./час</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card -->
+                                <div>
+                                    <div class="card shadow-box rounded-4 h-100 border-0">
+                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button" autocomplete="off">
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                        <div class="img">
+                                            <img src="images/img/category.jpeg" alt="">
+                                        </div>
+                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
+                                            <a class="card-title c-blue fw-5" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
+                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
+                                                <!-- rating -->
+                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                                    <span class="checked">&#9733;</span>
+                                                    <span class="checked">&#9733;</span>
+                                                    <span class="checked">&#9733;</span>
+                                                    <span class="checked">&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                </div>
+                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
+                                            </div>
+                                            <div class="fs-14 c-gray mb-1">5 км от Вас</div>
+                                            <div class="fw-5">500 руб./час</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card -->
+                                <div>
+                                    <div class="card shadow-box rounded-4 h-100 border-0">
+                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button" autocomplete="off">
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                        <div class="img">
+                                            <img src="images/img/category.jpeg" alt="">
+                                        </div>
+                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
+                                            <a class="card-title c-blue fw-5" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
+                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
+                                                <!-- rating -->
+                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                                    <span class="checked">&#9733;</span>
+                                                    <span class="checked">&#9733;</span>
+                                                    <span class="checked">&#9733;</span>
+                                                    <span class="checked">&#9733;</span>
+                                                    <span>&#9733;</span>
+                                                </div>
+                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
+                                            </div>
+                                            <div class="fs-14 c-gray mb-1">5 км от Вас</div>
+                                            <div class="fw-5">500 руб./час</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pe-3">
+                                <button class="btn btn-outline-2 btn-lg mx-auto w-100">Показать ещё</button>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- найти на карте -->
-                <section class="find-on-map container py-5">
-                    <h2 class="mb-3 mt-5">Найти на карте</h2>
-                    <p class="mb-4 col-xl-10">А также стремящиеся вытеснить традиционное производство, нанотехнологии являются только методом политического участия и смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности</p>
-                    <div class="input-group align-items-center">
-                        <div class="col-2 col-lg-3 col-xxl-2">
-                            <select class="form-select" aria-label="Выбор категории">
-                                <option selected>Любая категория</option>
-                                <option value="Автокраны">Автокраны</option>
-                                <option value="Бульдозеры">Бульдозеры</option>
-                                <option value="Гидромолоты">Гидромолоты</option>
-                            </select>
+                    <!-- аукцион текстовка -->
+                    <section class="auction bg-gray text-center py-5">
+                        <div class="container">
+                            <div class="row row-cols-lg-2 align-items-center">
+                                <div>
+                                    <img class="w-100" src="images/img/auction.png" loading="lazy">
+                                </div>
+                                <div class="py-lg-5">
+                                    <h2 class="mb-4 mt-5">Аукцион</h2>
+                                    <h5 class="mb-4">Вы не нашли подходящего исполнителя? </h5>
+                                    <p class="col-xl-10 mx-auto mb-5">И нет сомнений, что некоторые особенности внутренней политики являются только методом политического участия и объединены в целые кластеры себе подобных. Кстати, базовые сценарии поведения пользователей лишь добавляют
+                                        фракционных разногласий и преданы социально-демократической анафеме.</p>
+                                    <a href="auction.html" aria-label="Перейти на страницу Аукцион" class="btn btn-accent btn-lg mb-5">Подробнее</a>
+                                </div>
+                            </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Поиск по предложениям...">
-                        <div class="col-2 col-lg-3 col-xxl-2">
-                            <select class="form-select" aria-label="Радиус, метро, район">
+                    </section>
+
+                    <!-- найти на карте -->
+                    <section class="find-on-map container px-0 py-5">
+                        <h2 class="mb-3 mt-5">Найти на карте</h2>
+                        <p class="mb-4 col-xl-10 d-none d-md-block">А также стремящиеся вытеснить традиционное производство, нанотехнологии являются только методом политического участия и смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности</p>
+                        <div class="input-group align-items-center">
+                            <div class="col-2 col-lg-3 col-xxl-2 d-none d-md-block">
+                                <select class="form-select" aria-label="Выбор категории">
+                                    <option selected>Любая категория</option>
+                                    <option value="Автокраны">Автокраны</option>
+                                    <option value="Бульдозеры">Бульдозеры</option>
+                                    <option value="Гидромолоты">Гидромолоты</option>
+                                </select>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Поиск по предложениям...">
+                            <div class="col-2 col-lg-3 col-xxl-2 d-none d-md-block">
+                                <select class="form-select" aria-label="Радиус, метро, район">
                                 <option selected>Радиус/Метро/Район</option>
                                 <option value="Автокраны">Автокраны</option>
                                 <option value="Бульдозеры">Бульдозеры</option>
                                 <option value="Гидромолоты">Гидромолоты</option>
                             </select>
+                            </div>
+                            <button class="btn btn-accent px-4">Показать на карте</button>
                         </div>
-                        <button class="btn btn-accent px-4">Показать на карте</button>
-                    </div>
-                    <!-- map -->
-                    <div class="w-100 position-relative map-container">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af7cb7e62a63d014db98068fcd38a8b959bb35574d74be36291d89d97f49b8108&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
-                    </div>
-                </section>
+                        <!-- map -->
+                        <div class="w-100 position-relative map-container-lg">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af7cb7e62a63d014db98068fcd38a8b959bb35574d74be36291d89d97f49b8108&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+                        </div>
+                    </section>
+                </div>
 
-                <!-- популярные предложения спецтехники -->
-                <section class="popular-list bg-gray py-5">
-                    <div class="container my-lg-5">
-                        <h2 class="mb-4 mb-lg-5">Популярные предложения</h2>
-                        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gx-2 gy-3 g-sm-3 g-xxl-4 mb-4 mb-lg-5">
-                            <!-- card -->
-                            <div>
-                                <div class="card shadow-box rounded-4 h-100 border-0">
-                                    <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button" autocomplete="off">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                    <div class="img">
-                                        <img src="images/img/category.jpeg" alt="">
-                                    </div>
-                                    <div class="card-body d-flex flex-column text-center p-2 pb-3 p-xl-3">
-                                        <a class="card-title fw-5" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
-                                        <div class="mt-auto d-flex flex-column justify-content-center align-items-center">
-                                            <!-- rating -->
-                                            <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                <span class="checked">&#9733;</span>
-                                                <span class="checked">&#9733;</span>
-                                                <span class="checked">&#9733;</span>
-                                                <span class="checked">&#9733;</span>
-                                                <span>&#9733;</span>
-                                            </div>
-                                            <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                        </div>
-                                        <div class="fs-14 c-gray mb-1">5 км от Вас</div>
-                                        <div class="fw-5">500 руб./час</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- card -->
-                            <div>
-                                <div class="card shadow-box rounded-4 h-100 border-0">
-                                    <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button" autocomplete="off">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                    <div class="img">
-                                        <img src="images/img/category2.jpeg" alt="">
-                                    </div>
-                                    <div class="card-body d-flex flex-column text-center p-2 pb-3 p-xl-3">
-                                        <a class="card-title fw-5" href="proposal.html">Эвакуатор до 5 т</a>
-                                        <div class="mt-auto d-flex flex-column justify-content-center align-items-center">
-                                            <!-- rating -->
-                                            <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                <span class="checked">&#9733;</span>
-                                                <span class="checked">&#9733;</span>
-                                                <span class="checked">&#9733;</span>
-                                                <span class="checked">&#9733;</span>
-                                                <span>&#9733;</span>
-                                            </div>
-                                            <a href="reviews.html" class="fs-14 c-blue text-nowrap">4 отзывов</a>
-                                        </div>
-                                        <div class="fs-14 c-gray mb-1">15 км от Вас</div>
-                                        <div class="fw-5">1500 руб./час</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-accent btn-lg d-flex mx-auto">Показать ещё</button>
-                    </div>
-                </section>
+
                 <!-- популярные категории пока не надо
                 <section class="popular-categories container mb-5">
                     <h2 class="mb-4 mb-lg-5">Популярные категории</h2>
@@ -560,18 +614,67 @@
         </div>
 
         <!-- новости -->
-        <section class="news-list container mb-5 py-5">
+        <section class="news-list container pe-0 mb-md-5 py-5">
             <h2 class="mb-4 mb-lg-5 mt-lg-5">Новости</h2>
-            <div class="mb-4">
-                <div class="row align-items-start mb-4">
-                    <div class="col-sm-5 col-xl-3 mb-3">
+            <div class="row row-cols-auto mx-0 flex-nowrap flex-lg-wrap gx-2 news-group d-flex mb-lg-4">
+                <div class="d-flex flex-wrap align-items-start mb-4">
+                    <div class="col-sm-5 col-xl-3 mb-2">
+                        <time class="c-gray mb-1 d-inline-block d-lg-none" datetime="2021-03-31">31.03.21</time>
                         <img class="rounded-4 w-100" src="images/img/map.jpg" loading="lazy">
                     </div>
                     <div class="col-sm-7 col-xl-6">
-                        <time class="c-gray" datetime="2021-03-31">31.03.21</time>
+                        <time class="c-gray d-none d-lg-block" datetime="2021-03-31">31.03.21</time>
                         <h5 class="mt-lg-3">Как определить лучшего исполнителя</h5>
-                        <p>Соответствующими инстанциями. В своём стремлении повысить качество жизни, они забывают, что высокотехнологичная концепция общественного уклада влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.</p>
-                        <a class="c-blue" href="new.html">Подробнее<svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <p class="d-none d-lg-block">Соответствующими инстанциями. В своём стремлении повысить качество жизни, они забывают, что высокотехнологичная концепция общественного уклада влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.</p>
+                        <a class="c-blue d-none d-lg-block" href="new.html">Подробнее<svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.29167 12H27.7083" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 6L28 12L20 18" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class=" align-items-start mb-4">
+                    <div class="col-sm-5 col-xl-3 mb-2">
+                        <time class="c-gray mb-1 d-inline-block d-lg-none" datetime="2021-03-24">24.03.21</time>
+                        <img class="rounded-4 w-100" src="images/img/new.jpeg" loading="lazy">
+                    </div>
+                    <div class="col-sm-7 col-xl-6">
+                        <time class="c-gray d-none d-lg-block" datetime="2021-03-24">24.03.21</time>
+                        <h5 class="mt-lg-3">Выбираем лучшего исполнителя</h5>
+                        <p class="d-none d-lg-block">Соответствующими инстанциями. В своём стремлении повысить качество жизни, они забывают, что высокотехнологичная концепция общественного уклада влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.</p>
+                        <a class="c-blue d-none d-lg-block" href="new.html">Подробнее<svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.29167 12H27.7083" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 6L28 12L20 18" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class=" align-items-start mb-4">
+                    <div class="col-sm-5 col-xl-3 mb-2">
+                        <time class="c-gray mb-1 d-inline-block d-lg-none" datetime="2021-03-31">31.03.21</time>
+                        <img class="rounded-4 w-100" src="images/img/map.jpg" loading="lazy">
+                    </div>
+                    <div class="col-sm-7 col-xl-6">
+                        <time class="c-gray d-none d-lg-block" datetime="2021-03-31">31.03.21</time>
+                        <h5 class="mt-lg-3">Как определить лучшего исполнителя</h5>
+                        <p class="d-none d-lg-block">Соответствующими инстанциями. В своём стремлении повысить качество жизни, они забывают, что высокотехнологичная концепция общественного уклада влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.</p>
+                        <a class="c-blue d-none d-lg-block" href="new.html">Подробнее<svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.29167 12H27.7083" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 6L28 12L20 18" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class=" align-items-start mb-4">
+                    <div class="col-sm-5 col-xl-3 mb-2">
+                        <time class="c-gray mb-1 d-inline-block d-lg-none" datetime="2021-03-24">24.03.21</time>
+                        <img class="rounded-4 w-100" src="images/img/new.jpeg" loading="lazy">
+                    </div>
+                    <div class="col-sm-7 col-xl-6">
+                        <time class="c-gray d-none d-lg-block" datetime="2021-03-24">24.03.21</time>
+                        <h5 class="mt-lg-3">Выбираем лучшего исполнителя</h5>
+                        <p class="d-none d-lg-block">Соответствующими инстанциями. В своём стремлении повысить качество жизни, они забывают, что высокотехнологичная концепция общественного уклада влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.</p>
+                        <a class="c-blue d-none d-lg-block" href="new.html">Подробнее<svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.29167 12H27.7083" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M20 6L28 12L20 18" stroke="#4083D1" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -579,14 +682,14 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex">
-                <a href="news.html" class="btn btn-accent btn-lg mx-auto">Все новости</a>
+            <div class="d-flex col-12 pe-3">
+                <a href="news.html" class="btn btn-outline-2 btn-lg mx-auto w-100">Все новости</a>
             </div>
         </section>
     </main>
 
     <!-- footer -->
-    <footer>
+    <footer class="d-none d-md-block">
         <div class="container text-white">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-5 fs-20 my-3 my-lg-4">
@@ -872,10 +975,7 @@
                 </div>
             </div>
         </div>
-    </div><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.666016 7.99996C0.666016 7.99996 3.33268 2.66663 7.99935 2.66663C12.666 2.66663 15.3327 7.99996 15.3327 7.99996C15.3327 7.99996 12.666 13.3333 7.99935 13.3333C3.33268 13.3333 0.666016 7.99996 0.666016 7.99996Z" stroke="#3C3939" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" stroke="#3C3939" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+    </div>
 
 
     <!-- SIGNIN Modal step 2 -->
@@ -936,6 +1036,39 @@
             </div>
         </div>
     </div>
+
+
+    <!-- mobile sidebar -->
+    <div class="position-sticky bg-white shadow-box bottom-0 p-3 d-flex justify-content-around">
+        <!-- forum -->
+        <a href="forum.html">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <!-- search -->
+        <a href="search.html">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 20.9999L16.65 16.6499" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <!-- messages -->
+        <a href="">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 6L12 13L2 6" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <!-- account -->
+        <a href="account.html">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+
 
     <script src="js/bootstrap.js"></script>
     <script src="js/my-swiper.js"></script>

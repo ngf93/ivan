@@ -145,6 +145,7 @@ header {
 }
 
 .news-list {
+    .news-group {}
     img {
         height: 272px;
         object-fit: cover;
@@ -592,6 +593,10 @@ footer {
     }
 }
 
+.map-container-lg {
+    height: 690px;
+}
+
 .my-tabs {
     border-bottom: 1px solid #D2D2D2;
     button {
@@ -648,6 +653,14 @@ footer {
         object-fit: contain;
         object-position: center;
     }
+}
+
+button {
+    white-space: nowrap;
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll;
 }
 
 .swiper-button {
@@ -781,9 +794,28 @@ footer {
             font-size: 1rem;
         }
     }
+    .map-container-lg {
+        height: 633px;
+    }
+    .popular-list {
+        background-color: $white;
+    }
     .news-list {
+        .news-group {
+            width: 100%;
+            overflow-x: scroll;
+            >* {
+                width: 45%;
+            }
+            h5 {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
         img {
-            height: 50vw;
+            height: 38vw;
         }
     }
     .rounded-circle {
@@ -793,6 +825,13 @@ footer {
 }
 
 @media (max-width: 575.98px) {
+    .card {
+        &-title {
+            max-height: 40px;
+            overflow: hidden;
+            line-height: 20px;
+        }
+    }
     .find-on-map {
         .input-group {
             margin-bottom: 0;
