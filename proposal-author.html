@@ -161,11 +161,11 @@
                     </div>
                     <div>
                         <span>Исполнитель:</span>
-                        <a href="user.html" class="ms-3 c-blue fw-5">Георгий Б.</a>
+                        <span class="ms-3 c-black fw-5">Георгий Б.</span>
                     </div>
-                    <div class="c-dark-blue my-2">Частное лицо</div>
-                    <div class="mb-2">На сайте с марта 2021 года</div>
 
+                    <div class="c-dark-blue">Частное лицо</div>
+                    <div>На сайте с марта 2021 года</div>
                     <div class="d-flex align-items-baseline">
                         <!-- rating -->
                         <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20 me-4">
@@ -175,18 +175,21 @@
                             <span class="checked">&#9733;</span>
                             <span>&#9733;</span>
                         </div>
-                        <a href="user.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
+                        <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
                     </div>
                     <div class="d-inline-flex flex-column align-self-start mt-4">
-                        <button class="btn btn-outline-2 border-0 mb-4">
+                        <a href="create-proposal.html" class="btn btn-outline-2 mb-4">Редактировать предложение</a>
+                        <button class="btn p-0 text-start" data-bs-toggle="modal" data-bs-target="#deleteProposal" type="button">
                             <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 6H5H21" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 11V17" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 11V17" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Добавить в избранное</span>
+                            <span>Удалить предложение</span>
                         </button>
-                        <a href="" class="btn btn-outline-2 mb-4">Написать отзыв</a>
-                        <button class="mt-auto btn btn-lg btn-accent">Написать сообщение</button>
                     </div>
+
                 </div>
             </div>
             <div class="col-lg-5 py-5">
@@ -326,6 +329,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- Delete Proposal Modal -->
+    <div class="modal fade" id="deleteProposal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteProposalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center rounded-4 py-4">
+                <div class="modal-header px-lg-5 c-black">
+                    <h5 class="modal-title" id="deleteProposalLabel">Вы уверены, что хотите удалить Ваше предложение?</h5>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn px-4 btn-danger">Удалить</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.js"></script>
