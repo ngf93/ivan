@@ -2,6 +2,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #3C3939;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -243,6 +244,10 @@ a:hover.c-blue {
 
 .bg-gray {
   background-color: #F6F6F6;
+}
+
+.bg-light-gray {
+  background-color: #F2F2F2;
 }
 
 .shadow-box {
@@ -545,12 +550,17 @@ footer {
   background-size: contain;
 }
 
-.mobile-menu-btn {
+.mobile-menu-btn,
+.mobile-search-btn {
   width: 24px;
   height: 24px;
   font-size: 0px;
-  background-image: url(../images/icons/mobile-menu-btn.svg);
+  background-image: url("../images/icons/mobile-menu-btn.svg");
   background-position: center;
+}
+
+.mobile-search-btn {
+  background-image: url("../images/icons/search-settings.svg");
 }
 
 .offcanvas-menu {
