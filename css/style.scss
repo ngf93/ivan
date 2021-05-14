@@ -12,6 +12,10 @@ $yellow: #FFD600;
 $transparent: transparent;
 $danger: #EB1919;
 // *******************************************
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: $primary;
@@ -581,6 +585,12 @@ footer {
     &-header,
     &-footer {
         border: none;
+    }
+}
+
+.pop-cat-tabs {
+    button {
+        color: $accent;
     }
 }
 

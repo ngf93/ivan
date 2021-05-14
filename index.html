@@ -19,9 +19,9 @@
 </head>
 
 <body class="">
-
-    <div class="mobile-header container py-3">
-        <div class="shadow-box rounded-4 py-2 px-3 d-flex align-items-center justify-content-between">
+    <!-- MOBILE HEADER -->
+    <div class="mobile-header container pt-3 pb-1">
+        <div class="shadow-box rounded-4 py-1 px-3 d-flex align-items-center justify-content-between">
             <!-- Mobile Menu Button -->
             <button class="btn p-0 mobile-menu-btn rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">Меню</button>
             <form class="flex-fill mx-3 d-flex align-items-center">
@@ -412,16 +412,18 @@
                     </ul>
                 </section>
                 <div class="d-flex flex-column">
+
+
                     <!-- популярные предложения спецтехники -->
                     <section class="popular-list bg-gray py-lg-5">
                         <div class="container pe-0 my-lg-5">
-                            <div class="d-flex justify-content-between mb-4 mb-lg-5">
+                            <div class="d-flex justify-content-between mb- mb-lg-5">
                                 <h2 class="mb-0 d-none d-md-block">Популярные предложения</h2>
-                                <div class="d-flex w-100 overflow-x-scroll">
-                                    <button class="rounded-pill px-3 py-1 me-3 border-0 shadow-box">Любая категория</button>
-                                    <button class="rounded-pill px-3 py-1 me-3 border-0 shadow-box">Инструменты</button>
-                                    <button class="rounded-pill px-3 py-1 me-3 border-0 shadow-box">Техника</button>
-                                    <button class="rounded-pill px-3 py-1 border-0 shadow-box">Материалы</button>
+                                <div class="d-flex w-100 overflow-x-scroll pop-cat-tabs py-3">
+                                    <button class="bg-white rounded-pill px-3 py-1 me-3 border-0 shadow-box active">Любая категория</button>
+                                    <button class="bg-white rounded-pill px-3 py-1 me-3 border-0 shadow-box">Инструменты</button>
+                                    <button class="bg-white rounded-pill px-3 py-1 me-3 border-0 shadow-box">Техника</button>
+                                    <button class="bg-white rounded-pill px-3 py-1 border-0 shadow-box">Материалы</button>
                                 </div>
                             </div>
                             <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gx-2 gy-3 g-sm-3 g-xxl-4 mb-4 mb-lg-5 pe-3">
