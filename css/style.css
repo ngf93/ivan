@@ -264,6 +264,10 @@ a:hover.c-blue {
   overflow: hidden;
 }
 
+.rounded-30 {
+  border-radius: 30px;
+}
+
 .btn {
   font-weight: 500;
   white-space: nowrap;
@@ -369,14 +373,19 @@ img {
 
 .img img {
   position: absolute;
-  top: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
+  max-height: 100%;
+  padding: 5px;
+  max-width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 .img-upload .img-drop {
@@ -561,6 +570,7 @@ footer {
   font-size: 0px;
   background-image: url("../images/icons/mobile-menu-btn.svg");
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .mobile-search-btn {
@@ -865,11 +875,6 @@ button {
   .btn-lg {
     font-size: 16px;
   }
-  .input-group > .form-control,
-  .input-group > .form-select,
-  .input-group > .btn {
-    width: 100%;
-  }
   .page-item .page-link {
     font-size: 1rem;
   }
@@ -951,6 +956,19 @@ button {
   }
   .my-tabs button {
     font-size: 16px;
+  }
+  .auction img {
+    opacity: 0.2;
+    max-height: 100%;
+    max-width: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+  }
+  .auction .auction-text {
+    z-index: 3;
   }
 }
 /*# sourceMappingURL=style.css.map */
