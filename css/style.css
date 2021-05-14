@@ -619,6 +619,11 @@ footer {
   color: #FF6600;
 }
 
+.pop-cat-tabs button.active {
+  background-color: #FF6600 !important;
+  color: white !important;
+}
+
 .map-container {
   height: 300px;
 }

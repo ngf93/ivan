@@ -591,6 +591,10 @@ footer {
 .pop-cat-tabs {
     button {
         color: $accent;
+        &.active {
+            background-color: $accent !important;
+            color: $white !important;
+        }
     }
 }
 
