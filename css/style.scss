@@ -364,6 +364,7 @@ a {
         background-color: $danger;
     }
     &-fav {
+        z-index: 5;
         &.active {
             svg {
                 fill: $accent;

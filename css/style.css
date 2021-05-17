@@ -363,6 +363,10 @@ a:hover.c-blue {
   background-color: #EB1919;
 }
 
+.btn-fav {
+  z-index: 5;
+}
+
 .btn-fav.active svg {
   fill: #FF6600;
 }
