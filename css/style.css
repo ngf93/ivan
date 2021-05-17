@@ -62,20 +62,25 @@ header {
   width: 100%;
 }
 
+.card-title {
+  max-height: 40px;
+  overflow: hidden;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .main-1 {
   background-image: url("../images/img/hero.jpeg");
   background-size: cover;
   background-position: center;
 }
 
-.logo-bg {
-  background: radial-gradient(38.15% 646.72% at 50.08% 50%, #ACACAC 0%, rgba(255, 251, 251, 0) 100%);
-  -webkit-filter: blur(4px);
-          filter: blur(4px);
-}
-
 .main-2 {
-  background-image: url("../images/img/hero-2.jpeg");
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(46.35%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0))), url("../images/img/hero-2.jpeg");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 46.35%, rgba(255, 255, 255, 0) 100%), url("../images/img/hero-2.jpeg");
   background-size: cover;
 }
 
@@ -138,6 +143,18 @@ header {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.news-list .new-text {
+  max-height: 100px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.news-list p {
+  margin-bottom: 0;
 }
 
 h1,
@@ -242,6 +259,10 @@ a:hover.c-blue {
   bottom: 34px;
 }
 
+.bg-accent {
+  background-color: #FF6600;
+}
+
 .bg-blue {
   background-color: #F1F8FF;
 }
@@ -344,6 +365,10 @@ a:hover.c-blue {
 
 .btn-fav.active svg {
   fill: #FF6600;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
 }
 
 .mb-40 {
@@ -563,6 +588,11 @@ footer {
   background-size: contain;
 }
 
+.position-fixed .rounded-circle {
+  width: 10px;
+  height: 10px;
+}
+
 .mobile-menu-btn,
 .mobile-search-btn {
   width: 24px;
@@ -751,6 +781,14 @@ button {
 
 .overflow-x-scroll {
   overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.overflow-x-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .overflow-hidden {
@@ -907,15 +945,6 @@ button {
 }
 
 @media (max-width: 575.98px) {
-  .card-title {
-    max-height: 40px;
-    overflow: hidden;
-    line-height: 20px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
   .find-on-map .input-group {
     margin-bottom: 0;
   }
@@ -935,7 +964,7 @@ button {
 }
 
 @media (min-width: 465px) {
-  .modal-dialog {
+  .modal-small {
     max-width: 458px;
   }
 }
