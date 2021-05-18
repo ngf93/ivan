@@ -382,6 +382,12 @@ a {
     }
 }
 
+.p {
+    &-32 {
+        padding: 32px;
+    }
+}
+
 .bg-block {
     background-color: rgba($black, 0.6);
     z-index: 9;
@@ -508,6 +514,11 @@ input[type=date] {
             opacity: 0.8;
         }
     }
+}
+
+.vertical-scroll {
+    max-height: 80vh;
+    overflow-y: scroll;
 }
 
 .dialogue-list {

@@ -379,6 +379,10 @@ a:hover.c-blue {
   margin-bottom: 40px;
 }
 
+.p-32 {
+  padding: 32px;
+}
+
 .bg-block {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 9;
@@ -519,6 +523,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .page-item.disabled svg path {
   stroke: #999999;
   opacity: 0.8;
+}
+
+.vertical-scroll {
+  max-height: 80vh;
+  overflow-y: scroll;
 }
 
 .dialogue-list > div {
