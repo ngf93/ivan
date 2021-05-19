@@ -28,6 +28,12 @@ header {
   z-index: 10;
 }
 
+.ad-box a {
+  -webkit-text-decoration: 1px #4DA9FF underline;
+          text-decoration: 1px #4DA9FF underline;
+  text-underline-position: under;
+}
+
 .switch {
   color: #3C3939;
   background-color: transparent;
@@ -526,7 +532,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .vertical-scroll {
-  max-height: 80vh;
+  max-height: 650px;
   overflow-y: scroll;
 }
 

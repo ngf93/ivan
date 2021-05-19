@@ -35,6 +35,13 @@ header {
     z-index: 10;
 }
 
+.ad-box {
+    a {
+        text-decoration: 1px $blue underline;
+        text-underline-position: under;
+    }
+}
+
 // *** HOME PAGE start *** //
 .switch {
     color: $primary;
@@ -517,7 +524,7 @@ input[type=date] {
 }
 
 .vertical-scroll {
-    max-height: 80vh;
+    max-height: 650px;
     overflow-y: scroll;
 }
 
