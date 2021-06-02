@@ -99,6 +99,21 @@ header {
     background-size: cover;
 }
 
+.main-search-group {
+    .form-select:first-child {
+        max-width: 214px;
+    }
+    .form-control {
+        max-width: 379px;
+    }
+    .form-select:last-child {
+        max-width: 232px;
+    }
+    .btn {
+        min-width: 115px;
+    }
+}
+
 // categories list
 .categories-list {
     img {
@@ -909,7 +924,7 @@ footer {
 
 // MAP
 .map-container {
-    height: 300px;
+    height: 535px;
     .ymaps-2-1-78-controls__control_toolbar,
     .ymaps-2-1-78-map-copyrights-promo,
     .ymaps-2-1-78-controls__control {
@@ -1078,9 +1093,7 @@ button {
     }
     overflow-x: scroll;
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
 }
 
 .overflow-hidden {
@@ -1101,7 +1114,6 @@ button {
     .my-tabs {
         overflow-x: scroll;
         -ms-overflow-style: none;
-        /* IE and Edge */
         scrollbar-width: none;
         &::-webkit-scrollbar {
             display: none;
@@ -1146,13 +1158,6 @@ button {
     .modal {
         &-dialog {
             max-width: 944px;
-        }
-        &-content {
-            .btn-group {
-                .btn {
-                    padding: 4px 10px;
-                }
-            }
         }
     }
 }
@@ -1230,13 +1235,6 @@ button {
 }
 
 @media (max-width: 991.98px) {
-    .map-container {
-        height: 200px;
-        .map-circle {
-            width: 200px;
-            height: 200px;
-        }
-    }
     .modal {
         &-content {
             .nav {

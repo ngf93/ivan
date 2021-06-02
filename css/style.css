@@ -94,6 +94,22 @@ header {
   background-size: cover;
 }
 
+.main-search-group .form-select:first-child {
+  max-width: 214px;
+}
+
+.main-search-group .form-control {
+  max-width: 379px;
+}
+
+.main-search-group .form-select:last-child {
+  max-width: 232px;
+}
+
+.main-search-group .btn {
+  min-width: 115px;
+}
+
 .categories-list img {
   max-height: 225px;
   -o-object-fit: scale-down;
@@ -925,7 +941,7 @@ footer {
 }
 
 .map-container {
-  height: 300px;
+  height: 535px;
 }
 
 .map-container .ymaps-2-1-78-controls__control_toolbar,
@@ -1110,9 +1126,7 @@ button {
 .overflow-x-scroll {
   overflow-x: scroll;
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 
 .overflow-x-scroll::-webkit-scrollbar {
@@ -1136,7 +1150,6 @@ button {
 .proposal-page .my-tabs {
   overflow-x: scroll;
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
 }
 
@@ -1179,9 +1192,6 @@ button {
   }
   .modal-dialog {
     max-width: 944px;
-  }
-  .modal-content .btn-group .btn {
-    padding: 4px 10px;
   }
 }
 
@@ -1249,13 +1259,6 @@ button {
 }
 
 @media (max-width: 991.98px) {
-  .map-container {
-    height: 200px;
-  }
-  .map-container .map-circle {
-    width: 200px;
-    height: 200px;
-  }
   .modal-content .nav button {
     padding-bottom: 8px;
   }
