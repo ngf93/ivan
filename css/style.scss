@@ -626,22 +626,11 @@ img {
 .img {
     padding-top: 84%;
     position: relative;
-    // img {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     object-fit: cover;
-    //     object-position: center;
-    // }
     img {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: 0;
-        /* width: 100%; */
-        /* height: 100%; */
         max-height: 100%;
         padding: 5px;
         max-width: 100%;
@@ -655,11 +644,34 @@ img {
 .img-upload {
     .img-drop {
         border-color: $blue !important;
-        padding: 90px;
+        padding: 36px 52px;
     }
     input[type=file] {
         opacity: 0;
         position: absolute;
+    }
+    .row {
+        >div {
+            height: 96px;
+            div {
+                overflow: hidden;
+                border-color: #B1B1B1 !important;
+                button {
+                    z-index: 2;
+                }
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    div input[type=radio] {
+        cursor: pointer;
+        z-index: 1;
+        opacity: 0;
+        &:checked+div {
+            border-color: $accent !important;
+        }
     }
 }
 
@@ -686,6 +698,9 @@ img {
 .border {
     &-bottom {
         border-bottom-color: #D2D2D2 !important;
+    }
+    &-accent {
+        border: 1px solid $accent;
     }
 }
 
@@ -845,20 +860,6 @@ footer {
 .position-fixed .rounded-circle {
     width: 10px;
     height: 10px;
-}
-
-.mobile-menu-btn,
-.mobile-search-btn {
-    width: 24px;
-    height: 24px;
-    font-size: 0px;
-    background-image: url('../images/icons/mobile-menu-btn.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.mobile-search-btn {
-    background-image: url('../images/icons/search-settings.svg');
 }
 
 .offcanvas-menu {
@@ -1142,6 +1143,39 @@ button {
 
 .table-striped>tbody>tr:nth-of-type(odd) {
     background-color: #F0F0F0;
+}
+
+.map-container-3 {
+    height: 348px;
+}
+
+.add-param-block {
+    &>fieldset:first-child {
+        display: none;
+    }
+}
+
+.search-filter {
+    label {
+        cursor: pointer;
+    }
+    input[type=radio] {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        &:checked {
+            +label svg {
+                transform: rotateX(180deg);
+                path {
+                    stroke: $accent;
+                }
+            }
+        }
+    }
+    svg {
+        transform-origin: center center;
+        vertical-align: middle;
+    }
 }
 
 // MEDIA QUERIES start

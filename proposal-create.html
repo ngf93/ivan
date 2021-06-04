@@ -181,7 +181,8 @@
                         <label for="proposal-vin" class="fs-20 c-black me-4 mb-2 text-nowrap col-sm-2">VIN-код</label>
                         <input id="proposal-vin" type="number" class="form-control" placeholder="Например, XTA210990Y2766389" required>
                     </fieldset>
-                    <!-- photo -->
+
+                    <!-- photo upload -->
                     <fieldset class="img-upload d-flex flex-column mb-3 mb-md-4">
                         <div class="d-flex flex-wrap justify-content-between mb-3 mb-md-4">
                             <label for="" class="fs-20 c-black me-4">Загрузите фотографию:</label>
@@ -199,25 +200,129 @@
                         <!-- drop img -->
                         <div class="img-drop position-relative rounded-3 border align-self-start">
                             <input type="file" class="top-0 start-0 w-100 h-100">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M35 25V31.6667C35 32.5507 34.6488 33.3986 34.0237 34.0237C33.3986 34.6488 32.5507 35 31.6667 35H8.33333C7.44928 35 6.60143 34.6488 5.97631 34.0237C5.35119 33.3986 5 32.5507 5 31.6667V25" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M11.6663 16.6667L19.9997 25L28.333 16.6667" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M20 25V5" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" transform="translate(24) rotate(90)" fill="white"/>
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10L12 15L17 10" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15V3" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </fieldset>
+
+                    <!-- photo uploaded -->
+                    <fieldset class="img-upload d-flex flex-column mb-3 mb-md-4">
+                        <div class="d-flex flex-wrap justify-content-between mb-3 mb-md-4">
+                            <label for="" class="fs-20 c-black me-4">Загрузите фотографию:</label>
+                            <div class="position-relative c-accent fw-5">
+                                <input type="file" class="w-100 h-100" multiple>
+                                <span class="d-flex align-items-center">
+                                    <svg class="me-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5 12H19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Добавить</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Выберите фотографию, которая будет на обложке.</p>
+                        </div>
+                        <!-- drop img -->
+                        <div class="row row-cols-4 g-3 col-11">
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="" checked>
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/mechanism.png" alt="">
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="">
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/category3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="">
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/mechanism.png" alt="">
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="">
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/category2.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="">
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/category4.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="">
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/mechanism.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
                     <!-- description -->
                     <fieldset class="d-flex flex-column flex-sm-row align-items-start mb-4">
                         <label for="proposal-desc" class="fs-20 c-black me-4 mb-2 col-sm-2">Описание</label>
                         <textarea id="proposal-desc" rows="4" class="form-control" placeholder="Начните ввод..."></textarea>
                     </fieldset>
+
                     <!-- address edit -->
                     <fieldset class="d-flex flex-column mb-4">
                         <div class="d-flex flex-column flex-xxl-row align-items- mb-4">
                             <label for="proposal-address" class="fs-20 c-black me-4 mb-2 col-sm-2">Адрес</label>
                             <!-- search input -->
                             <div class="input-group flex-nowrap">
-                                <input class="form-control col-10" type="search" id="proposal-address" placeholder="Улица и номер дома">
+                                <input class="form-control border-accent col-10" type="search" id="proposal-address" placeholder="Улица и номер дома">
                                 <button class="w-auto btn btn-accent px-2 px-md-4 col-2 col-lg-1" type="button">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -227,17 +332,35 @@
                             </div>
                         </div>
                         <!-- map -->
-                        <div class="w-100 position-relative map-container mb-4">
+                        <div class="w-100 position-relative map-container-3 mb-4">
                             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af7cb7e62a63d014db98068fcd38a8b959bb35574d74be36291d89d97f49b8108&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
                         </div>
                         <button class="btn btn-accent mx-auto px-4">OK</button>
                     </fieldset>
+
+                    <!-- address -->
+                    <fieldset class="d-flex flex-column mb-4">
+                        <div class="d-flex flex-column flex-xxl-row align-items- mb-4">
+                            <label for="proposal-address" class="fs-20 c-black me-4 mb-2 col-sm-2">Адрес</label>
+                            <!-- search input -->
+                            <div class="input-group flex-nowrap position-relative">
+                                <input class="form-control col-10" type="search" id="proposal-address" placeholder="Улица и номер дома" value="ул. Красноможайская, д. 12">
+                                <button class="w-auto btn p-0 me-1 position-absolute end-0 top-50 translate-middle" type="button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 20H21" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.5 3.49998C16.8978 3.10216 17.4374 2.87866 18 2.87866C18.2786 2.87866 18.5544 2.93353 18.8118 3.04014C19.0692 3.14674 19.303 3.303 19.5 3.49998C19.697 3.69697 19.8532 3.93082 19.9598 4.18819C20.0665 4.44556 20.1213 4.72141 20.1213 4.99998C20.1213 5.27856 20.0665 5.55441 19.9598 5.81178C19.8532 6.06915 19.697 6.303 19.5 6.49998L7 19L3 20L4 16L16.5 3.49998Z" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+
                     <!-- price -->
                     <fieldset class="mb-4 d-flex flex-wrap align-items-sm-center">
                         <label class="form-label me-4 mb-sm-0 col-12 col-sm-auto fs-20 c-black col-sm-2" for="price">Стоимость:</label>
                         <div class="row gx-2 gx-md-3">
                             <div class="col-6">
-                                <input id="price" type="number" class="form-control form-control-sm d-inline-block" value="1500" placeholder="Цена" required>
+                                <input id="price" type="number" class="form-control form-control-sm d-inline-block" placeholder="Цена" required>
                             </div>
                             <div class="col-6">
                                 <select class="form-select form-select-sm d-inline-block" aria-label="Выбор категории" required>
@@ -247,26 +370,63 @@
                             </div>
                         </div>
                     </fieldset>
+
                     <!-- parameters -->
-                    <fieldset class="mb-5 col-lg-10">
-                        <legend class="h5 mb-3">Параметры</legend>
-                        <fieldset class="mb-3">
-                            <label for="parameters-name" class="c-black mb-2">Введите название параметра:</label>
-                            <input id="parameters-name" type="text" class="form-control" placeholder="Например, масса">
-                        </fieldset>
+                    <legend class="h5 mb-3">Параметры</legend>
+                    <fieldset class="mb-5 col-lg-10 add-param-block flex-column">
+                        <!-- hidden param group -->
                         <fieldset class="mb-4">
-                            <label for="parameters-value" class="c-black mb-2">Введите значение параметра:</label>
-                            <input id="parameters-value" type="text" class="form-control" placeholder="Например, 10кг">
+                            <fieldset class="mb-3">
+                                <label for="parameters-name" class="c-black mb-2">Введите название параметра:</label>
+                                <div class="d-flex flex-nowrap align-items-center">
+                                    <input id="parameters-name" type="text" class="form-control col-10" placeholder="Например, масса">
+                                    <!-- delete param group -->
+                                    <button class="p-0 btn flex-shrink-0 ms-4 col-auto">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 6H5H21" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                    
+                                    </button>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label for="parameters-value" class="c-black mb-2">Введите значение параметра:</label>
+                                <input id="parameters-value" type="text" class="form-control" placeholder="Например, 10кг">
+                            </fieldset>
                         </fieldset>
-                        <button class="btn btn-outline-2 p-0 border-0">
+
+                        <!-- visible param group -->
+                        <fieldset class="mb-4">
+                            <fieldset class="mb-3">
+                                <label for="parameters-name" class="c-black mb-2">Введите название параметра:</label>
+                                <div class="d-flex flex-nowrap align-items-center">
+                                    <input id="parameters-name" type="text" class="form-control col-10" placeholder="Например, масса">
+                                    <!-- delete param group -->
+                                    <button class="p-0 btn flex-shrink-0 ms-4 col-auto">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 6H5H21" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                    
+                                    </button>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label for="parameters-value" class="c-black mb-2">Введите значение параметра:</label>
+                                <input id="parameters-value" type="text" class="form-control" placeholder="Например, 10кг">
+                            </fieldset>
+                        </fieldset>
+
+                        <!-- add param group btn -->
+                        <button type="button" class="btn btn-outline-2 order-last p-0 border-0 add-param-group" onclick="addInput(this)">
                             <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M5 12H19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <span>Добавить параметр</span>
                         </button>
+
                     </fieldset>
-                    <button class="mt-auto btn btn-lg btn-accent w-100">Опубликовать</button>
+                    <button type="submit" class="mt-auto btn btn-lg btn-accent w-100">Опубликовать</button>
                 </div>
             </div>
         </div>
@@ -653,6 +813,7 @@
     </div>
 
     <!-- scripts -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/my-swiper.js"></script>

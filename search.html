@@ -125,11 +125,51 @@
 
             </div>
             <div class="col-lg-8">
-                <div class="border-bottom mb-40">
-                    <select class="form-select border-0 h5">
-                        <option value="" selected>Показать по 10</option>
-                        <option value="">Показать по 20</option>
-                    </select>
+                <!-- top filters -->
+                <div class="d-flex justify-content-between border-bottom pb-3 mb-40">
+                    <!-- left sort -->
+                    <div class="d-flex search-filter fs-5">
+                        <!-- by-remoteness -->
+                        <fieldset class="d-flex align-items-center">
+                            <input type="radio" name="sort-by" id="by-remoteness">
+                            <label for="by-remoteness">
+                                <span>По удалённости</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19 12L12 19L5 12" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                  
+                            </label>
+                        </fieldset>
+                        <!-- by-price -->
+                        <fieldset class="d-flex mx-4 align-items-center">
+                            <input type="radio" name="sort-by" id="by-price">
+                            <label for="by-price">
+                                <span>По цене</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19 12L12 19L5 12" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                   
+                            </label>
+                        </fieldset>
+                        <!-- by-popularity -->
+                        <fieldset class="d-flex align-items-center">
+                            <input type="radio" name="sort-by" id="by-popul">
+                            <label for="by-popul">
+                                <span>По популярности</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19 12L12 19L5 12" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </label>
+                        </fieldset>
+                    </div>
+                    <!-- show by -->
+                    <div>
+                        <select class="form-select fs-5 border-0">
+                            <option value="" selected>Показать по 10</option>
+                            <option value="">Показать по 20</option>
+                        </select>
+                    </div>
                 </div>
                 <!-- объявление -->
                 <div class="row px-lg-3 shadow-box rounded-4 py-3 py-lg-4 d-flex flex-wrap flex-lg-nowrap align-items-center mb-4">
@@ -616,6 +656,7 @@
     </div>
 
     <!-- scripts -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/my-swiper.js"></script>
