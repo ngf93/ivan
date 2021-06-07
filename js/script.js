@@ -37,13 +37,6 @@ $(".write-message-close").on('click', function() {
     $(".bg-block").addClass('d-none');
 });
 
-
-// delete dialogue on user page
-$(".dialogue-delete-btn").on('click', function() {
-    $(".write-message-block").removeClass('d-none');
-});
-
-
 /* adding new inputs */
 function addInput(elem) {
     let cloneInput = elem.previousElementSibling.cloneNode(true);

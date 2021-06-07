@@ -835,6 +835,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
           box-shadow: none;
 }
 
+.dialogue-list > div .dial-aut {
+  max-width: 72px;
+}
+
+.dialogue-list > div .dial-aut a {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dialogue-list > div button {
+  z-index: 3;
+}
+
 .dialogue-list .rounded-circle {
   width: 64px;
   height: 64px;

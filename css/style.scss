@@ -807,6 +807,17 @@ input[type=date] {
             background-color: rgba($accent, 0.05);
             box-shadow: none;
         }
+        .dial-aut {
+            max-width: 72px;
+            a {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        button {
+            z-index: 3;
+        }
     }
     .rounded-circle {
         width: 64px;
