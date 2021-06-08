@@ -32,9 +32,9 @@
 
 <body>
     <!-- HEADER -->
-    <header class="py-3 fs-20">
+    <header class="py-4 fs-20">
         <div class="container">
-            <nav class="d-flex flex-wrap align-items-center">
+            <nav class="d-flex flex-wrap align-items-center position-relative">
                 <!-- расположение -->
                 <a href="" class="me-4">
                     <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +44,7 @@
                     </svg>
                 </a>
                 <!-- меню -->
-                <a href="">
+                <a href="" class="me-auto">
                     <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 12H21" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M3 6H21" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -52,14 +52,14 @@
                     </svg><span>Меню</span>
                 </a>
                 <!-- logo -->
-                <a title="Главная страница" class="mx-auto" href="index.html">
-                    <svg width="52" height="55" viewBox="0 0 52 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.55993 38.201C6.3466 38.121 6.13327 38.0144 5.9466 37.8277C5.6266 37.5077 5.4666 37.1344 5.4666 36.7077V22.8144C5.49327 22.3877 5.65327 22.0144 5.9466 21.6944C6.13327 21.5077 6.3466 21.401 6.55993 21.321V20.9744H5.4666H5.3866H1.75993H1.67993H0.266602V21.241C0.613268 21.2944 0.933268 21.4277 1.17327 21.6944C1.49327 22.0144 1.65327 22.3877 1.65327 22.8144V36.7077C1.6266 37.1344 1.4666 37.5077 1.17327 37.8277C0.906602 38.0944 0.613268 38.2277 0.266602 38.281V38.5477H1.67993H1.75993H5.35993H5.4666H6.55993V38.201Z" fill="black"/>
-                        <path d="M22.2401 20.9733L16.9067 33.2133L12.6401 22.84C12.4534 22.3333 12.4801 21.96 12.7201 21.6667C12.9334 21.4267 13.1734 21.2933 13.4401 21.2667V21H6.56006V21.32C6.77339 21.3733 6.98673 21.48 7.22673 21.6133C7.62673 21.8533 7.97339 22.2533 8.24006 22.84L15.5201 38.5467L16.1067 38.52C16.1067 38.52 17.1734 35.88 17.2267 35.7733L24.1334 20.9733H22.2401V20.9733Z" fill="black"/>
-                        <path d="M50.6935 21H50.6134H47.1735H47.1201H46.0535V21.32C46.2935 21.4 46.4801 21.5067 46.6668 21.6933C46.9601 21.9867 47.1201 22.36 47.1201 22.7867V32.7067L36.0001 21C35.3601 21 34.4801 21 34.4801 21V36.7867C34.4801 37.2133 34.3201 37.56 34.0268 37.8533C33.8668 38.0133 33.6801 38.1467 33.4668 38.2V38.5467H34.4801H34.5601H38.0001H38.0801H39.1468V38.2267C38.9335 38.1467 38.7201 38.04 38.5335 37.8533C38.2401 37.56 38.0801 37.1867 38.0801 36.7867L38.0535 26.84L50.3468 38.5467H50.7468C50.7468 38.5467 50.6668 36.3333 50.6668 35.72V22.8133C50.6934 22.3867 50.8534 22.0133 51.1468 21.72C51.3068 21.56 51.4934 21.4533 51.6801 21.3733V21H50.6935Z" fill="black"/>
-                        <path d="M26.6399 38.28V38.5467H33.5466V38.2C33.3599 38.1467 33.1732 38.0667 32.9866 37.9333C32.7199 37.7733 32.4799 37.5333 32.2666 37.2133L25.3866 20.9467L23.0399 25.6667L25.8666 32.5733H19.8132L19.2266 33.64H26.2666L27.5732 36.84C27.7332 37.2933 27.7066 37.64 27.4666 37.88C27.2266 38.1467 26.9599 38.28 26.6399 38.28Z" fill="black"/>
-                        <path d="M5.11984 19.0267H46.8799H50.1599C47.1999 8.46666 37.4932 0.679993 25.9999 0.679993C14.5065 0.679993 4.79984 8.46666 1.83984 19.0267H5.11984Z" fill="#F25C05"/>
-                        <path d="M45.0934 40.3333C41.3067 46.9733 34.1867 51.4533 26 51.4533C17.8134 51.4533 10.6934 46.9733 6.90672 40.3333H3.38672C7.41338 48.76 16.0534 54.6 26 54.6C35.9467 54.6 44.5867 48.76 48.6134 40.3333H45.0934Z" fill="black"/>
+                <a title="Главная страница" class="position-absolute top-50 start-50 translate-middle" href="index.html">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.5599 49.201C20.3466 49.121 20.1333 49.0144 19.9466 48.8277C19.6266 48.5077 19.4666 48.1344 19.4666 47.7077V33.8144C19.4933 33.3877 19.6533 33.0144 19.9466 32.6944C20.1333 32.5077 20.3466 32.401 20.5599 32.321V31.9744H19.4666H19.3866H15.7599H15.6799H14.2666V32.241C14.6133 32.2944 14.9333 32.4277 15.1733 32.6944C15.4933 33.0144 15.6533 33.3877 15.6533 33.8144V47.7077C15.6266 48.1344 15.4666 48.5077 15.1733 48.8277C14.9066 49.0944 14.6133 49.2277 14.2666 49.281V49.5477H15.6799H15.7599H19.3599H19.4666H20.5599V49.201Z" fill="black"/>
+                        <path d="M36.2396 31.9733L30.9062 44.2133L26.6396 33.84C26.4529 33.3333 26.4796 32.96 26.7196 32.6667C26.9329 32.4267 27.1729 32.2933 27.4396 32.2667V32H20.5596V32.32C20.7729 32.3733 20.9862 32.48 21.2262 32.6133C21.6262 32.8533 21.9729 33.2533 22.2396 33.84L29.5196 49.5467L30.1062 49.52C30.1062 49.52 31.1729 46.88 31.2262 46.7733L38.1329 31.9733H36.2396Z" fill="black"/>
+                        <path d="M64.6935 32H64.6134H61.1735H61.1201H60.0535V32.32C60.2935 32.4 60.4801 32.5067 60.6668 32.6933C60.9601 32.9867 61.1201 33.36 61.1201 33.7867V43.7067L50.0001 32C49.3601 32 48.4801 32 48.4801 32V47.7867C48.4801 48.2133 48.3201 48.56 48.0268 48.8533C47.8668 49.0133 47.6801 49.1467 47.4668 49.2V49.5467H48.4801H48.5601H52.0001H52.0801H53.1468V49.2267C52.9335 49.1467 52.7201 49.04 52.5335 48.8533C52.2401 48.56 52.0801 48.1867 52.0801 47.7867L52.0535 37.84L64.3468 49.5467H64.7468C64.7468 49.5467 64.6668 47.3333 64.6668 46.72V33.8133C64.6934 33.3867 64.8534 33.0133 65.1468 32.72C65.3068 32.56 65.4934 32.4533 65.6801 32.3733V32H64.6935Z" fill="black"/>
+                        <path d="M40.6399 49.28V49.5467H47.5466V49.2C47.3599 49.1467 47.1732 49.0667 46.9866 48.9333C46.7199 48.7733 46.4799 48.5333 46.2666 48.2133L39.3866 31.9467L37.0399 36.6667L39.8666 43.5733H33.8132L33.2266 44.64H40.2666L41.5732 47.84C41.7332 48.2933 41.7066 48.64 41.4666 48.88C41.2266 49.1467 40.9599 49.28 40.6399 49.28Z" fill="black"/>
+                        <path d="M19.1198 30.0267H60.8799H64.1599C61.1999 19.4667 51.4932 11.68 39.9998 11.68C28.5065 11.68 18.7998 19.4667 15.8398 30.0267H19.1198Z" fill="#F25C05"/>
+                        <path d="M59.0934 51.3333C55.3067 57.9733 48.1867 62.4533 40 62.4533C31.8134 62.4533 24.6934 57.9733 20.9067 51.3333H17.3867C21.4134 59.76 30.0534 65.6 40 65.6C49.9467 65.6 58.5867 59.76 62.6134 51.3333H59.0934Z" fill="black"/>
                     </svg>
                 </a>
                 <!-- search -->
@@ -98,28 +98,34 @@
     <!-- MAIN -->
     <main>
         <nav class="container mx-auto d-none d-md-block">
-            <div class=" mx-auto nav nav-tabs text-body position-abslute border-0 py-4" style="z-index: 30;" id="nav-tab" role="tablist">
+            <div class="mx-auto nav nav-tabs text-body position-absolute border-0 py-4" style="z-index: 30;" id="nav-tab" role="tablist">
                 <button class="switch active position-relative me-3 mb-4 active" id="customer-tab" data-bs-toggle="tab" data-bs-target="#customer" type="button" role="tab" aria-controls="customer" aria-selected="true">Заказчикам</button>
                 <button class="switch position-relative mb-4" id="implementer-tab" data-bs-toggle="tab" data-bs-target="#implementer" type="button" role="tab" aria-controls="implementer" aria-selected="false">Исполнителям</button>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-            <!-- заказчикам -->
-            <div class="tab-pane show active" id="customer" role="tabpanel" aria-labelledby="customer-tab">
-                <section class="d-none d-lg-block position-relative py-5">
-                    <div class="container flex-column d-flex pb-5">
-                        <div class="d-none d-lg-flex mx-auto mb-3">
-                            <img src="images/img/hero-img-1.png" alt="">
-                            <img src="images/img/logo-lg.svg" alt="">
-                            <img src="images/img/hero-img-2.png" alt="">
+            <!-- ЗАКАЗЧИКАМ -->
+            <article class="tab-pane show active" id="customer" role="tabpanel" aria-labelledby="customer-tab">
+                <section class="position-relative py-5">
+                    <div class="container d-flex flex-column justify-content-center pb-5">
+                        <div class="d-flex  mx-auto align-items-center mb-3">
+                            <div>
+                                <img class="w-100" src="images/img/hero-img-1.png" alt="">
+                            </div>
+                            <a href="index.html">
+                                <img class="w-100" src="images/img/logo-lg.svg" alt="">
+                            </a>
+                            <div>
+                                <img class="w-100" src="images/img/hero-img-2.png" alt="">
+                            </div>
                         </div>
-                        <div class="mx-lg-auto col-lg-10 d-flex">
+                        <div class="mx-lg-auto col-xl-10 d-flex">
                             <div class="input-group main-search-group flex-row me-3">
                                 <select class="form-select" aria-label="Выбор категории">
-                                    <option selected>Любая категория</option>
-                                    <option value="Автокраны">Автокраны</option>
-                                    <option value="Бульдозеры">Бульдозеры</option>
-                                    <option value="Гидромолоты">Гидромолоты</option>
+                                    <option value="Любая категория" selected>Любая категория</option>
+                                    <option value="Спецтехника">Спецтехника</option>
+                                    <option value="Инструменты">Инструменты</option>
+                                    <option value="Материалы">Материалы</option>
                                 </select>
                                 <input type="text" class="form-control" placeholder="Поиск по предложениям...">
                                 <button class="form-select text-start" data-bs-toggle="modal" data-bs-target="#searchModal">Радиус, метро, район</button>
@@ -198,406 +204,201 @@
                     </ul>
                 </section>
 
-                <div class="d-flex flex-column">
-                    <!-- POPULAR PROPOSAL SECTION -->
-                    <section class="popular-list order-md-last bg-gray py-lg-5 pb-4">
-                        <div class="container pe-0 my-lg-5">
-                            <div class="d-flex justify-content-between align-items-center mb-lg-5">
-                                <h2 class="mb-0 d-none d-md-block me-auto">Популярные предложения</h2>
-                                <div class="d-flex w-100 overflow-x-scroll pop-cat-tabs py-3 py-md-0">
-                                    <button class="bg-white rounded-30 px-3 py-1 me-3 border-0 shadow-box active">Любая категория</button>
-                                    <button class="bg-white rounded-30 px-3 py-1 me-3 border-0 shadow-box">Инструменты</button>
-                                    <button class="bg-white rounded-30 px-3 py-1 me-3 border-0 shadow-box">Техника</button>
-                                    <button class="bg-white rounded-30 px-3 py-1 border-0 shadow-box">Материалы</button>
-                                </div>
+                <!-- AUCTION SECTION -->
+                <section class="auction bg-gray text-center py-5">
+                    <div class="container position-relative">
+                        <div class="row row-cols-2 align-items-center">
+                            <div class="mh-100">
+                                <img class="mw-100" alt="" src="images/img/auction.png" loading="lazy">
                             </div>
-                            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gx-2 gy-3 g-sm-3 g-xxl-4 mb-4 mb-lg-5 pe-3">
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/drel.png" alt="">
-                                        </div>
-                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
-                                            <a class="card-title c-blue fw-5" href="proposal.html">Дрель Makita 6413 450 Вт</a>
-                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">5 км от Вас</div>
-                                            <div class="fw-5">200 руб./час</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/category3.jpg" alt="">
-                                        </div>
-                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
-                                            <a class="card-title c-blue fw-5" href="proposal.html">Эвакуатор до 5 т</a>
-                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">15 км от Вас</div>
-                                            <div class="fw-5">1500 руб./час</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/ecovata.jpg" alt="">
-                                        </div>
-                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
-                                            <a class="card-title c-blue fw-5" href="proposal.html">Эковата 2 кг</a>
-                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">5 км от Вас</div>
-                                            <div class="fw-5">500 руб.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/category2.jpeg" alt="">
-                                        </div>
-                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
-                                            <a class="card-title c-blue fw-5" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
-                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">33 км от Вас</div>
-                                            <div class="fw-5">700 руб./час</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/category3.jpg" alt="">
-                                        </div>
-                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
-                                            <a class="card-title c-blue fw-5" href="proposal.html">Эвакуатор до 5 т</a>
-                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">15 км от Вас</div>
-                                            <div class="fw-5">1500 руб./час</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/ecovata.jpg" alt="">
-                                        </div>
-                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
-                                            <a class="card-title c-blue fw-5" href="proposal.html">Эковата 2 кг</a>
-                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">5 км от Вас</div>
-                                            <div class="fw-5">500 руб.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/category2.jpeg" alt="">
-                                        </div>
-                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
-                                            <a class="card-title c-blue fw-5" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
-                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">33 км от Вас</div>
-                                            <div class="fw-5">700 руб./час</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/category3.jpg" alt="">
-                                        </div>
-                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
-                                            <a class="card-title c-blue fw-5" href="proposal.html">Эвакуатор до 5 т</a>
-                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">15 км от Вас</div>
-                                            <div class="fw-5">1500 руб./час</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/ecovata.jpg" alt="">
-                                        </div>
-                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
-                                            <a class="card-title c-blue fw-5" href="proposal.html">Эковата 2 кг</a>
-                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">5 км от Вас</div>
-                                            <div class="fw-5">500 руб.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- card -->
-                                <div>
-                                    <div class="card shadow-box rounded-4 h-100 border-0">
-                                        <button class="btn-fav position-absolute btn p-1 z-index-10 end-0 top-0 m-2" data-bs-toggle="button">
-                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.84 3.60999C20.3292 3.099 19.7228 2.69364 19.0554 2.41708C18.3879 2.14052 17.6725 1.99817 16.95 1.99817C16.2275 1.99817 15.5121 2.14052 14.8446 2.41708C14.1772 2.69364 13.5708 3.099 13.06 3.60999L12 4.66999L10.94 3.60999C9.9083 2.5783 8.50903 1.9987 7.05 1.9987C5.59096 1.9987 4.19169 2.5783 3.16 3.60999C2.1283 4.64169 1.54871 6.04096 1.54871 7.49999C1.54871 8.95903 2.1283 10.3583 3.16 11.39L4.22 12.45L12 20.23L19.78 12.45L20.84 11.39C21.351 10.8792 21.7563 10.2728 22.0329 9.60535C22.3095 8.93789 22.4518 8.22248 22.4518 7.49999C22.4518 6.77751 22.3095 6.0621 22.0329 5.39464C21.7563 4.72718 21.351 4.12075 20.84 3.60999V3.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                        <div class="img">
-                                            <img src="images/img/category2.jpeg" alt="">
-                                        </div>
-                                        <div class="card-body d-flex flex-column align-items-start text-start p-2 pb-3 p-xl-3">
-                                            <a class="card-title c-blue fw-5" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
-                                            <div class="d-none d-md-flex mt-auto flex-column justify-content-center align-items-center">
-                                                <!-- rating -->
-                                                <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span class="checked">&#9733;</span>
-                                                    <span>&#9733;</span>
-                                                </div>
-                                                <a href="reviews.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
-                                            </div>
-                                            <div class="fs-14 c-gray mb-1">33 км от Вас</div>
-                                            <div class="fw-5">700 руб./час</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 pe-3">
-                                <button class="btn btn-outline-2 btn-lg mx-auto w-100">Показать ещё</button>
+                            <div class="py-5 auction-text">
+                                <h2 class="d-none d-sm-block mb-4 mt-5">Аукцион</h2>
+                                <h5 class="mb-2 mb-lg-4">Вы не нашли подходящего исполнителя?</h5>
+                                <p class="col-xl-10 mx-auto mb-5">И нет сомнений, что некоторые особенности внутренней политики являются только методом политического участия и объединены в целые кластеры себе подобных. Кстати, базовые сценарии поведения пользователей лишь добавляют фракционных
+                                    разногласий и преданы социально-демократической анафеме.</p>
+                                <a href="auction.html" aria-label="Перейти на страницу Аукцион" class="btn btn-accent btn-lg mb-lg-5">Подробнее</a>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                </section>
 
-                    <!-- AUCTION SECTION -->
-                    <section class="order-md-first auction bg-gray text-center py-5">
-                        <div class="container position-relative">
-                            <div class="row row-cols-lg-2 align-items-center">
-                                <div class="mh-100">
-                                    <img class="mw-100" alt="" src="images/img/auction.png" loading="lazy">
-                                </div>
-                                <div class="py-lg-5 auction-text">
-                                    <h2 class="d-none d-sm-block mb-4 mt-5">Аукцион</h2>
-                                    <h5 class="mb-2 mb-lg-4">Вы не нашли подходящего исполнителя?</h5>
-                                    <p class="mb-4 d-sm-none">Опубликуйте свое объявление!</p>
-                                    <p class="d-none d-sm-block col-xl-10 mx-auto mb-5">И нет сомнений, что некоторые особенности внутренней политики являются только методом политического участия и объединены в целые кластеры себе подобных. Кстати, базовые сценарии поведения пользователей лишь добавляют
-                                        фракционных разногласий и преданы социально-демократической анафеме.</p>
-                                    <a href="auction.html" aria-label="Перейти на страницу Аукцион" class="btn btn-accent btn-lg mb-lg-5">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- FIND ON MAP SECTION -->
-                    <section class="find-on-map container px-0 py-4 py-md-5 position-relative">
-                        <h2 class="mb-3 ps-3 ps-md-0">Найти на карте</h2>
-                        <p class="mb-4 col-xl-10 d-none d-md-block">А также стремящиеся вытеснить традиционное производство, нанотехнологии являются только методом политического участия и смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности</p>
-                        <div class="input-group align-items-center shadow-box z-index-10">
-                            <div class="col-2 col-lg-3 col-xxl-2 d-none d-md-block">
-                                <select class="form-select" aria-label="Выбор категории">
-                                    <option selected>Любая категория</option>
-                                    <option value="Автокраны">Автокраны</option>
-                                    <option value="Бульдозеры">Бульдозеры</option>
-                                    <option value="Гидромолоты">Гидромолоты</option>
-                                </select>
-                            </div>
-                            <button class="btn mobile-search-btn p-0 px-4 rounded-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchSettings" aria-controls="searchSettings">Настройки поиска</button>
-                            <input type="text" class="form-control border-0" placeholder="Поиск по предложениям...">
-                            <div class="col-2 col-lg-3 col-xxl-2 d-none d-md-block">
-                                <select class="form-select" aria-label="Радиус, метро, район">
-                                <option selected>Радиус/Метро/Район</option>
-                                <option value="Автокраны">Автокраны</option>
-                                <option value="Бульдозеры">Бульдозеры</option>
-                                <option value="Гидромолоты">Гидромолоты</option>
+                <!-- FIND ON MAP SECTION -->
+                <section class="find-on-map container py-5">
+                    <h2 class="mb-3">Найти на карте</h2>
+                    <p class="mb-4 col-xl-10">А также стремящиеся вытеснить традиционное производство, нанотехнологии являются только методом политического участия и смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности</p>
+                    <div class="input-group align-items-center shadow-box z-index-10">
+                        <div class="col-2 col-lg-3 col-xxl-2 d-none d-md-block">
+                            <select class="form-select" aria-label="Выбор категории">
+                                <option selected>Любая категория</option>
+                                <option value="Спецтехника">Спецтехника</option>
+                                <option value="Инструменты">Инструменты</option>
+                                <option value="Материалы">Материалы</option>
                             </select>
-                            </div>
-                            <button class="btn btn-accent px-4 rounded-0">
-                                <svg class="d-lg-none" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span class="d-none d-lg-block">Показать на карте</span>
-                            </button>
                         </div>
-                        <div class="d-flex w-100 overflow-x-scroll pop-cat-tabs ps-3 py-3 position-absolute z-index-10">
-                            <button class="bg-white rounded-30 px-3 py-1 me-2 border-0 shadow-box active">В радиусе 1 км</button>
-                            <button class="bg-white rounded-30 px-3 py-1 me-2 border-0 shadow-box">В радиусе 5 км</button>
-                            <button class="bg-white rounded-30 px-3 py-1 me-2 border-0 shadow-box">В радиусе 10 км</button>
-                            <button class="bg-white rounded-30 px-3 py-1 me-2 border-0 shadow-box">В радиусе 25 км</button>
-                            <button class="bg-white rounded-30 px-3 py-1 me-2 border-0 shadow-box">В радиусе 50 км</button>
-                            <button class="bg-white rounded-30 px-3 py-1 border-0 shadow-box">В радиусе 100 км</button>
+                        <input type="text" class="form-control" placeholder="Поиск по предложениям...">
+                        <div class="col-2 col-lg-3 col-xxl-2 d-none d-md-block">
+                            <button class="form-select text-start" data-bs-toggle="modal" data-bs-target="#searchModal">Радиус, метро, район</button>
                         </div>
-                        <!-- map -->
-                        <div class="w-100 position-relative map-container-lg">
-                            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af7cb7e62a63d014db98068fcd38a8b959bb35574d74be36291d89d97f49b8108&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
-                        </div>
-                    </section>
-                </div>
+                        <button class="btn btn-accent px-4">
+                            <span class="d-none d-lg-block">Показать на карте</span>
+                        </button>
+                    </div>
+                    <!-- map -->
+                    <div class="w-100 position-relative map-container-lg">
+                        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af7cb7e62a63d014db98068fcd38a8b959bb35574d74be36291d89d97f49b8108&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+                    </div>
+                </section>
 
-            </div>
+                <!-- POPULAR PROPOSAL SECTION -->
+                <section class="popular-list bg-gray py-5">
+                    <div class="container py-xl-5">
+                        <div class="d-flex flex-column flex-xl-row justify-content-between align-items-xl-center mb-5">
+                            <h2 class="flex-fill mb-4 mb-xl-0">Популярные предложения</h2>
+                            <!-- filter -->
+                            <div class="d-flex pop-cat-tabs py-3 py-md-0">
+                                <input type="radio" name="pop-filt" id="pop-any" checked>
+                                <label class="bg-white rounded-30 px-3 py-1 me-2 border-0 shadow-box" for="pop-any">Любая категория</label>
+                                <input type="radio" name="pop-filt" id="pop-ins">
+                                <label class="bg-white rounded-30 px-3 py-1 me-2 border-0 shadow-box" for="pop-ins">Инструменты</label>
+                                <input type="radio" name="pop-filt" id="pop-enq">
+                                <label class="bg-white rounded-30 px-3 py-1 me-2 border-0 shadow-box" for="pop-enq">Техника</label>
+                                <input type="radio" name="pop-filt" id="pop-mat">
+                                <label class="bg-white rounded-30 px-3 py-1 me-2 border-0 shadow-box" for="pop-mat">Материалы</label>
+                            </div>
+                        </div>
+                        <!-- cards -->
+                        <div class="row row-cols-4 row-cols-xxl-6 g-3 g-xxl-4 mb-5 text-center">
+                            <!-- card -->
+                            <div>
+                                <div class="card shadow-box rounded-4 h-100 border-0">
+                                    <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                    <div class="img">
+                                        <img src="images/img/drel.png" alt="">
+                                    </div>
+                                    <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                        <a class="card-title stretched-link c-blue fw-5 m-auto" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
+                                        <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                            <!-- rating -->
+                                            <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span>&#9733;</span>
+                                            </div>
+                                            <a href="reviews.html" class="small c-blue text-nowrap">14 отзывов</a>
+                                        </div>
+                                        <div class="small c-gray mb-1">5 км от Вас</div>
+                                        <div class="fw-5 c-black">200 руб./час</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div>
+                                <div class="card shadow-box rounded-4 h-100 border-0">
+                                    <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                    <div class="img">
+                                        <img src="images/img/drel.png" alt="">
+                                    </div>
+                                    <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                        <a class="card-title stretched-link c-blue fw-5 m-auto" href="proposal.html">Эвакуатор до 5 т</a>
+                                        <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                            <!-- rating -->
+                                            <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span>&#9733;</span>
+                                            </div>
+                                            <a href="reviews.html" class="small c-blue text-nowrap">14 отзывов</a>
+                                        </div>
+                                        <div class="small c-gray mb-1">5 км от Вас</div>
+                                        <div class="fw-5 c-black">200 руб./час</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div>
+                                <div class="card shadow-box rounded-4 h-100 border-0">
+                                    <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                    <div class="img">
+                                        <img src="images/img/drel.png" alt="">
+                                    </div>
+                                    <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                        <a class="card-title stretched-link c-blue fw-5 m-auto" href="proposal.html">Китайские вилочные погрузчики</a>
+                                        <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                            <!-- rating -->
+                                            <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span>&#9733;</span>
+                                            </div>
+                                            <a href="reviews.html" class="small c-blue text-nowrap">14 отзывов</a>
+                                        </div>
+                                        <div class="small c-gray mb-1">5 км от Вас</div>
+                                        <div class="fw-5 c-black">200 руб./час</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div>
+                                <div class="card shadow-box rounded-4 h-100 border-0">
+                                    <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                    <div class="img">
+                                        <img src="images/img/drel.png" alt="">
+                                    </div>
+                                    <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                        <a class="card-title stretched-link c-blue fw-5 m-auto" href="proposal.html">Кран Liebherr 80 тн</a>
+                                        <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                            <!-- rating -->
+                                            <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span class="checked">&#9733;</span>
+                                                <span>&#9733;</span>
+                                            </div>
+                                            <a href="reviews.html" class="small c-blue text-nowrap">14 отзывов</a>
+                                        </div>
+                                        <div class="small c-gray mb-1">5 км от Вас</div>
+                                        <div class="fw-5 c-black">200 руб./час</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- show more proposal -->
+                        <button class="btn btn-lg btn-outline-2 w-100">Показать ещё</button>
+                    </div>
+                </section>
+
+            </article>
+
             <!-- ИСПОЛНИТЕЛЯМ -->
-            <div class="tab-pane" id="implementer" role="tabpanel" aria-labelledby="implementer-tab">
+            <article class="tab-pane" id="implementer" role="tabpanel" aria-labelledby="implementer-tab">
                 <section class="position-relative py-5 mb-5 main-2">
-                    <div class="container py-5">
-                        <div class="col-xl-5 col-xxl-4 c-black">
+                    <div class="container py-5 my-4">
+                        <div class="col-9 col-xl-6 col-xxl-5 c-black">
                             <h2 class="mb-4">Хотите стать исполнителем?</h2>
-                            <p class="fw-5 fs-20 mb-5">Разнообразный и богатый опыт говорит нам, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует повышению качества приоритизации разума над эмоциями. </p>
+                            <p class="fs-5 mb-5">Разнообразный и богатый опыт говорит нам, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует повышению качества приоритизации разума над эмоциями. </p>
                         </div>
                         <button class="btn btn-lg btn-accent" data-bs-toggle="modal" data-bs-target="#signInModal">Зарегистрироваться</button>
                     </div>
                 </section>
 
                 <!-- аукцион объявлений -->
-                <section class="auction container mb-5 pt-lg-5">
-                    <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between align-items-center mb-4 mb-lg-5">
+                <section class="auction container mb-5 py-5">
+                    <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between align-items-center mb-5">
                         <h2 class="mb-0 me-auto">Аукцион объявлений</h2>
-                        <select class="form-select border-0 w-auto me-2 ps-0" aria-label="Выбор категории для поиска спецтехники">
-                            <option selected>Любая категория</option>
-                            <option value="Автокраны">Автокраны</option>
-                            <option value="Бульдозеры">Бульдозеры</option>
-                            <option value="Гидромолоты">Гидромолоты</option>
+                        <select class="form-select fs-5 border-0 w-auto me-2">
+                            <option value="Любая категория" selected>Любая категория</option>
+                            <option value="Спецтехника">Спецтехника</option>
+                            <option value="Инструменты">Инструменты</option>
+                            <option value="Материалы">Материалы</option>
                         </select>
-                        <select class="form-select border-0 w-auto ps-0" aria-label="Выбор радиуса, метро и района">
+                        <select class="form-select fs-5 border-0 w-auto" aria-label="Выбор радиуса, метро и района">
                             <option selected>Радиус/Метро/Район</option>
                         </select>
                     </div>
@@ -644,7 +445,7 @@
                                 <div class="c-gray">12 откликов</div>
                             </div>
                         </div>
-                        <!-- сообщение  -->
+                        <!-- сообщение -->
                         <form class="row bg-blue rounded-3 py-3 p-lg-4 shadow-box mb-4 message position-relative">
                             <button class="btn w-auto p-0 position-absolute end-0 top-0">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -750,9 +551,10 @@
                                 <div class="text-success">Будьте первым</div>
                             </div>
                         </div>
-                        <button class="btn btn-lg btn-outline rounded-4 w-100 mt-3">Показать ещё</button>
+                        <!-- show more -->
+                        <button class="btn btn-lg btn-outline-2 rounded-4 w-100 mt-3">Показать ещё</button>
                         <!-- pagination -->
-                        <nav class="fs-20 fw-5 mt-4 mt-lg-5" aria-label="Навигация по страницам объявлений аукциона">
+                        <nav class="fs-20 fw-5 mt-5">
                             <ul class="pagination justify-content-center flex-wrap">
                                 <li class="page-item disabled">
                                     <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
@@ -778,7 +580,7 @@
                         </nav>
                     </div>
                 </section>
-            </div>
+            </article>
         </div>
 
         <!-- NEWS SECTION -->
@@ -878,6 +680,7 @@
                 </div>
                 <div class="modal-body p-0">
                     <div class="tab-content pt-4" id="search-tabContent">
+                        <!-- КАРТА -->
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                             <!-- search input -->
                             <div class="input-group flex-nowrap mb-3">
@@ -923,7 +726,7 @@
                             </div>
                         </div>
                         <!-- СТАНЦИЯ МЕТРО -->
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="tab-pane fade over-hid-x" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <div class="row">
                                 <div class="col-lg-3">
                                     <fieldset class="mb-3 form-check">
@@ -984,7 +787,7 @@
                             </div>
                         </div>
                         <!-- РАЙОН -->
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="tab-pane fade over-hid-x" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                             <div class="row">
                                 <div class="col-lg-3">
                                     <fieldset class="mb-3 form-check">

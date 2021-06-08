@@ -576,7 +576,8 @@ a {
         color: $accent;
         border: 1px solid $accent;
         &:hover {
-            color: darken($accent, 1);
+            color: $white;
+            background-color: $accent;
         }
         &:disabled {
             background-color: grayscale($accent);
@@ -587,13 +588,25 @@ a {
     &-danger {
         background-color: $danger;
     }
-    &-fav {
-        z-index: 5;
-        &.active {
-            svg {
-                fill: $accent;
-            }
-        }
+}
+
+.btn-i {
+    width: 24px;
+    height: 24px;
+    box-sizing: content-box;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: $transparent;
+}
+
+.btn-fav {
+    z-index: 3;
+    background-image: url('../images/icons/fav.svg');
+    &.active {
+        background-image: url('../images/icons/fav-fill.svg');
     }
 }
 
@@ -925,12 +938,17 @@ footer {
 }
 
 .pop-cat-tabs {
-    button {
-        color: $accent;
-        &.active {
+    input {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        &:checked+label {
             background-color: $accent !important;
             color: $white !important;
         }
+    }
+    label {
+        color: $accent;
     }
 }
 
@@ -971,6 +989,7 @@ footer {
 
 .map-container-lg {
     height: 690px;
+    margin-top: -4px;
 }
 
 // FORMS ELEMENTS
@@ -1108,7 +1127,8 @@ button {
     scrollbar-width: none;
 }
 
-.overflow-hidden {
+.overflow-hidden,
+.over-hid-x {
     overflow: hidden;
 }
 
@@ -1207,111 +1227,9 @@ button {
     }
 }
 
-@media screen and (max-width: 767.98px) {
-    .popular-categories {
-        .fs-20 {
-            font-size: 14px;
-        }
-    }
-    .btn-lg {
-        font-size: 16px;
-    }
-    .page-item {
-        .page-link {
-            font-size: 1rem;
-        }
-    }
-    .map-container-lg {
-        height: 633px;
-    }
-    .popular-list {
-        background-color: $white;
-    }
-    .news-list {
-        .news-group {
-            width: 100%;
-            overflow-x: scroll;
-            >* {
-                width: 45%;
-            }
-            h5 {
-                font-family: 'Roboto', sans-serif;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-            }
-        }
-        img {
-            height: 38vw;
-        }
-    }
-    .rounded-circle {
-        width: 60px;
-        height: 60px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .find-on-map {
-        .input-group {
-            margin-bottom: 0;
-        }
-    }
-    // PAGINATION
-    .page-item {
-        margin-right: 1px;
-    }
-    .gallery-top {
-        height: 200px;
-    }
-    .gallery-thumbs {
-        height: 80px;
-    }
-    .user-prof-img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
 @media (min-width: 465px) {
     .modal-small {
         max-width: 458px;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .modal {
-        &-content {
-            .nav {
-                button {
-                    padding-bottom: 8px;
-                }
-            }
-            .btn-group {
-                .btn {
-                    padding: 4px 10px;
-                }
-            }
-        }
-    }
-    .my-tabs {
-        button {
-            font-size: 16px;
-        }
-    }
-    .auction {
-        img {
-            opacity: 0.2;
-            max-height: 100%;
-            max-width: 100%;
-            left: 50%;
-            top: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            position: absolute;
-        }
-        .auction-text {
-            z-index: 3;
-        }
     }
 }
 

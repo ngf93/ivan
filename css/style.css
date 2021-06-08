@@ -573,7 +573,8 @@ a:hover.c-blue {
 }
 
 .btn-outline-2:hover {
-  color: #fa6400;
+  color: white;
+  background-color: #FF6600;
 }
 
 .btn-outline-2:disabled {
@@ -586,12 +587,26 @@ a:hover.c-blue {
   background-color: #EB1919;
 }
 
-.btn-fav {
-  z-index: 5;
+.btn-i {
+  width: 24px;
+  height: 24px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
 }
 
-.btn-fav.active svg {
-  fill: #FF6600;
+.btn-fav {
+  z-index: 3;
+  background-image: url("../images/icons/fav.svg");
+}
+
+.btn-fav.active {
+  background-image: url("../images/icons/fav-fill.svg");
 }
 
 .mb-32 {
@@ -961,13 +976,19 @@ footer {
   border: none;
 }
 
-.pop-cat-tabs button {
-  color: #FF6600;
+.pop-cat-tabs input {
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
-.pop-cat-tabs button.active {
+.pop-cat-tabs input:checked + label {
   background-color: #FF6600 !important;
   color: white !important;
+}
+
+.pop-cat-tabs label {
+  color: #FF6600;
 }
 
 .map-container {
@@ -1009,6 +1030,7 @@ footer {
 
 .map-container-lg {
   height: 690px;
+  margin-top: -4px;
 }
 
 .pass_btn[data-state="invisible"] {
@@ -1163,7 +1185,8 @@ button {
   display: none;
 }
 
-.overflow-hidden {
+.overflow-hidden,
+.over-hid-x {
   overflow: hidden;
 }
 
@@ -1258,91 +1281,9 @@ button {
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .popular-categories .fs-20 {
-    font-size: 14px;
-  }
-  .btn-lg {
-    font-size: 16px;
-  }
-  .page-item .page-link {
-    font-size: 1rem;
-  }
-  .map-container-lg {
-    height: 633px;
-  }
-  .popular-list {
-    background-color: white;
-  }
-  .news-list .news-group {
-    width: 100%;
-    overflow-x: scroll;
-  }
-  .news-list .news-group > * {
-    width: 45%;
-  }
-  .news-list .news-group h5 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .news-list img {
-    height: 38vw;
-  }
-  .rounded-circle {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .find-on-map .input-group {
-    margin-bottom: 0;
-  }
-  .page-item {
-    margin-right: 1px;
-  }
-  .gallery-top {
-    height: 200px;
-  }
-  .gallery-thumbs {
-    height: 80px;
-  }
-  .user-prof-img {
-    width: 100px;
-    height: 100px;
-  }
-}
-
 @media (min-width: 465px) {
   .modal-small {
     max-width: 458px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .modal-content .nav button {
-    padding-bottom: 8px;
-  }
-  .modal-content .btn-group .btn {
-    padding: 4px 10px;
-  }
-  .my-tabs button {
-    font-size: 16px;
-  }
-  .auction img {
-    opacity: 0.2;
-    max-height: 100%;
-    max-width: 100%;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-    position: absolute;
-  }
-  .auction .auction-text {
-    z-index: 3;
   }
 }
 /*# sourceMappingURL=style.css.map */
