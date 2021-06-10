@@ -949,6 +949,11 @@ footer {
     }
     label {
         color: $accent;
+        cursor: pointer;
+        &:hover {
+            background-color: lighten($accent, 8) !important;
+            color: $white;
+        }
     }
 }
 

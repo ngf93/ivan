@@ -37,7 +37,16 @@ $(".write-message-close").on('click', function() {
     $(".bg-block").addClass('d-none');
 });
 
-/* adding new inputs */
+let numOfClicks = 0;
+const $elem = $('.unconfirmed');
+const $elem2 = $('.uncon-tooltip');
+
+$elem.on('click', () => {
+    ++numOfClicks;
+    $elem2.toggleClass('d-none', numOfClicks % 2 !== 0);
+});
+
+/* adding new parametres inputs */
 function addInput(elem) {
     let cloneInput = elem.previousElementSibling.cloneNode(true);
     elem.before(cloneInput);

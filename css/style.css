@@ -989,6 +989,12 @@ footer {
 
 .pop-cat-tabs label {
   color: #FF6600;
+  cursor: pointer;
+}
+
+.pop-cat-tabs label:hover {
+  background-color: #ff7e29 !important;
+  color: white;
 }
 
 .map-container {
