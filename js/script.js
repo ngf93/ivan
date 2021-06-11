@@ -37,6 +37,23 @@ $(".write-message-close").on('click', function() {
     $(".bg-block").addClass('d-none');
 });
 
+// response message
+$(".write-response-btn").on('click', function() {
+    $(".write-response-block").removeClass('d-none');
+});
+
+$(".write-response-close").on('click', function() {
+    $(".write-response-block").addClass('d-none');
+});
+
+// favorite
+$('.btn-fav-2').on('click', () => {
+    $('.btn-fav-2>span').html('Добавить в избранное');
+})
+$('.btn-fav-2').on('click', () => {
+    $('.btn-fav-2.active>span').html('В избранном');
+})
+
 let numOfClicks = 0;
 const $elem = $('.unconfirmed');
 const $elem2 = $('.uncon-tooltip');

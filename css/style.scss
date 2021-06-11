@@ -610,6 +610,19 @@ a {
     }
 }
 
+.btn-fav-2 {
+    &:focus,
+    &:hover {
+        color: $accent !important;
+        background-color: $white !important;
+    }
+    &.active {
+        svg path {
+            fill: $accent;
+        }
+    }
+}
+
 .mb {
     &-32 {
         margin-bottom: 32px;

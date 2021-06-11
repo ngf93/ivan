@@ -609,6 +609,15 @@ a:hover.c-blue {
   background-image: url("../images/icons/fav-fill.svg");
 }
 
+.btn-fav-2:focus, .btn-fav-2:hover {
+  color: #FF6600 !important;
+  background-color: white !important;
+}
+
+.btn-fav-2.active svg path {
+  fill: #FF6600;
+}
+
 .mb-32 {
   margin-bottom: 32px;
 }

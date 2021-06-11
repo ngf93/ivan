@@ -198,15 +198,64 @@
                         <a href="user.html" class="fs-14 c-blue text-nowrap">14 отзывов</a>
                     </div>
                     <div class="d-inline-flex flex-column align-self-start mt-4">
-                        <button class="btn btn-outline-2 border-0 mb-4">
+                        <button class="btn btn-outline-2 border-0 mb-4 btn-fav-2" data-bs-toggle="button">
                             <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20.8401 4.60999C20.3294 4.099 19.7229 3.69364 19.0555 3.41708C18.388 3.14052 17.6726 2.99817 16.9501 2.99817C16.2276 2.99817 15.5122 3.14052 14.8448 3.41708C14.1773 3.69364 13.5709 4.099 13.0601 4.60999L12.0001 5.66999L10.9401 4.60999C9.90843 3.5783 8.50915 2.9987 7.05012 2.9987C5.59109 2.9987 4.19181 3.5783 3.16012 4.60999C2.12843 5.64169 1.54883 7.04096 1.54883 8.49999C1.54883 9.95903 2.12843 11.3583 3.16012 12.39L4.22012 13.45L12.0001 21.23L19.7801 13.45L20.8401 12.39C21.3511 11.8792 21.7565 11.2728 22.033 10.6053C22.3096 9.93789 22.4519 9.22248 22.4519 8.49999C22.4519 7.77751 22.3096 7.0621 22.033 6.39464C21.7565 5.72718 21.3511 5.12075 20.8401 4.60999V4.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <span>Добавить в избранное</span>
                         </button>
-                        <a href="" class="btn btn-outline-2 mb-4">Написать отзыв</a>
-                        <button class="mt-auto btn btn-lg btn-accent">Написать сообщение</button>
+                        <button class="write-review-btn btn btn btn-outline-2 mb-4">Написать отзыв</button>
+                        <button class="write-message-btn mt-auto btn btn-lg btn-accent">Написать сообщение</button>
                     </div>
+                    <!-- send message block -->
+                    <form class="write-message-block d-none rounded-4 w-100 bg-white shadow-box p-3 p-md-4 d-flex flex-column mt-4">
+                        <div class="d-flex flex-row align-items-start justify-content-between">
+                            <div class="flex-fill">
+                                <fieldset class="mb-3 d-flex flex-column flex-lg-row align-items-lg-center">
+                                    <label class="mb-1 mb-lg-0 col-lg-2">Кому:</label>
+                                    <input class="form-control bg-white" type="text" readonly value="Геннадий С">
+                                </fieldset>
+                                <fieldset class="mb-4 d-flex flex-column flex-lg-row align-items-lg-center">
+                                    <label class="mb-1 mb-lg-0 col-lg-2">Тема:</label>
+                                    <input class="form-control" type="text" placeholder="Введите название темы..." required>
+                                </fieldset>
+                            </div>
+                            <button class="btn p-0 write-message-close ms-3" type="button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 6L18 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </button>
+                        </div>
+                        <textarea minlength="10" maxlength="800" required class="form-control mb-4 mb-md-5" rows="8" placeholder="Введите сообщение..."></textarea>
+                        <button type="submit" class="btn btn-accent ms-auto px-4">Отправить</button>
+                    </form>
+
+                    <!-- write review block -->
+                    <form class="write-review-block d-none rounded-4 w-100 bg-white shadow-box p-3 p-md-4 d-flex flex-column mt-4">
+                        <div class="d-flex flex-row align-items-start justify-content-between">
+                            <div class="flex-fill">
+                                <fieldset class="mb-3 d-flex flex-column flex-lg-row align-items-lg-center">
+                                    <label class="mb-1 mb-lg-0 col-lg-3">Кому:</label>
+                                    <input class="form-control bg-white" type="text" readonly value="Геннадий С">
+                                </fieldset>
+                                <fieldset class="mb-4 d-flex flex-column flex-lg-row align-items-lg-center">
+                                    <label class="mb-1 mb-lg-0 col-lg-3">Предложение:</label>
+                                    <select class="form-select">
+                                        <option value="">11</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <button class="btn p-0 write-review-close ms-3" type="button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 6L18 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </button>
+                        </div>
+                        <textarea minlength="10" maxlength="800" required class="form-control mb-4 mb-md-5" rows="8" placeholder="Введите сообщение..."></textarea>
+                        <button type="submit" class="btn btn-accent ms-auto px-4">Отправить</button>
+                    </form>
                 </div>
             </div>
             <div class="col-lg-5 py-5">
