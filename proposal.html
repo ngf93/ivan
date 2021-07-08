@@ -177,6 +177,7 @@
                             <span>г. Казань, м. Площадь Габдуллы Тукая</span>
                         </div>
                         <!-- show on map -->
+                        <!-- активирует таб с картой и скроллит к ней -->
                         <button class="btn p-0 c-accent mb-2">Показать на карте</button>
                     </div>
                     <div>
@@ -213,13 +214,14 @@
                             <div class="flex-fill">
                                 <fieldset class="mb-3 d-flex flex-column flex-lg-row align-items-lg-center">
                                     <label class="mb-1 mb-lg-0 col-lg-2">Кому:</label>
-                                    <input class="form-control bg-white" type="text" readonly value="Геннадий С">
+                                    <input class="form-control bg-white" type="text" readonly value="Георгий Б.">
                                 </fieldset>
                                 <fieldset class="mb-4 d-flex flex-column flex-lg-row align-items-lg-center">
                                     <label class="mb-1 mb-lg-0 col-lg-2">Тема:</label>
-                                    <input class="form-control" type="text" placeholder="Введите название темы..." required>
+                                    <input class="form-control bg-white" type="text" placeholder="Введите название темы..." required value="Экскаватор-погрузчик с гидромолотом" readonly>
                                 </fieldset>
                             </div>
+                            <!-- close -->
                             <button class="btn p-0 write-message-close ms-3" type="button">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -227,7 +229,7 @@
                                 </svg>                                
                             </button>
                         </div>
-                        <textarea minlength="10" maxlength="800" required class="form-control mb-4 mb-md-5" rows="8" placeholder="Введите сообщение..."></textarea>
+                        <textarea minlength="10" maxlength="800" required class="form-control mb-4 mb-md-5 pt-2" rows="8" placeholder="Введите сообщение..."></textarea>
                         <button type="submit" class="btn btn-accent ms-auto px-4">Отправить</button>
                     </form>
 
@@ -237,7 +239,7 @@
                             <div class="flex-fill">
                                 <fieldset class="mb-3 d-flex flex-column flex-lg-row align-items-lg-center">
                                     <label class="mb-1 mb-lg-0 col-lg-3">Кому:</label>
-                                    <input class="form-control bg-white" type="text" readonly value="Геннадий С">
+                                    <input class="form-control bg-white" type="text" readonly value="Георгий Б.">
                                 </fieldset>
                                 <fieldset class="mb-4 d-flex flex-column flex-lg-row align-items-lg-center">
                                     <label class="mb-1 mb-lg-0 col-lg-3">Предложение:</label>
@@ -246,14 +248,36 @@
                                     </select>
                                 </fieldset>
                             </div>
+                            <!-- close -->
                             <button class="btn p-0 write-review-close ms-3" type="button">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M6 6L18 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                
+                                </svg>                           
                             </button>
                         </div>
-                        <textarea minlength="10" maxlength="800" required class="form-control mb-4 mb-md-5" rows="8" placeholder="Введите сообщение..."></textarea>
+                        <!-- rate -->
+                        <fieldset class="mb-4">
+                            <label class="mb-2">Ваша оценка:</label>
+                            <div class="add_rate d-flex flex-row-reverse justify-content-end">
+                                <input type="radio" name="rate" id="5" value="5" checked>
+                                <label for="5"></label>
+                                <input type="radio" name="rate" id="4" value="4">
+                                <label for="4"></label>
+                                <input type="radio" name="rate" id="3" value="3">
+                                <label for="3"></label>
+                                <input type="radio" name="rate" id="2" value="2">
+                                <label for="2"></label>
+                                <input type="radio" name="rate" id="1" value="1">
+                                <label for="1"></label>
+                            </div>
+                        </fieldset>
+                        <!-- review -->
+                        <fieldset class="mb-4 mb-md-5">
+                            <label class="mb-2">Ваш отзыв:</label>
+                            <textarea minlength="10" maxlength="800" required class="form-control" rows="8" placeholder="Начните ввод отзыва..."></textarea>
+                        </fieldset>
+                        <!-- send -->
                         <button type="submit" class="btn btn-accent ms-auto px-4">Отправить</button>
                     </form>
                 </div>
@@ -266,7 +290,7 @@
                         <button class="btn rounded-0 flex-fill" id="on-map-tab" data-bs-toggle="tab" data-bs-target="#on-map" type="button" role="tab" aria-controls="on-map" aria-selected="false">На карте</button>
                     </div>
                 </nav>
-                <div class="tab-content py-4" id="nav-tabContent">
+                <div class="tab-content py-4 mt-2" id="nav-tabContent">
                     <!-- specification -->
                     <div class="tab-pane show active c-black" id="specification" role="tabpanel" aria-labelledby="specification-tab">
                         <p>Сложно сказать, почему реплицированные с зарубежных источников, современные исследования набирают популярность среди определённых слоёв населения, а значит, должны быть превращены в посмешище, хотя само их существование приносит
@@ -305,16 +329,97 @@
                         </table>
                     </div>
                     <!-- on-map -->
+                    <!-- скрыть все элементы управления кроме метки -->
                     <div class="tab-pane" id="on-map" role="tabpanel" aria-labelledby="on-map-tab">
+                        <!-- map -->
+                        <div class="w-100 position-relative map-container-sm">
+                            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af7cb7e62a63d014db98068fcd38a8b959bb35574d74be36291d89d97f49b8108&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- similar proposal -->
+            <!-- не более 6 предложений -->
             <section class="popular-list py-5">
                 <div class="container my-lg-5">
-                    <h2 class="mb-4 mb-lg-5">Похожие предложения</h2>
-                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gx-2 gy-3 g-sm-3 g-xxl-4 mb-4 mb-lg-5">
+                    <h2 class="mb-4 mb-lg-5 c-black">Похожие предложения</h2>
+                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gx-2 gy-3 g-sm-3 g-xxl-4 mb-4 mb-lg-5 text-center">
+                        <!-- card -->
+                        <div>
+                            <div class="card shadow-box rounded-4 h-100 border-0">
+                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                <div class="img">
+                                    <img src="images/img/category3.jpg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title stretched-link c-blue fw-5 m-auto" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
+                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                        <!-- rating -->
+                                        <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
+                                        </div>
+                                        <a href="reviews.html" class="small c-blue text-nowrap">14 отзывов</a>
+                                    </div>
+                                    <div class="small c-gray mb-1">5 км от Вас</div>
+                                    <div class="fw-5 c-black">200 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div>
+                            <div class="card shadow-box rounded-4 h-100 border-0">
+                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                <div class="img">
+                                    <img src="images/img/category.jpeg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title stretched-link c-blue fw-5 m-auto" href="proposal.html">Эвакуатор до 5 т</a>
+                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                        <!-- rating -->
+                                        <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
+                                        </div>
+                                        <a href="reviews.html" class="small c-blue text-nowrap">14 отзывов</a>
+                                    </div>
+                                    <div class="small c-gray mb-1">5 км от Вас</div>
+                                    <div class="fw-5 c-black">200 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div>
+                            <div class="card shadow-box rounded-4 h-100 border-0">
+                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                <div class="img">
+                                    <img src="images/img/ecovata.jpg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title stretched-link c-blue fw-5 m-auto" href="proposal.html">Китайские вилочные погрузчики</a>
+                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                        <!-- rating -->
+                                        <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
+                                        </div>
+                                        <a href="reviews.html" class="small c-blue text-nowrap">14 отзывов</a>
+                                    </div>
+                                    <div class="small c-gray mb-1">5 км от Вас</div>
+                                    <div class="fw-5 c-black">200 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- card -->
                         <div>
                             <div class="card shadow-box rounded-4 h-100 border-0">
@@ -345,60 +450,35 @@
                             <div class="card shadow-box rounded-4 h-100 border-0">
                                 <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
                                 <div class="img">
-                                    <img src="images/img/drel.png" alt="">
-                                </div>
-                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
-                                    <a class="card-title stretched-link c-blue fw-5 m-auto" href="proposal.html">Эвакуатор до 5 т</a>
-                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
-                                        <!-- rating -->
-                                        <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span>&#9733;</span>
-                                        </div>
-                                        <a href="reviews.html" class="small c-blue text-nowrap">14 отзывов</a>
-                                    </div>
-                                    <div class="small c-gray mb-1">5 км от Вас</div>
-                                    <div class="fw-5 c-black">200 руб./час</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card -->
-                        <div>
-                            <div class="card shadow-box rounded-4 h-100 border-0">
-                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
-                                <div class="img">
-                                    <img src="images/img/drel.png" alt="">
-                                </div>
-                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
-                                    <a class="card-title stretched-link c-blue fw-5 m-auto" href="proposal.html">Китайские вилочные погрузчики</a>
-                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
-                                        <!-- rating -->
-                                        <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span>&#9733;</span>
-                                        </div>
-                                        <a href="reviews.html" class="small c-blue text-nowrap">14 отзывов</a>
-                                    </div>
-                                    <div class="small c-gray mb-1">5 км от Вас</div>
-                                    <div class="fw-5 c-black">200 руб./час</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card -->
-                        <div>
-                            <div class="card shadow-box rounded-4 h-100 border-0">
-                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
-                                <div class="img">
-                                    <img src="images/img/drel.png" alt="">
+                                    <img src="images/img/category3.jpg" alt="">
                                 </div>
                                 <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
                                     <a class="card-title stretched-link c-blue fw-5 m-auto" href="proposal.html">Кран Liebherr 80 тн</a>
+                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                        <!-- rating -->
+                                        <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
+                                        </div>
+                                        <a href="reviews.html" class="small c-blue text-nowrap">14 отзывов</a>
+                                    </div>
+                                    <div class="small c-gray mb-1">5 км от Вас</div>
+                                    <div class="fw-5 c-black">200 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div>
+                            <div class="card shadow-box rounded-4 h-100 border-0">
+                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                <div class="img">
+                                    <img src="images/img/ecovata.jpg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title stretched-link c-blue fw-5 m-auto" href="proposal.html">Китайские вилочные погрузчики</a>
                                     <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
                                         <!-- rating -->
                                         <div class="d-flex align-items-center flex-shrink-0 c-gray fs-20">
