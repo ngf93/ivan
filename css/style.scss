@@ -39,11 +39,29 @@ header {
     z-index: 10;
 }
 
-.ad-box {
+// FOR AD CONTENT
+.some-box {
     min-height: 184px;
+    background: linear-gradient(270deg, #FFFFFF 1.38%, rgba(255, 255, 255, 0) 52.97%);
+    .d-flex {
+        z-index: 5;
+    }
     a {
         text-decoration: 1px $blue underline;
         text-underline-position: under;
+        z-index: 5;
+    }
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: 4;
+        background: linear-gradient(270deg, #FFFFFF 1.38%, rgba(255, 255, 255, 0) 52.97%);
     }
 }
 
@@ -141,7 +159,6 @@ header {
 
 .find-on-map {
     .input-group {
-        // margin-bottom: -10px;
         .form-select,
         .form-control {
             border-color: $accent;
@@ -184,9 +201,9 @@ header {
 }
 
 .news-list {
-    // .news-group {}
     img {
-        height: 272px;
+        height: 14vw;
+        min-height: 200px;
         object-fit: cover;
         object-position: center;
     }
@@ -200,6 +217,22 @@ header {
     p {
         margin-bottom: 0;
     }
+}
+
+.new_img {
+    height: 16.5vw;
+    min-height: 200px;
+}
+
+.new_img_2 {
+    height: 11.1vw;
+    min-height: 160px;
+}
+
+.more_link {
+    align-self: flex-start;
+    padding-right: 35px + 8;
+    background: url('../images/icons/more.svg') no-repeat center right;
 }
 
 // *** HOME PAGE end *** //
@@ -231,10 +264,10 @@ h6,
 }
 
 .fw {
-    &-5 {
+    &_5 {
         font-weight: 500;
     }
-    &-6 {
+    &_6 {
         font-weight: 600;
     }
 }
@@ -256,7 +289,7 @@ h6,
     &-dark-blue {
         color: $dark-blue;
     }
-    &-gray {
+    &_gray {
         color: $gray;
     }
     &-black {
@@ -269,7 +302,7 @@ a {
     text-decoration: inherit;
     &:hover {
         color: inherit;
-        &.c-blue {
+        &.c_blue {
             color: darken($blue, 10);
         }
     }
@@ -324,19 +357,15 @@ a {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.rounded {
-    &-4 {
+.br {
+    &_10 {
         border-radius: 10px;
         overflow: hidden;
     }
-    &-30 {
+    &_30 {
         border-radius: 30px;
+        overflow: hidden;
     }
-}
-
-.br_10 {
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 // RATING
@@ -372,6 +401,12 @@ a {
             border-bottom-right-radius: 12px;
         }
     }
+}
+
+// TOPIC PAGE
+.topic_img {
+    height: 15vw;
+    min-height: 200px;
 }
 
 // TOPIC PAGE 
@@ -420,7 +455,7 @@ a {
         background-color: $accent;
         color: $white;
         border-radius: 10px;
-        padding: 11px 24px;
+        padding: 11px 32px;
         line-height: 1em;
         font-weight: 500;
         &:hover {
@@ -477,6 +512,11 @@ a {
     }
 }
 
+.prop_prev_img {
+    width: 185px;
+    height: 136px;
+}
+
 .btn-i {
     width: 24px;
     height: 24px;
@@ -490,6 +530,10 @@ a {
 }
 
 .btn-fav {
+    position: absolute;
+    margin: 16px 16px 0 0;
+    top: 0;
+    right: 0;
     z-index: 3;
     background-image: url('../images/icons/fav.svg');
     &.active {
@@ -562,6 +606,7 @@ img {
     input[type=file] {
         opacity: 0;
         position: absolute;
+        cursor: pointer;
     }
     .row {
         >div {
@@ -779,20 +824,6 @@ footer {
             background-image: url('../images/icons/checked-radio.svg');
             background-size: contain;
         }
-    }
-}
-
-.position-fixed .rounded-circle {
-    width: 10px;
-    height: 10px;
-}
-
-.offcanvas-menu {
-    max-width: 90%;
-    .avatar-small {
-        width: 40px;
-        height: 40px;
-        background-image: url(../images/img/avatar-sm.svg);
     }
 }
 
@@ -1027,11 +1058,15 @@ footer {
     }
 }
 
+.go_back {
+    padding-left: 24px + 8;
+    background: url('../images/icons/back.svg') no-repeat center left;
+}
+
 button {
     white-space: nowrap;
     background-color: $transparent;
     border: none;
-    // padding: 0;
 }
 
 .overflow-x-scroll {
@@ -1162,12 +1197,6 @@ button {
         &-md {
             max-width: 827px;
         }
-    }
-}
-
-@media (min-width: 465px) {
-    .modal-small {
-        max-width: 458px;
     }
 }
 

@@ -105,20 +105,78 @@
     </header>
 
     <!-- MAIN -->
-    <main>
+    <main class="container">
 
-        <section class="position-relative py-5">
+        <section class="row py-5">
+            <a href="forum.html" class="go_back col-12 fw_5 mb-5">Вернуться назад</a>
+            <div class="col-4">
+                <img class="topic_img w-100 br_10" src="https://www.evening-kazan.ru/sites/default/files/images/3fvdffd.jpg" alt="Рухнула дорога">
+            </div>
+            <div class="col-8">
+                <div class="d-flex justify-content-between mb-4">
+                    <div>
+                        <div class="mb-1">
+                            <a href="user.html" class="c_blue me-3">Наиль Б.</a>
+                            <span class="c-dark-blue">Организация</span>
+                        </div>
+                        <div class="d-flex align-items-baseline c_gray text-nowrap fs_14">
+                            <!-- rating -->
+                            <div class="rated d-flex align-items-center flex-shrink-0 fs-5 me-4">
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span>★</span>
+                            </div>
+                            <a class="c_blue" href="#user_reviews">14 отзывов</a>
+                        </div>
 
+                        <div class="d-flex align-items-baseline c_gray text-nowrap fs_14">
+                            <!-- rating -->
+                            <div class="rated d-flex align-items-center flex-shrink-0 fs-5 me-4">
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span>★</span>
+                            </div>
+                            <span>Отзывов пока нет</span>
+                        </div>
+
+                        <div class="fs_14 c_gray text-nowrap">
+                            <span>Оценок пока нет</span>
+                        </div>
+                    </div>
+
+                    <div class="text-end">
+                        <div class="mb-2">
+                            <span class="c_gray me-3">Дата публикации:</span>
+                            <span>20.06.21</span>
+                        </div>
+                        <div>
+                            <span class="c_gray me-3">Время публикации:</span>
+                            <span>17:06</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <h5 class="mb-3">Рухнула дорога на улице Шоссейная</h5>
+                    <p>Есть над чем задуматься: сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и объективно рассмотрены соответствующими инстанциями. В своём стремлении повысить качество жизни, они забывают, что высокотехнологичная
+                        концепция общественного уклада влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="container py-5">
+        <!-- ANSWERS TO TOPIC -->
+        <!-- если ответов более 12 включать пагинацию -->
+        <section class="pb-5">
 
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h5>12 ответов по данной теме</h5>
                 <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#addAnswer">Написать ответ</button>
             </div>
 
-            <!-- topics list -->
+            <!-- answers list -->
             <div class="answers_row br_10 mb_40">
 
                 <div class="d-flex bg-accent text-white fs-5 lh-sm">
@@ -127,16 +185,57 @@
                     <div class="p-3"></div>
                 </div>
 
-                <!-- topic preview -->
+                <!-- answer -->
                 <div class="d-flex border-bottom">
                     <div class="px-3 py-2 border-start border-end">
                         <a href="user.html">Наиль Б.</a>
                         <div class="c-dark-blue">Организация</div>
+                        <div class="d-flex flex-wrap align-items-baseline c_gray text-nowrap fs_14">
+                            <!-- rating -->
+                            <div class="rated d-flex align-items-center flex-shrink-0 fs-5 me-4">
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span>★</span>
+                            </div>
+                            <a class="c_blue" href="#user_reviews">14 отзывов</a>
+                        </div>
                     </div>
                     <div class="px-3 py-2 border-end">
-                        <div class="answer_row c-gray mb-2">Наиль Б.</div>
+                        <div class="answer_row c_gray mb-2">Наиль Б.</div>
                         <p>Противоположная точка зрения подразумевает, что действия представителей оппозиции, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут превращены в посмешище, хотя само их существование
                             приносит несомненную пользу обществу.</p>
+                        <div class="d-flex">
+                            <span class="me-2">20.06.21</span>
+                            <span>17:06</span>
+                        </div>
+                    </div>
+                    <div class="p-2 border-end d-flex align-items-center justify-content-center">
+                        <button class="btn btn_replay" data-bs-toggle="modal" data-bs-target="#answerToAnswer"></button>
+                    </div>
+                </div>
+
+                <!-- answer -->
+                <div class="d-flex border-bottom">
+                    <div class="px-3 py-2 border-start border-end">
+                        <a href="user.html">Павел В.</a>
+                        <div class="c-dark-blue">Частное лицо</div>
+                        <div class="d-flex flex-wrap align-items-baseline c_gray text-nowrap fs_14">
+                            <!-- rating -->
+                            <div class="rated d-flex align-items-center flex-shrink-0 fs-5 me-4">
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span class="checked">★</span>
+                                <span>★</span>
+                            </div>
+                            <span>Отзывов пока нет</span>
+                        </div>
+                    </div>
+                    <div class="px-3 py-2 border-end">
+                        <div class="answer_row c_gray mb-2">Наиль Б.</div>
+                        <p>Континентально-европейского типа политической культуры, будут превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
                         <div class="d-flex">
                             <span class="me-2">20.06.21</span>
                             <span>17:06</span>
@@ -177,6 +276,16 @@
             </nav>
         </section>
 
+        <!-- EMTY STATE -->
+        <section class="pb-5">
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5>0 ответов по данной теме</h5>
+                <button class="btn btn_1" data-bs-toggle="modal" data-bs-target="#addAnswer">Написать ответ</button>
+            </div>
+
+        </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -200,7 +309,7 @@
     <!-- ADD ANSWER -->
     <div class="modal fade" id="addAnswer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addAnswerLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md">
-            <div class="modal-content rounded-4 py-4">
+            <div class="modal-content br_10 py-4">
                 <div class="modal-header px-lg-5 c-black">
                     <h5 class="modal-title" id="addAnswerLabel">Рухнула дорога на улице Шоссейная</h5>
                     <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -216,7 +325,7 @@
     <!-- ANSWER TO ANSWER -->
     <div class="modal fade" id="answerToAnswer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="answerToAnswerLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md">
-            <div class="modal-content rounded-4 py-4">
+            <div class="modal-content br_10 py-4">
                 <div class="modal-header px-lg-5 c-black">
                     <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
