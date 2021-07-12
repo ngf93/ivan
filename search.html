@@ -100,7 +100,8 @@
     <main class="container py-5">
 
         <div class="col-12 mb-5">
-            <div class="some-box shadow-box br_30 position-relative p-3 p-lg-4 d-flex align-items-end justify-content-end">
+
+            <div class="some-box shad_box br_30 position-relative p-3 p-lg-4 d-flex align-items-end justify-content-end">
                 <img class="position-absolute w-100 h-100 top-0 end-0 bottom-0 start-0" src="https://randomwordgenerator.com/img/picture-generator/55e2dc434c50a814f1dc8460962e33791c3ad6e04e50744074267bd19f4ac2_640.jpg" alt="">
 
                 <div class="d-flex">
@@ -112,7 +113,29 @@
                 </div>
 
             </div>
+
         </div>
+
+        <div class="mx-lg-auto col-xl-10 d-flex mb-5">
+            <div class="input-group main-search-group flex-row me-3">
+                <select class="form-select" aria-label="Выбор категории">
+                    <option value="Любая категория" selected>Любая категория</option>
+                    <option value="Спецтехника">Спецтехника</option>
+                    <option value="Инструменты">Инструменты</option>
+                    <option value="Материалы">Материалы</option>
+                </select>
+                <input type="text" class="form-control" placeholder="Поиск по предложениям...">
+                <button class="form-select text-start" data-bs-toggle="modal" data-bs-target="#searchModal">Радиус, метро, район</button>
+                <button class="btn btn_1 px-4 mb-2 mb-md-0">Найти</button>
+            </div>
+            <button class="btn btn-outline-2 text-body flex-shrink-0">
+                <svg class="me-2" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.125 6.66669C13.125 11.3334 7.5 15.3334 7.5 15.3334C7.5 15.3334 1.875 11.3334 1.875 6.66669C1.875 5.07539 2.46763 3.54926 3.52252 2.42405C4.57742 1.29883 6.00816 0.666687 7.5 0.666687C8.99184 0.666687 10.4226 1.29883 11.4775 2.42405C12.5324 3.54926 13.125 5.07539 13.125 6.66669Z" stroke="#FF6600" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 8.66669C8.53553 8.66669 9.375 7.77126 9.375 6.66669C9.375 5.56212 8.53553 4.66669 7.5 4.66669C6.46447 4.66669 5.625 5.56212 5.625 6.66669C5.625 7.77126 6.46447 8.66669 7.5 8.66669Z" stroke="#FF6600" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>Показать на карте
+            </button>
+        </div>
+
 
         <div class="d-flex flex-wrap pb-4">
             <h1 class="h2 me-2 me-4 mb-2">Экскаватор-погрузчик с гидромолотом</h1>
@@ -122,7 +145,7 @@
         <div class="row justify-content-between">
 
             <div class="col-4 col-xxl-3 mb-4">
-                <div class="br_30 shadow-box p-4">
+                <div class="br_30 shad_box p-4">
 
                     <legend class="mb-4 h5">Тип исполнителя</legend>
                     <fieldset class="form-check mb-3">
@@ -150,7 +173,7 @@
 
             </div>
 
-            <div class="col-12 col-xl-8">
+            <div class="col-12 col-xl-8 position-relative">
 
                 <!-- top filters -->
                 <div class="d-flex justify-content-between border-bottom pb-3 mb_40">
@@ -200,7 +223,7 @@
                 </div>
 
                 <!-- announcement preview -->
-                <div class="d-flex align-items-center shadow-box p-3 p-xl-4 br_10 mb-4">
+                <div class="d-flex align-items-center shad_box p-3 p-xl-4 br_10 mb-4">
 
                     <div class="prop_prev_img position-relative flex-shrink-0 me-3">
                         <button class="btn-fav btn-i active" data-bs-toggle="button" aria-pressed="true"></button>
@@ -229,16 +252,40 @@
                     <div class="col-lg-4 flex-fill d-flex flex-column justify-content-lg-end align-items-lg-end">
                         <span class="fw_5 mb-3 c-black">500 руб./час</span>
                         <span>5 км от Вас</span>
-                        <button class="btn btn_1 btn-lg fs-6 send-message mt-4">Написать</button>
+                        <button class="write-message-btn btn btn_1 btn-lg fs-6 mt-4">Написать</button>
                     </div>
 
                 </div>
 
+                <!-- send message block -->
+                <form class="write-message-block start-0 d-none br_10 w-100 bg-white shad_box p-4 d-flex flex-column position-absolute z-index-10">
+                    <div class="d-flex align-items-start justify-content-between">
+                        <div class="flex-fill">
+                            <fieldset class="mb-3 d-flex align-items-center">
+                                <label class="col-lg-2">Кому:</label>
+                                <input class="form-control" type="text" readonly value="Максим В.">
+                            </fieldset>
+                            <fieldset class="mb-4 d-flex align-items-center">
+                                <label class="col-lg-2">Тема:</label>
+                                <input class="form-control" type="text" placeholder="Введите название темы..." value="Экскаватор-погрузчик с гидромолотом" readonly required>
+                            </fieldset>
+                        </div>
+                        <button class="btn p-0 write-message-close ms-3" type="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </button>
+                    </div>
+                    <textarea minlength="10" maxlength="800" required class="form-control mb_40" rows="8" placeholder="Введите сообщение..."></textarea>
+                    <button type="submit" class="btn btn_1 ms-auto px-4">Отправить</button>
+                </form>
+
                 <!-- announcement preview -->
-                <div class="d-flex align-items-center shadow-box p-3 p-xl-4 br_10 mb-4">
+                <div class="d-flex align-items-center shad_box p-3 p-xl-4 br_10 mb-4">
 
                     <div class="prop_prev_img position-relative flex-shrink-0 me-3">
-                        <button class="btn-fav btn-i active" data-bs-toggle="button" aria-pressed="true"></button>
+                        <button class="btn-fav btn-i" data-bs-toggle="button"></button>
                         <img class="w-100 h-100" src="https://randomwordgenerator.com/img/picture-generator/54e5d3434e54b10ff3d8992cc12c30771037dbf85254784b732f7ad6944e_640.jpg" alt="">
                     </div>
 
@@ -262,7 +309,7 @@
                     </div>
 
                     <div class="col-lg-4 flex-fill d-flex flex-column justify-content-lg-end align-items-lg-end">
-                        <span class="fw_5 mb-3 c-black">500 руб./час</span>
+                        <span class="fw_5 mb-3 c-black">500 руб. за услугу</span>
                         <span>5 км от Вас</span>
                         <button class="btn btn_1 btn-lg fs-6 send-message mt-4">Написать</button>
                     </div>

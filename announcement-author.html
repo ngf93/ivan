@@ -31,6 +31,7 @@
 </head>
 
 <body>
+
     <!-- HEADER -->
     <header class="py-4 fs-20">
         <div class="container">
@@ -95,112 +96,93 @@
         </div>
     </header>
 
-    <main class="mb-5 proposal-page">
+    <main class="my-5">
         <div class="container">
-            <a href="#" class="fw_5 my-3 my-lg-5 d-inline-flex align-items-center">
-                <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 12H5" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12 19L5 12L12 5" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Вернуться назад</span>
-            </a>
             <div class="row border-bottom pb-3">
+                <a href="#" class="go_back col-12 fw_5 mb-5">Вернуться назад</a>
                 <div class="col-12 d-flex flex-wrap mb-3">
                     <h5 class="c-black me-1 me-lg-4 mb-1">Выкопать яму под колодец</h5>
                     <span class="c_gray mb-1">3 часа назад</span>
                 </div>
-                <div class="col-lg-6 mb-4">
-                    <img class="w-100 br_10 mb-3" src="images/img/map.jpg" alt="">
-                    <div class="">
-                        <!-- address -->
-                        <div class="mb-3">
-                            <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip1)">
-                                <path d="M14 6.66663C14 11.3333 8 15.3333 8 15.3333C8 15.3333 2 11.3333 2 6.66663C2 5.07533 2.63214 3.5492 3.75736 2.42399C4.88258 1.29877 6.4087 0.666626 8 0.666626C9.5913 0.666626 11.1174 1.29877 12.2426 2.42399C13.3679 3.5492 14 5.07533 14 6.66663Z" fill="#03588C" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8 8.66663C9.10457 8.66663 10 7.7712 10 6.66663C10 5.56206 9.10457 4.66663 8 4.66663C6.89543 4.66663 6 5.56206 6 6.66663C6 7.7712 6.89543 8.66663 8 8.66663Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip1">
-                                <rect width="16" height="16" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            <span>г. Казань, м. Площадь Габдуллы Тукая</span>
-                        </div>
-                        <div class="c-black">
-                            Современные технологии достигли такого уровня, что понимание сути ресурсосберегающих технологий предполагает независимые способы реализации системы обучения кадров, соответствующей насущным потребностям.
-                        </div>
-                    </div>
+                <div class="col-lg-6">
+                    <img class="w-100 br_10" src="images/img/map.jpg" alt="">
                 </div>
                 <!-- right column -->
                 <div class="col-lg-6 d-flex flex-column">
-                    <!-- address and show on map -->
-                    <div class="d-flex flex-wrap justify-content-between mb-1">
-
-                    </div>
                     <div>
                         <span>Заказчик:</span>
-                        <span class="ms-3 c_blue fw_5">Георгий Б.</span>
+                        <a href="user.html" class="ms-3 c_blue fw_5">Геннадий С.</a>
                     </div>
 
-                    <div class="c-dark-blue my-2">Частное лицо</div>
+                    <div class="c-dark-blue my-2">Организация</div>
+
                     <div>На сайте с марта 2021 года</div>
+
+                    <!-- есть отзывы и рейтинг -->
                     <div class="d-flex align-items-baseline mt-2 mb-4">
-                        <!-- rating -->
-                        <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20 me-4">
+                        <div class="rated me-4">
                             <span class="checked">&#9733;</span>
                             <span class="checked">&#9733;</span>
                             <span class="checked">&#9733;</span>
                             <span class="checked">&#9733;</span>
                             <span>&#9733;</span>
                         </div>
-                        <a href="reviews.html" class="fs-14 c_blue text-nowrap">14 отзывов</a>
+                        <span class="fs-14 c_blue text-nowrap">14 отзывов</span>
                     </div>
-                    <div class="d-flex">
+
+                    <div class="d-flex mb-3">
                         <span>Дата исполнения:</span>
                         <span class="ms-3 c-black fw_5">25.04.21</span>
                     </div>
-                    <div class="d-inline-flex flex-column align-self-start mt-4">
-                        <a href="announcement-create.html" class="btn btn-outline-2 px-4 mb-4">Редактировать объявление</a>
-                        <button class="btn p-0 text-start" data-bs-toggle="modal" data-bs-target="#deleteAnnouncement" type="button">
-                            <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 6H5H21" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M10 11V17" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M14 11V17" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+
+                    <div class="d-inline-flex flex-column align-self-start mt-auto">
+
+                        <a href="announcement-edit.html" class="btn btn_2 mb-4">Редактировать объявление</a>
+
+                        <button class="btn btn_del p-0 text-start" data-bs-toggle="modal" data-bs-target="#deleteAnnouncement" type="button">
                             <span>Удалить объявление</span>
                         </button>
+
                     </div>
 
                 </div>
+                <div class="col-6 mb-4">
+                    <!-- address -->
+                    <div class="address_row my-4">г. Казань, м. Площадь Габдуллы Тукая</div>
+                    <div class="c-black">
+                        Современные технологии достигли такого уровня, что понимание сути ресурсосберегающих технологий предполагает независимые способы реализации системы обучения кадров, соответствующей насущным потребностям.
+                    </div>
+                </div>
 
             </div>
-            <div class="col-10 col-xxl-8 py-5">
+
+            <!-- Список откликов -->
+            <div class="col-11 col-xxl-8 py-5">
                 <div class="h5 c-black mb_40">12 откликов по Вашему объявлению</div>
+                <!-- отклик -->
                 <div class="row align-items-start mb-4">
                     <div class="col-lg-3 col-xxl-4">
-                        <img class="w-100 h-100 br_10" src="images/img/ivanc.jpg" alt="">
+                        <img class="response_img w-100 br_10" src="https://lh3.googleusercontent.com/proxy/J7xzISemxcLPZBmhZSSWBFC7hhG_kzWdykhfZK0pKTG-FVtoFoQOirhKZePG7tdtPLksa-jSMJbOo7Jk5KTtgY_lT9_czHHPy-BBVK_YfPJ7wQBZ" alt="">
                     </div>
                     <div class="col-lg-9 col-xxl-8">
                         <div class="d-flex flex-wrap justify-content-between">
-                            <div>
-                                <div class="h5 c_blue">Эвакуатор до 5 т</div>
-                                <div class="h5 c_blue">Иван С</div>
-                                <div class="c-dark-blue mb-3">Частное лицо</div>
+                            <div class="d-flex flex-column">
+                                <a href="proposal.html" class="h5 c_blue">Эвакуатор до 5 т</a>
+                                <a href="user.html" class="h5 c_blue">Наиль Б.</a>
+                                <div class="c-dark-blue mb-3">Организация</div>
                             </div>
                             <div class="d-flex flex-column align-items-lg-end">
                                 <div class="c-black">1500 руб./час</div>
                                 <div class="d-flex align-items-baseline">
                                     <!-- rating -->
-                                    <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20 me-4">
+                                    <div class="rated me-4">
                                         <span class="checked">&#9733;</span>
                                         <span class="checked">&#9733;</span>
                                         <span class="checked">&#9733;</span>
                                         <span class="checked">&#9733;</span>
                                         <span>&#9733;</span>
                                     </div>
-                                    <a href="reviews.html" class="fs-14 c_blue text-nowrap">14 отзывов</a>
+                                    <span class="fs-14 c_blue text-nowrap">14 отзывов</span>
                                 </div>
                             </div>
                         </div>
@@ -215,29 +197,31 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- отклик -->
                 <div class="row align-items-start mb-4">
                     <div class="col-lg-3 col-xxl-4">
-                        <img class="w-100 h-100 br_10" src="images/img/category.jpeg" alt="">
+                        <img class="response_img w-100 br_10" src="images/img/category.jpeg" alt="">
                     </div>
                     <div class="col-lg-9 col-xxl-8">
                         <div class="d-flex flex-wrap justify-content-between">
-                            <div>
-                                <div class="h5 c_blue">Эвакуатор до 5 т</div>
-                                <div class="h5 c_blue">Иван С</div>
-                                <div class="c-dark-blue mb-3">Частное лицо</div>
+                            <div class="d-flex flex-column">
+                                <a href="proposal.html" class="h5 c_blue">Эвакуатор до 5 т</a>
+                                <a href="user.html" class="h5 c_blue">Наиль Б.</a>
+                                <div class="c-dark-blue mb-3">Организация</div>
                             </div>
                             <div class="d-flex flex-column align-items-lg-end">
-                                <div class="c-black">1500 руб./час</div>
+                                <div class="c-black">1500 руб. за услугу</div>
                                 <div class="d-flex align-items-baseline">
                                     <!-- rating -->
-                                    <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20 me-4">
+                                    <div class="rated me-4">
                                         <span class="checked">&#9733;</span>
                                         <span class="checked">&#9733;</span>
                                         <span class="checked">&#9733;</span>
                                         <span class="checked">&#9733;</span>
                                         <span>&#9733;</span>
                                     </div>
-                                    <a href="reviews.html" class="fs-14 c_blue text-nowrap">14 отзывов</a>
+                                    <span class="fs-14 c_blue text-nowrap">14 отзывов</span>
                                 </div>
                             </div>
                         </div>
@@ -252,6 +236,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
@@ -643,7 +628,7 @@
                     <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body pt-0 pb-5">
-                    <h5 class="modal-title mb-4" id="deleteAnnouncementLabel">Вы уверены, что хотите удалить Ваше объявление?</h5>
+                    <h5 class="modal-title lh-sm mb-4" id="deleteAnnouncementLabel">Вы уверены, что хотите удалить Ваше объявление?</h5>
                     <button type="button" class="btn px-4 btn-danger">Удалить</button>
                 </div>
             </div>

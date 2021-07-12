@@ -96,35 +96,74 @@
         </div>
     </header>
 
-    <main class="container py-5 my-xl-5">
+    <main class="container py-5">
         <div class="row">
+
+            <div class="col-12 mb-5 some-box shad_box br_30 position-relative p-3 p-lg-4 d-flex align-items-end justify-content-end">
+                <img class="position-absolute w-100 h-100 top-0 end-0 bottom-0 start-0" src="https://randomwordgenerator.com/img/picture-generator/55e2dc434c50a814f1dc8460962e33791c3ad6e04e50744074267bd19f4ac2_640.jpg" alt="">
+                <div class="d-flex">
+                    <a href="index.html" class="stretched-link h5 m-0 me-3 c-black">Текст рекламы с предложением</a>
+                    <svg class="flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19" stroke="#4CA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 5L19 12L12 19" stroke="#4CA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
             <!-- USER INFO -->
-            <div class="mb-4 col-lg-5 position-relative">
+            <div class="mb-4 col-6 col-xl-5 position-relative">
+
                 <div class="d-flex flex-wrap mb-4 pb-4 border-bottom">
                     <!-- picture -->
-                    <div class="col-lg-5 br_10 user-prof-img me-xxl-3 mb-2">
-                        <img class="w-100 h-100" src="images/img/user.jpg" alt="">
+                    <div class="br_10 user-prof-img me-xxl-3 mb-2">
+                        <img class="w-100 h-100" src="https://randomuser.me/api/portraits/men/97.jpg" alt="">
                     </div>
                     <div class="col-lg-7">
                         <div class="d-flex flex-wrap align-items-baseline justify-content-between">
-                            <div class="h5 me-3">Геннадий С</div>
+                            <div class="h5 me-3">Наиль Б.</div>
                             <div class="c-dark-blue mb-2">Организация</div>
                         </div>
                         <div class="mb-3">На сайте с марта 2021 года</div>
-                        <div class="mb-3 c-black">
+
+                        <!-- номер телефона и почта вид если НЕ вошел в аккаунт -->
+                        <div class="c_black mb-2">
                             <p class="mb-2">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 6L9 17L4 12" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
+                                    <path d="M20 6L9 17L4 12" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                                 <span>Номер телефона</span>
                             </p>
                             <p class="mb-0">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 6L9 17L4 12" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
+                                    <path d="M20 6L9 17L4 12" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                                 <span>Электронная почта</span>
                             </p>
                         </div>
+
+                        <!-- номер телефона и почта вид если ВОШЕЛ в аккаунт -->
+                        <!-- phone -->
+                        <div class="d-flex flex-wrap align-items-baseline mb-2">
+                            <span class="fs_12 me-3">Номер телефона:</span>
+                            <span>
+                                <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.6669 11.28V13.28C14.6677 13.4657 14.6297 13.6494 14.5553 13.8195C14.4809 13.9897 14.3718 14.1424 14.235 14.2679C14.0982 14.3934 13.9367 14.489 13.7608 14.5485C13.5849 14.6079 13.3985 14.63 13.2136 14.6133C11.1622 14.3904 9.19161 13.6894 7.46028 12.5667C5.8495 11.5431 4.48384 10.1774 3.46028 8.56665C2.3336 6.82745 1.63244 4.84731 1.41361 2.78665C1.39695 2.60229 1.41886 2.41649 1.47795 2.24107C1.53703 2.06564 1.63199 1.90444 1.75679 1.76773C1.88159 1.63102 2.03348 1.52179 2.20281 1.447C2.37213 1.37221 2.55517 1.33349 2.74028 1.33332H4.74028C5.06382 1.33013 5.37748 1.4447 5.62279 1.65567C5.8681 1.86664 6.02833 2.15961 6.07361 2.47998C6.15803 3.12003 6.31458 3.74847 6.54028 4.35332C6.62998 4.59193 6.64939 4.85126 6.59622 5.10057C6.54305 5.34988 6.41952 5.57872 6.24028 5.75998L5.39361 6.60665C6.34265 8.27568 7.72458 9.65761 9.39361 10.6067L10.2403 9.75998C10.4215 9.58074 10.6504 9.45722 10.8997 9.40405C11.149 9.35088 11.4083 9.37029 11.6469 9.45998C12.2518 9.68568 12.8802 9.84224 13.5203 9.92665C13.8441 9.97234 14.1399 10.1355 14.3513 10.385C14.5627 10.6345 14.6751 10.953 14.6669 11.28Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <a class="c_black" href="tel:+7(917)123-45-67">+7 (917) 123-45-67</a>
+                            </span>
+                        </div>
+                        <!-- email -->
+                        <div class="d-flex flex-wrap align-items-baseline mb-2">
+                            <span class="fs_12 me-3">E-mail:</span>
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.99967 10.6666C9.47243 10.6666 10.6663 9.47274 10.6663 7.99998C10.6663 6.52722 9.47243 5.33331 7.99967 5.33331C6.52692 5.33331 5.33301 6.52722 5.33301 7.99998C5.33301 9.47274 6.52692 10.6666 7.99967 10.6666Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.6663 5.33333V8.66666C10.6663 9.19709 10.8771 9.7058 11.2521 10.0809C11.6272 10.4559 12.1359 10.6667 12.6663 10.6667C13.1968 10.6667 13.7055 10.4559 14.0806 10.0809C14.4556 9.7058 14.6663 9.19709 14.6663 8.66666V7.99999C14.6663 6.49535 14.1572 5.03498 13.2219 3.85635C12.2866 2.67772 10.98 1.85014 9.51477 1.50819C8.0495 1.16624 6.51164 1.33002 5.15125 1.9729C3.79086 2.61579 2.68795 3.69996 2.02185 5.04914C1.35576 6.39832 1.16566 7.93315 1.48246 9.40407C1.79926 10.875 2.60433 12.1955 3.76677 13.1508C4.9292 14.1062 6.38064 14.6402 7.88506 14.6661C9.38948 14.692 10.8584 14.2082 12.053 13.2933" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <a href="mailto:nail_b@yandex.ru">nail_b@yandex.ru</a>
+                            </span>
+                        </div>
+
                         <div class="mt-auto d-flex align-items-baseline">
                             <!-- rating -->
                             <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20 me-4">
@@ -141,10 +180,12 @@
                         <hr class="col-12 m-0 border-bottom" />
                     </div>
                 </div>
+
                 <!-- send message btn -->
                 <button class="write-message-btn btn btn-lg btn_1 mb-4">Написать сообщение</button>
+
                 <!-- send message block -->
-                <form class="write-message-block d-none br_10 w-100 bg-white shadow-box p-3 p-md-4 d-flex flex-column position-absolute z-index-10">
+                <form class="write-message-block d-none br_10 w-100 bg-white shad_box p-3 p-md-4 d-flex flex-column position-absolute z-index-10">
                     <div class="d-flex flex-row align-items-start justify-content-between">
                         <div class="flex-fill">
                             <fieldset class="mb-3 d-flex flex-column flex-lg-row align-items-lg-center">
@@ -166,6 +207,7 @@
                     <textarea minlength="10" maxlength="800" required class="form-control mb-4 mb-md-5" rows="8" placeholder="Введите сообщение..."></textarea>
                     <button type="submit" class="btn btn_1 ms-auto px-4">Отправить</button>
                 </form>
+
                 <!-- TABS BUTTONS LIST -->
                 <div class="nav ff-2 flex-column my-tabs-2 me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <!-- offers -->
@@ -175,9 +217,12 @@
                     <!-- reviews -->
                     <button class="nav-link px-0 py-2" id="reviews-tab" data-bs-toggle="pill" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Отзывы</button>
                 </div>
+
             </div>
+
             <!-- TABS CONTENT -->
             <div class="tab-content col-lg-7" id="v-pills-tabContent">
+
                 <!-- OFFERS TAB CONTENT -->
                 <div class="tab-pane fade show active col-xl-11 ms-auto" id="offers" role="tabpanel" aria-labelledby="offers-tab">
                     <h2 class="mb-3">Актуальные предложения</h2>
@@ -187,7 +232,7 @@
                     <div class="row row-cols-2 row-cols-sm-3 g-2 gx-xxl-4 gy-3 text-center">
                         <!-- card -->
                         <div>
-                            <div class="card shadow-box br_10 h-100 border-0">
+                            <div class="card shad_box br_10 h-100 border-0">
                                 <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
                                 <div class="img">
                                     <img src="images/img/drel.png" alt="">
@@ -212,7 +257,7 @@
                         </div>
                         <!-- card -->
                         <div>
-                            <div class="card shadow-box br_10 h-100 border-0">
+                            <div class="card shad_box br_10 h-100 border-0">
                                 <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
                                 <div class="img">
                                     <img src="images/img/drel.png" alt="">
@@ -237,7 +282,7 @@
                         </div>
                         <!-- card -->
                         <div>
-                            <div class="card shadow-box br_10 h-100 border-0">
+                            <div class="card shad_box br_10 h-100 border-0">
                                 <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
                                 <div class="img">
                                     <img src="images/img/drel.png" alt="">
@@ -262,7 +307,7 @@
                         </div>
                         <!-- card -->
                         <div>
-                            <div class="card shadow-box br_10 h-100 border-0">
+                            <div class="card shad_box br_10 h-100 border-0">
                                 <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
                                 <div class="img">
                                     <img src="images/img/drel.png" alt="">
@@ -287,6 +332,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- ANNOUNCEMENT TAB CONTENT -->
                 <div class="tab-pane fade col-xl-11 ms-auto" id="announcements" role="tabpanel" aria-labelledby="announcements-tab">
                     <h2 class="mb-3">Актуальные объявления</h2>
@@ -295,45 +341,48 @@
                     <!-- announcements list -->
                     <div class="">
                         <!-- announcement 1 -->
-                        <div class="d-flex flex-wrap br_10 shadow-box p-4">
+                        <div class="d-flex flex-wrap br_10 shad_box p-4">
                             <div class="col-4 announcements-img me-lg-3">
                                 <img class="w-100 h-100" src="images/img/map.jpg" alt="">
                             </div>
                             <div class="col-8 d-flex flex-fill flex-column">
-                                <div class="h5 mb-1 c_blue">Выкопать яму под колодец</div>
+                                <a href="announcement.html" class="h5 mb-1 c_blue">Выкопать яму под колодец</a>
                                 <time class="c_gray">3 часа назад</time>
                                 <div class="mt-auto d-flex flex-wrap justify-content-between align-items-end">
                                     <div>
                                         <div class="d-flex">
                                             <span class="me-2 me-lg-4 c-primary">Дата исполнения:</span>
-                                            <span class="fw_5">25.04.21</span>
+                                            <span class="fw_5 c-black">25.04.21</span>
                                         </div>
                                         <div class="d-flex">
                                             <span class="me-2 me-lg-4 c-primary">Адрес:</span>
-                                            <span class="fw_5">ул. Гарифьянова, д.12 к.32/2</span>
+                                            <span class="fw_5 c-black">ул. Гарифьянова, д.12 к.32/2</span>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center c-accent">
+                                    <a href="announcement.html" class="d-flex align-items-center c-accent">
                                         <span class="me-2">Подробнее</span>
                                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.5 12H19.5" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M12.5 5L19.5 12L12.5 19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- REVIEWS TAB CONTENT -->
                 <div class="tab-pane fade position-relative" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+
                     <div class="d-flex flex-wrap justify-content-between">
-                        <h2 class="mb-3">Отзывы <span>Геннадий С</span></h2>
+                        <h2 class="mb-3">Отзывы <span>Наиль Б.</span></h2>
                         <!-- write review btn -->
-                        <button class="btn btn-outline-2 px-4 mb-3 write-review-btn" type="button">Написать отзыв</button>
+                        <button class="btn btn_2 mb-3 write-review-btn" type="button">Написать отзыв</button>
                     </div>
+
                     <!-- write review block -->
-                    <form class="write-review-block z-index-10 d-none br_10 w-100 bg-white shadow-box p-3 p-xl-4 d-flex flex-column position-absolute">
+                    <form class="write-review-block z-index-10 d-none br_10 w-100 bg-white shad_box p-3 p-xl-4 d-flex flex-column position-absolute">
                         <div class="d-flex flex-row align-items-start justify-content-between">
                             <div class="flex-fill">
                                 <fieldset class="mb-3 d-flex flex-column flex-lg-row align-items-lg-center">
@@ -359,36 +408,25 @@
                         <button type="submit" class="btn btn_1 ms-auto px-4">Отправить</button>
                     </form>
 
-                    <!-- empty announcements -->
-                    <p class="fs-20">У пользователя пока нет отзывов.</p>
+                    <!-- empty state -->
+                    <p class="fs-5">У пользователя пока нет отзывов.</p>
+
                     <!-- reviews list -->
-                    <div class="reviews-list">
+                    <div>
                         <!-- review 1 -->
                         <div class="d-flex py-4 border-bottom">
-                            <div class="rounded-circle flex-shrink-0 me-2 me-sm-4">
+                            <div class="rounded-circle me-4">
                                 <img class="w-100 h-100" src="images/img/user.jpg" alt="">
                             </div>
-                            <div>
+                            <div class="flex-fill">
                                 <div class="d-flex flex-wrap justify-content-between">
                                     <!-- name -->
                                     <a href="user.html" class="h5 mb-1 me-1">Геннадий Л.</a>
                                     <!-- link -->
-                                    <div class="c_blue d-flex align-items-baseline">
-                                        <svg class="flex-shrink-0 me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0)">
-                                                <path d="M14.4152 1.38101C12.8295 -0.351715 10.1439 -0.47093 8.41097 1.11506L0.747415 8.12856L1.38501 8.82524L9.04857 1.81175C9.69986 1.21567 10.5442 0.909059 11.4264 0.947969C13.2514 1.02881 14.6631 2.57117 14.5823 4.39641C14.5432 5.27845 14.163 6.0925 13.5116 6.68857L4.97723 14.499C4.11285 15.2901 2.7661 15.2304 1.9751 14.366C1.18225 13.4997 1.24162 12.1569 2.10811 11.3639L10.2942 3.87227C10.4803 3.70197 10.7211 3.61423 10.9736 3.6255C11.495 3.64858 11.8984 4.08923 11.8753 4.61076C11.8641 4.86279 11.7554 5.09537 11.5693 5.26567L4.2541 11.9603L4.8917 12.657L12.2069 5.96233C12.5791 5.62171 12.7964 5.15656 12.8187 4.65254C12.865 3.60976 12.0584 2.72819 11.0153 2.68198C10.5113 2.65969 10.0288 2.83494 9.65661 3.17556L1.47051 10.6672C0.219086 11.8125 0.133083 13.7521 1.27842 15.0036C2.42199 16.2532 4.36737 16.3373 5.61482 15.1957L14.1492 7.38529C15.8779 5.80323 15.9972 3.10973 14.4152 1.38101Z" fill="#4CA9FF"/>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0">
-                                                    <rect width="16" height="16" fill="white"/>
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <span>Экскаватор-погрузчик с гидромолотом</span>
-                                    </div>
+                                    <a href="proposal.html" class="c_blue link_row">Экскаватор-погрузчик с гидромолотом</a>
                                 </div>
                                 <!-- rating -->
-                                <div class="mb-2">
+                                <div>
                                     <span>Оценка:</span>
                                     <div class="ms-3 d-inline-flex align-items-center flex-shrink-0 c_gray fs-20">
                                         <span class="checked">&#9733;</span>
@@ -399,35 +437,23 @@
                                     </div>
                                 </div>
                                 <!-- text -->
-                                <p class="m-0">Через несколько недель мне позвонила то ли заведующая магазина, то ли директор, поблагодарила за отзыв и сказала, что он был зачитан на собрании</p>
+                                <p class="mt-2 m-0">Через несколько недель мне позвонила то ли заведующая магазина, то ли директор, поблагодарила за отзыв и сказала, что он был зачитан на собрании</p>
                             </div>
                         </div>
                         <!-- review 2 -->
                         <div class="d-flex py-4 border-bottom">
-                            <div class="rounded-circle flex-shrink-0 me-2 me-sm-4">
+                            <div class="rounded-circle me-4">
                                 <img class="w-100 h-100" src="images/img/ivanc.jpg" alt="">
                             </div>
-                            <div>
+                            <div class="flex-fill">
                                 <div class="d-flex flex-wrap justify-content-between">
                                     <!-- name -->
                                     <a href="user.html" class="h5 mb-1 me-1">Анатолий Ж.</a>
                                     <!-- link -->
-                                    <div class="c_blue d-flex align-items-baseline">
-                                        <svg class="flex-shrink-0 me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0)">
-                                                <path d="M14.4152 1.38101C12.8295 -0.351715 10.1439 -0.47093 8.41097 1.11506L0.747415 8.12856L1.38501 8.82524L9.04857 1.81175C9.69986 1.21567 10.5442 0.909059 11.4264 0.947969C13.2514 1.02881 14.6631 2.57117 14.5823 4.39641C14.5432 5.27845 14.163 6.0925 13.5116 6.68857L4.97723 14.499C4.11285 15.2901 2.7661 15.2304 1.9751 14.366C1.18225 13.4997 1.24162 12.1569 2.10811 11.3639L10.2942 3.87227C10.4803 3.70197 10.7211 3.61423 10.9736 3.6255C11.495 3.64858 11.8984 4.08923 11.8753 4.61076C11.8641 4.86279 11.7554 5.09537 11.5693 5.26567L4.2541 11.9603L4.8917 12.657L12.2069 5.96233C12.5791 5.62171 12.7964 5.15656 12.8187 4.65254C12.865 3.60976 12.0584 2.72819 11.0153 2.68198C10.5113 2.65969 10.0288 2.83494 9.65661 3.17556L1.47051 10.6672C0.219086 11.8125 0.133083 13.7521 1.27842 15.0036C2.42199 16.2532 4.36737 16.3373 5.61482 15.1957L14.1492 7.38529C15.8779 5.80323 15.9972 3.10973 14.4152 1.38101Z" fill="#4CA9FF"/>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0">
-                                                    <rect width="16" height="16" fill="white"/>
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <span>Выкопать яму под колодец</span>
-                                    </div>
+                                    <a href="proposal.html" class="c_blue link_row">Экскаватор-погрузчик с гидромолотом</a>
                                 </div>
                                 <!-- rating -->
-                                <div class="mb-2">
+                                <div>
                                     <span>Оценка:</span>
                                     <div class="ms-3 d-inline-flex align-items-center flex-shrink-0 c_gray fs-20">
                                         <span class="checked">&#9733;</span>
@@ -438,36 +464,24 @@
                                     </div>
                                 </div>
                                 <!-- text -->
-                                <p class="m-0">Наша компания впервые обратилась к фирме N около полугода назад с задачей разработать продающий сайт, который реально генерирует продажи, а не просто висит мертвым грузом, проедая бюджет. Результаты превзошли ожидания:
+                                <p class="mt-2 m-0">Наша компания впервые обратилась к фирме N около полугода назад с задачей разработать продающий сайт, который реально генерирует продажи, а не просто висит мертвым грузом, проедая бюджет. Результаты превзошли ожидания:
                                     рост продаж за первый квартал составил +96%, и это в “мертвый сезон”, когда обычно у нас убыток. Планируем заказать фирме N еще несколько сайтов для смежных проектов.</p>
                             </div>
                         </div>
                         <!-- review 3 -->
                         <div class="d-flex py-4 border-bottom">
-                            <div class="rounded-circle flex-shrink-0 me-2 me-sm-4">
+                            <div class="rounded-circle me-4">
                                 <img class="w-100 h-100" src="images/img/category4.jpeg" alt="">
                             </div>
-                            <div>
+                            <div class="flex-fill">
                                 <div class="d-flex flex-wrap justify-content-between">
                                     <!-- name -->
                                     <a href="user.html" class="h5 mb-1 me-1">Иннокеннтий К.</a>
                                     <!-- link -->
-                                    <div class="c_blue d-flex align-items-baseline">
-                                        <svg class="flex-shrink-0 me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0)">
-                                                <path d="M14.4152 1.38101C12.8295 -0.351715 10.1439 -0.47093 8.41097 1.11506L0.747415 8.12856L1.38501 8.82524L9.04857 1.81175C9.69986 1.21567 10.5442 0.909059 11.4264 0.947969C13.2514 1.02881 14.6631 2.57117 14.5823 4.39641C14.5432 5.27845 14.163 6.0925 13.5116 6.68857L4.97723 14.499C4.11285 15.2901 2.7661 15.2304 1.9751 14.366C1.18225 13.4997 1.24162 12.1569 2.10811 11.3639L10.2942 3.87227C10.4803 3.70197 10.7211 3.61423 10.9736 3.6255C11.495 3.64858 11.8984 4.08923 11.8753 4.61076C11.8641 4.86279 11.7554 5.09537 11.5693 5.26567L4.2541 11.9603L4.8917 12.657L12.2069 5.96233C12.5791 5.62171 12.7964 5.15656 12.8187 4.65254C12.865 3.60976 12.0584 2.72819 11.0153 2.68198C10.5113 2.65969 10.0288 2.83494 9.65661 3.17556L1.47051 10.6672C0.219086 11.8125 0.133083 13.7521 1.27842 15.0036C2.42199 16.2532 4.36737 16.3373 5.61482 15.1957L14.1492 7.38529C15.8779 5.80323 15.9972 3.10973 14.4152 1.38101Z" fill="#4CA9FF"/>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0">
-                                                    <rect width="16" height="16" fill="white"/>
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <span>Выкопать яму под колодец</span>
-                                    </div>
+                                    <a href="proposal.html" class="c_blue link_row">Экскаватор-погрузчик с гидромолотом</a>
                                 </div>
                                 <!-- rating -->
-                                <div class="mb-2">
+                                <div>
                                     <span>Оценка:</span>
                                     <div class="ms-3 d-inline-flex align-items-center flex-shrink-0 c_gray fs-20">
                                         <span class="checked">&#9733;</span>
@@ -477,14 +491,13 @@
                                         <span>&#9733;</span>
                                     </div>
                                 </div>
-                                <!-- text -->
-                                <p class="m-0">Наткнулся на книгу случайно, название улыбнуло. Не знаю, кого может торкнуть этот бред, разве что задротов типа автора отзыва №3</p>
                             </div>
                         </div>
                         <!-- reviews list end -->
                     </div>
+
                     <!-- pagination -->
-                    <nav class="fs-20 mt-4 mt-lg-5" aria-label="Навигация по страницам объявлений аукциона">
+                    <nav class="fs-5 mt-4 mt-lg-5">
                         <ul class="pagination flex-wrap justify-content-center">
                             <li class="page-item disabled">
                                 <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
@@ -508,9 +521,11 @@
                             </li>
                         </ul>
                     </nav>
+
                 </div>
             </div>
         </div>
+
     </main>
 
     <!-- FOOTER -->

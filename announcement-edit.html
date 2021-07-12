@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Создание объявления - Ivan</title>
+    <title>Редактирование объявления - Ivan</title>
     <meta name="description" content="Сдать и арендовать спецтехнику в своем городе на ivan.ru">
     <meta name="keywords" content="спецтехника, аренда, сдача, продажа, покупка, поиск стройматериалы, инструменты">
     <!-- styles -->
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- open graph -->
-    <meta name="og:title" content="Создание объявления – «Ivan»">
+    <meta name="og:title" content="Редактирование объявления – «Ivan»">
     <meta property="og:image" content="images/img/logo.svg">
     <meta name="og:description" content="Сдать и арендовать спецтехнику в своем городе на ivan.ru">
     <meta name="og:url" content="ivan.ru">
@@ -96,20 +96,20 @@
         </div>
     </header>
 
-    <main class="my-5">
+    <main class="my-5 proposal-page">
         <div class="container">
             <div class="row">
-                <div class="col-5">
+                <div class="col-lg-5">
                     <!-- picture -->
-                    <div class="row mb-4">
+                    <div class="row mb-4 pb-4">
                         <div class="col-lg-5">
                             <div class="br_10" style="height: 232px;">
-                                <img class="w-100 h-100" src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                                <img class="w-100 h-100" src="images/img/user.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-7 pt-3 c-black">
                             <div class="d-flex align-items-center mb-1">
-                                <div class="h5 mb-0">Геннадий С.</div>
+                                <div class="h5 mb-0">Анатолий Ш.</div>
                                 <button class="btn py-0">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -117,8 +117,6 @@
                                     </svg>
                                 </button>
                             </div>
-                            <!-- member type -->
-                            <div class="c-dark-blue mb-2">Организация</div>
                             <!-- on site since -->
                             <div class="mb-1">На сайте с февраля 2021 года</div>
                             <!-- phone -->
@@ -138,42 +136,25 @@
                             </div>
                             <div class="mt-auto d-flex align-items-baseline">
                                 <!-- rating -->
-                                <div class="rated me-4">
+                                <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20 me-4">
                                     <span class="checked">&#9733;</span>
                                     <span class="checked">&#9733;</span>
                                     <span class="checked">&#9733;</span>
                                     <span class="checked">&#9733;</span>
                                     <span>&#9733;</span>
                                 </div>
-                                <span class="fs-14 c_blue text-nowrap">4 отзывов</span>
+                                <a href="" class="fs-14 c_blue text-nowrap">4 отзывов</a>
                             </div>
                         </div>
                         <div>
                             <hr class="border-bottom">
                         </div>
                     </div>
-                    <!-- tabs buttons list -->
-                    <div class="d-flex align-items-start c-black">
-                        <div class="nav ff-2 flex-column my-tabs-2 me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <!-- offer -->
-                            <button class="nav-link active mb-2 px-0" id="offer-tab" data-bs-toggle="pill" data-bs-target="#offer" type="button" role="tab" aria-controls="offer" aria-selected="true">Мои предложения</button>
-                            <!-- announcement -->
-                            <button class="nav-link mb-2 px-0" id="announcement-tab" data-bs-toggle="pill" data-bs-target="#announcement" type="button" role="tab" aria-controls="announcement" aria-selected="false">Мои объявления</button>
-                            <!-- reviews -->
-                            <button class="nav-link mb-2 px-0" id="reviews-tab" data-bs-toggle="pill" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Мои отзывы</button>
-                            <!-- favorites -->
-                            <button class="nav-link mb-2 px-0" id="favorites-tab" data-bs-toggle="pill" data-bs-target="#favorites" type="button" role="tab" aria-controls="favorites" aria-selected="false">Избранное</button>
-                            <!-- messages -->
-                            <button class="nav-link mb-2 px-0" id="messages-tab" data-bs-toggle="pill" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Сообщения</button>
-                            <!-- settings -->
-                            <button class="nav-link px-0" id="settings-tab" data-bs-toggle="pill" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Настройки</button>
-                        </div>
-                    </div>
                 </div>
                 <!-- right column -->
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="d-flex flex-column-reverse flex-md-row flex-wrap justify-content-between mb-4">
-                        <h1 class="h2">Новое объявление</h1>
+                        <h1 class="h2">Редактирование объявления</h1>
                         <a href="#" class="fw_5 d-inline-flex align-items-center">
                             <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19 12H5" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -231,7 +212,7 @@
                         <button class="btn btn_1 mx-auto px-4">OK</button>
                     </fieldset>
                     <!-- address -->
-                    <fieldset class="d-flex flex-column mb_40">
+                    <fieldset class="d-flex flex-column mb-4">
                         <div class="d-flex flex-column flex-xxl-row align-items- mb-4">
                             <label for="proposal-address" class="fs-20 c-black me-4 mb-2 col-sm-2">Адрес</label>
                             <!-- search input -->
@@ -247,9 +228,8 @@
                         </div>
                     </fieldset>
 
-                    <button class="btn btn-lg btn_1 w-100">Опубликовать</button>
+                    <button class="mt-auto btn btn-lg btn_1 w-100">Опубликовать</button>
                 </div>
-
             </div>
         </div>
     </main>

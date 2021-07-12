@@ -109,7 +109,7 @@
                 <!-- slider -->
                 <div class="col-lg-5 mb-4">
                     <!-- Swiper -->
-                    <div class="swiper-container position-relative gallery-top mb-4 border br_10 p-2">
+                    <div class="swiper-container position-relative gallery-top mb-3 mb-xl-4 border br_10">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="images/img/category4.jpeg" alt="">
@@ -138,16 +138,16 @@
                     </div>
                     <div class="swiper-container gallery-thumbs">
                         <div class="swiper-wrapper w-100">
-                            <div class="swiper-slide w-25">
+                            <div class="swiper-slide">
                                 <img src="images/img/category4.jpeg" alt="">
                             </div>
-                            <div class="swiper-slide w-25">
+                            <div class="swiper-slide">
                                 <img src="images/img/category2.jpeg" alt="">
                             </div>
-                            <div class="swiper-slide w-25">
+                            <div class="swiper-slide">
                                 <img src="images/img/category3.jpg" alt="">
                             </div>
-                            <div class="swiper-slide w-25">
+                            <div class="swiper-slide">
                                 <img src="images/img/category.jpeg" alt="">
                             </div>
                         </div>
@@ -198,7 +198,7 @@
                         <a href="account.html" class="fs-14 c_blue text-nowrap">14 отзывов</a>
                     </div>
                     <div class="d-inline-flex flex-column align-self-start mt-4">
-                        <a href="proposal-create.html" class="btn btn-outline-2 mb-4">Редактировать предложение</a>
+                        <a href="proposal-edit.html" class="btn btn_2 mb-4">Редактировать предложение</a>
                         <button class="btn p-0 text-start" data-bs-toggle="modal" data-bs-target="#deleteProposal" type="button">
                             <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3 6H5H21" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -265,13 +265,89 @@
             </div>
 
             <!-- similar proposal -->
-            <section class="popular-list py-5">
+            <!-- не более 6 предложений -->
+            <section class="pb-5">
                 <div class="container my-lg-5">
-                    <h2 class="mb-4 mb-lg-5">Похожие предложения</h2>
-                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 gx-2 gy-3 g-sm-3 g-xxl-4 mb-4 mb-lg-5">
+                    <h2 class="mb-4 mb-lg-5 c-black">Похожие предложения</h2>
+                    <div class="row row-cols-4 row-cols-xl-5 gx-2 gy-3 g-sm-3 g-xxl-4 mb-4 mb-lg-5 text-center">
                         <!-- card -->
                         <div>
-                            <div class="card shadow-box br_10 h-100 border-0">
+                            <div class="card shad_box br_10 h-100 border-0">
+                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                <div class="img">
+                                    <img src="images/img/category3.jpg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
+                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                        <!-- rating -->
+                                        <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
+                                        </div>
+                                        <a href="reviews.html" class="small c_blue text-nowrap">14 отзывов</a>
+                                    </div>
+                                    <div class="small c_gray mb-1">5 км от Вас</div>
+                                    <div class="fw_5 c-black">200 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div>
+                            <div class="card shad_box br_10 h-100 border-0">
+                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                <div class="img">
+                                    <img src="images/img/category.jpeg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Эвакуатор до 5 т</a>
+                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                        <!-- rating -->
+                                        <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
+                                        </div>
+                                        <a href="reviews.html" class="small c_blue text-nowrap">14 отзывов</a>
+                                    </div>
+                                    <div class="small c_gray mb-1">5 км от Вас</div>
+                                    <div class="fw_5 c-black">200 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div>
+                            <div class="card shad_box br_10 h-100 border-0">
+                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                <div class="img">
+                                    <img src="images/img/ecovata.jpg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Китайские вилочные погрузчики</a>
+                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                        <!-- rating -->
+                                        <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
+                                        </div>
+                                        <a href="reviews.html" class="small c_blue text-nowrap">14 отзывов</a>
+                                    </div>
+                                    <div class="small c_gray mb-1">5 км от Вас</div>
+                                    <div class="fw_5 c-black">200 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div>
+                            <div class="card shad_box br_10 h-100 border-0">
                                 <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
                                 <div class="img">
                                     <img src="images/img/drel.png" alt="">
@@ -296,63 +372,38 @@
                         </div>
                         <!-- card -->
                         <div>
-                            <div class="card shadow-box br_10 h-100 border-0">
+                            <div class="card shad_box br_10 h-100 border-0">
                                 <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
                                 <div class="img">
-                                    <img src="images/img/drel.png" alt="">
-                                </div>
-                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
-                                    <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Эвакуатор до 5 т</a>
-                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
-                                        <!-- rating -->
-                                        <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20">
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span>&#9733;</span>
-                                        </div>
-                                        <a href="reviews.html" class="small c_blue text-nowrap">14 отзывов</a>
-                                    </div>
-                                    <div class="small c_gray mb-1">5 км от Вас</div>
-                                    <div class="fw_5 c-black">200 руб./час</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card -->
-                        <div>
-                            <div class="card shadow-box br_10 h-100 border-0">
-                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
-                                <div class="img">
-                                    <img src="images/img/drel.png" alt="">
-                                </div>
-                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
-                                    <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Китайские вилочные погрузчики</a>
-                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
-                                        <!-- rating -->
-                                        <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20">
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span class="checked">&#9733;</span>
-                                            <span>&#9733;</span>
-                                        </div>
-                                        <a href="reviews.html" class="small c_blue text-nowrap">14 отзывов</a>
-                                    </div>
-                                    <div class="small c_gray mb-1">5 км от Вас</div>
-                                    <div class="fw_5 c-black">200 руб./час</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card -->
-                        <div>
-                            <div class="card shadow-box br_10 h-100 border-0">
-                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
-                                <div class="img">
-                                    <img src="images/img/drel.png" alt="">
+                                    <img src="images/img/category3.jpg" alt="">
                                 </div>
                                 <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
                                     <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Кран Liebherr 80 тн</a>
+                                    <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
+                                        <!-- rating -->
+                                        <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
+                                        </div>
+                                        <a href="reviews.html" class="small c_blue text-nowrap">14 отзывов</a>
+                                    </div>
+                                    <div class="small c_gray mb-1">5 км от Вас</div>
+                                    <div class="fw_5 c-black">200 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div>
+                            <div class="card shad_box br_10 h-100 border-0">
+                                <button class="btn-fav btn-i position-absolute end-0 top-0 m-3" data-bs-toggle="button"></button>
+                                <div class="img">
+                                    <img src="images/img/ecovata.jpg" alt="">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
+                                    <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Китайские вилочные погрузчики</a>
                                     <div class="d-flex mt-auto flex-column justify-content-center align-items-center">
                                         <!-- rating -->
                                         <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20">
@@ -730,7 +781,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body pb-5">
-                    <h5 class="modal-title mb-4" id="deleteAccountLabel">Вы уверены, что хотите удалить Вашу учетную запись</h5>
+                    <h5 class="modal-title lh-sm mb-4" id="deleteAccountLabel">Вы уверены, что хотите удалить Вашу учетную запись</h5>
                     <p>Все Ваши данные будут утеряны безвозвратно.</p>
                     <button type="button" class="btn px-4 btn-danger">Удалить</button>
                 </div>
@@ -742,11 +793,11 @@
     <div class="modal fade" id="deleteProposal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteProposalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-small">
             <div class="modal-content text-center br_10">
-                <div class="modal-header pb-0 c-black">
+                <div class="modal-header pb-0">
                     <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body pt-0 pb-5">
-                    <h5 class="modal-title mb-4" id="deleteProposalLabel">Вы уверены, что хотите удалить Ваше предложение?</h5>
+                    <h5 class="modal-title lh-sm mb-4" id="deleteProposalLabel">Вы уверены, что хотите удалить Ваше предложение?</h5>
                     <button type="button" class="btn px-4 btn-danger">Удалить</button>
                 </div>
             </div>

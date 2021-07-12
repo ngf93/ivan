@@ -95,56 +95,30 @@
         </div>
     </header>
 
-    <main class="mb-5 proposal-page">
+    <main class="proposal-page my-5 ">
         <div class="container">
-            <a href="#" class="fw_5 my-3 my-lg-5 d-inline-flex align-items-center">
-                <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 12H5" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12 19L5 12L12 5" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Вернуться назад</span>
-            </a>
-            <div class="row border-bottom pb-3">
+            <div class="row pb-3">
+                <a href="#" class="go_back col-12 fw_5 mb-5">Вернуться назад</a>
                 <div class="col-12 d-flex flex-wrap mb-3">
-                    <h5 class="c-black me-1 me-lg-4 mb-1">Выкопать яму под колодец</h5>
+                    <h5 class="c-black me-4 mb-1">Выкопать яму под колодец</h5>
                     <span class="c_gray mb-1">3 часа назад</span>
                 </div>
-                <div class="col-lg-6 mb-4">
-                    <img class="w-100 br_10 mb-3" src="images/img/map.jpg" alt="">
-                    <div>
-                        <!-- address -->
-                        <div class="mb-3">
-                            <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip1)">
-                                <path d="M14 6.66663C14 11.3333 8 15.3333 8 15.3333C8 15.3333 2 11.3333 2 6.66663C2 5.07533 2.63214 3.5492 3.75736 2.42399C4.88258 1.29877 6.4087 0.666626 8 0.666626C9.5913 0.666626 11.1174 1.29877 12.2426 2.42399C13.3679 3.5492 14 5.07533 14 6.66663Z" fill="#03588C" stroke="#03588C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M8 8.66663C9.10457 8.66663 10 7.7712 10 6.66663C10 5.56206 9.10457 4.66663 8 4.66663C6.89543 4.66663 6 5.56206 6 6.66663C6 7.7712 6.89543 8.66663 8 8.66663Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip1">
-                                <rect width="16" height="16" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            <span>г. Казань, м. Площадь Габдуллы Тукая</span>
-                        </div>
-                        <div class="c-black">
-                            Современные технологии достигли такого уровня, что понимание сути ресурсосберегающих технологий предполагает независимые способы реализации системы обучения кадров, соответствующей насущным потребностям.
-                        </div>
-                    </div>
-                </div>
-                <!-- right column -->
-                <div class="col-lg-6 d-flex flex-column">
-                    <!-- address and show on map -->
-                    <div class="d-flex flex-wrap justify-content-between mb-1">
 
-                    </div>
+                <div class="col-6">
+                    <img class="w-100 br_10" src="images/img/map.jpg" alt="#">
+                </div>
+
+                <!-- right column -->
+                <div class="col-6 d-flex flex-column">
+
                     <div>
                         <span>Заказчик:</span>
-                        <span class="ms-3 c_blue fw_5">Георгий Б.</span>
+                        <a href='user.html' class="ms-3 c_blue fw_5">Наиль Б.</a>
                     </div>
 
-                    <div class="c-dark-blue my-2">Частное лицо</div>
+                    <div class="c-dark-blue my-2">Организация</div>
                     <div>На сайте с марта 2021 года</div>
+
                     <div class="d-flex align-items-baseline mt-2 mb-4">
                         <!-- rating -->
                         <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20 me-4">
@@ -154,81 +128,95 @@
                             <span class="checked">&#9733;</span>
                             <span>&#9733;</span>
                         </div>
-                        <a href="reviews.html" class="fs-14 c_blue text-nowrap">14 отзывов</a>
+                        <span class="fs-14 c_blue text-nowrap">14 отзывов</span>
                     </div>
-                    <div class="d-flex">
+
+                    <div class="d-flex mb-3">
                         <span>Дата исполнения:</span>
                         <span class="ms-3 c-black fw_5">25.04.21</span>
                     </div>
-                    <div class="d-inline-flex flex-column align-self-start justify-content-center mt-4">
-                        <button class="btn px-4 btn_1 mb-2 write-response-btn">Откликнуться</button>
+
+                    <div class="d-inline-flex flex-column align-self-start justify-content-center align-items-center mt-auto">
+                        <button class="btn btn_lg btn_1 mb-2 write-response-btn">Откликнуться</button>
                         <span class="c_gray">12 откликов</span>
                     </div>
 
                 </div>
+
+                <div class="col-6 mb-4">
+                    <!-- address -->
+                    <div class="address_row my-4">г. Казань, м. Площадь Габдуллы Тукая</div>
+                    <div class="c-black">
+                        Современные технологии достигли такого уровня, что понимание сути ресурсосберегающих технологий предполагает независимые способы реализации системы обучения кадров, соответствующей насущным потребностям.
+                    </div>
+                </div>
+
                 <!-- отклик  -->
-                <form class="write-response-block row d-none bg-blue rounded-3 py-3 p-lg-4 shadow-box mb-4 message position-relative">
-                    <button type="button" class="btn write-response-close w-auto p-0 position-absolute end-0 top-0 m-2">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6 6L18 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <div class="col-lg-6 mb-3 mb-lg-0">
-                        <div class="row align-items-start">
-                            <div class="col-lg-3 mb-2">
-                                <div class="img w-100 h-100 br_10">
-                                    <img class="br_10" src="images/img/ivanc.jpg" alt="">
+                <form class="write-response-block d-none">
+                    <div class="row bg-blue shadow-box rounded-3 p-4 position-relative">
+                        <!-- close -->
+                        <button type="button" class="btn write-response-close w-auto p-0 position-absolute end-0 top-0 m-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="col-7 col-xl-6">
+                            <div class="row align-items-start">
+                                <div class="col-3 mb-2">
+                                    <img class="br_10 w-100 h-100" src="https://randomuser.me/api/portraits/men/32.jpg" alt="#">
                                 </div>
-                            </div>
-                            <div class="col-lg-9">
-                                <div class="d-flex flex-wrap align-items-start align-items-lg-center mb-2">
-                                    <!-- ссылка на мою страницу -->
-                                    <a class="h5" href="account.html">Иван С</a>
-                                    <div class="d-flex mx-4 align-items-center flex-shrink-0 c_gray">
-                                        <span class="checked">&#9733;</span>
-                                        <span class="checked">&#9733;</span>
-                                        <span class="checked">&#9733;</span>
-                                        <span class="checked">&#9733;</span>
-                                        <span>&#9733;</span>
+                                <div class="col-9">
+                                    <div class="d-flex flex-wrap align-items-center mb-2">
+                                        <!-- ссылка на мою страницу -->
+                                        <a class="h5" href="account.html">Геннадий С.</a>
+                                        <div class="rated mx-4">
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span class="checked">&#9733;</span>
+                                            <span>&#9733;</span>
+                                        </div>
+                                        <span class="c_blue">4 отзывов</span>
                                     </div>
-                                    <a href="reviews.html" class="c_blue">4 отзывов</a>
-                                </div>
-                                <fieldset class="mb-3">
-                                    <label class="form-label me-4" for="offer">Ваше предложение:</label>
-                                    <select id="offer" class="form-select form-select-sm w-auto d-inline-block" aria-label="Выбор категории" required>
+                                    <fieldset class="mb-3">
+                                        <label class="me-4" for="offer">Ваше предложение:</label>
+                                        <select id="offer" class="form-select form-select-sm w-auto d-inline-block" required>
                                         <option selected>Эвакуатор до 5 т</option>
                                     </select>
-                                </fieldset>
-                                <fieldset class="mb-3 d-flex flex-wrap align-items-sm-center">
-                                    <label class="form-label me-4 mb-sm-0 col-12 col-sm-auto" for="price">Стоимость:</label>
-                                    <div class="row gx-2">
-                                        <div class="col-6">
-                                            <input id="price" type="number" class="form-control form-control-sm me-lg-2 d-inline-block" value="1500" placeholder="Цена" required>
-                                        </div>
-                                        <div class="col-6">
-                                            <select class="form-select form-select-sm d-inline-block" aria-label="Выбор категории">
+                                    </fieldset>
+                                    <fieldset class="mb-3 d-flex flex-wrap align-items-sm-center">
+                                        <label class="me-4 col-12 col-sm-auto" for="price">Стоимость:</label>
+                                        <div class="row gx-2">
+                                            <div class="col-6">
+                                                <input id="price" type="number" class="form-control form-control-sm me-2 d-inline-block" placeholder="Цена" required>
+                                            </div>
+                                            <div class="col-6">
+                                                <select class="form-select form-select-sm d-inline-block">
                                                 <option selected>руб./час</option>
                                                 <option>за услугу</option>
                                             </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset class="d-flex align-items-center">
-                                    <label class="me-4" for="date">Дата:</label>
-                                    <input type="date" id="date" class="form-control form-control-sm w-auto me-lg-2 d-inline-block" value="2021-04-16">
-                                </fieldset>
+                                    </fieldset>
+                                    <fieldset class="d-flex align-items-center">
+                                        <label class="me-4" for="date">Дата:</label>
+                                        <input type="date" id="date" class="form-control form-control-sm w-auto me-2 d-inline-block" value="2021-04-16">
+                                    </fieldset>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <fieldset class="col-lg-6">
-                        <label for="message" class="form-label">Комментарий:</label>
-                        <textarea class="form-control" name="message" id="message" cols="30" rows="5" placeholder="Введите текст..."></textarea>
-                    </fieldset>
-                    <div>
-                        <button type="button" class="btn btn-lg btn_1 d-flex mx-auto mt-3 mt-lg-5">Отправить</button>
+                        <fieldset class="col-5 col-xl-6">
+                            <label for="message" class="form-label">Комментарий:</label>
+                            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Введите текст..."></textarea>
+                        </fieldset>
+                        <!-- send -->
+                        <div class="d-flex mt-5">
+                            <button type="button" class="btn btn_1 btn-lg mx-auto">Отправить</button>
+                        </div>
                     </div>
                 </form>
+
             </div>
         </div>
     </main>

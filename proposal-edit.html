@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Создание объявления - Ivan</title>
+    <title>Редактирование предложения - Ivan</title>
     <meta name="description" content="Сдать и арендовать спецтехнику в своем городе на ivan.ru">
     <meta name="keywords" content="спецтехника, аренда, сдача, продажа, покупка, поиск стройматериалы, инструменты">
     <!-- styles -->
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- open graph -->
-    <meta name="og:title" content="Создание объявления – «Ivan»">
+    <meta name="og:title" content="Редактирование предложения – «Ivan»">
     <meta property="og:image" content="images/img/logo.svg">
     <meta name="og:description" content="Сдать и арендовать спецтехнику в своем городе на ivan.ru">
     <meta name="og:url" content="ivan.ru">
@@ -96,20 +96,20 @@
         </div>
     </header>
 
-    <main class="my-5">
+    <main class="my-5 proposal-page">
         <div class="container">
             <div class="row">
-                <div class="col-5">
+                <div class="col-lg-5">
                     <!-- picture -->
-                    <div class="row mb-4">
+                    <div class="row mb-4 pb-4">
                         <div class="col-lg-5">
                             <div class="br_10" style="height: 232px;">
-                                <img class="w-100 h-100" src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                                <img class="w-100 h-100" src="images/img/user.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-7 pt-3 c-black">
                             <div class="d-flex align-items-center mb-1">
-                                <div class="h5 mb-0">Геннадий С.</div>
+                                <div class="h5 mb-0">Анатолий Ш.</div>
                                 <button class="btn py-0">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -118,7 +118,7 @@
                                 </button>
                             </div>
                             <!-- member type -->
-                            <div class="c-dark-blue mb-2">Организация</div>
+                            <!-- <div class="c-dark-blue mb-2">Организация</div> -->
                             <!-- on site since -->
                             <div class="mb-1">На сайте с февраля 2021 года</div>
                             <!-- phone -->
@@ -138,52 +138,35 @@
                             </div>
                             <div class="mt-auto d-flex align-items-baseline">
                                 <!-- rating -->
-                                <div class="rated me-4">
+                                <div class="d-flex align-items-center flex-shrink-0 c_gray fs-20 me-4">
                                     <span class="checked">&#9733;</span>
                                     <span class="checked">&#9733;</span>
                                     <span class="checked">&#9733;</span>
                                     <span class="checked">&#9733;</span>
                                     <span>&#9733;</span>
                                 </div>
-                                <span class="fs-14 c_blue text-nowrap">4 отзывов</span>
+                                <a href="" class="fs-14 c_blue text-nowrap">4 отзывов</a>
                             </div>
                         </div>
                         <div>
                             <hr class="border-bottom">
                         </div>
                     </div>
-                    <!-- tabs buttons list -->
-                    <div class="d-flex align-items-start c-black">
-                        <div class="nav ff-2 flex-column my-tabs-2 me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <!-- offer -->
-                            <button class="nav-link active mb-2 px-0" id="offer-tab" data-bs-toggle="pill" data-bs-target="#offer" type="button" role="tab" aria-controls="offer" aria-selected="true">Мои предложения</button>
-                            <!-- announcement -->
-                            <button class="nav-link mb-2 px-0" id="announcement-tab" data-bs-toggle="pill" data-bs-target="#announcement" type="button" role="tab" aria-controls="announcement" aria-selected="false">Мои объявления</button>
-                            <!-- reviews -->
-                            <button class="nav-link mb-2 px-0" id="reviews-tab" data-bs-toggle="pill" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Мои отзывы</button>
-                            <!-- favorites -->
-                            <button class="nav-link mb-2 px-0" id="favorites-tab" data-bs-toggle="pill" data-bs-target="#favorites" type="button" role="tab" aria-controls="favorites" aria-selected="false">Избранное</button>
-                            <!-- messages -->
-                            <button class="nav-link mb-2 px-0" id="messages-tab" data-bs-toggle="pill" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Сообщения</button>
-                            <!-- settings -->
-                            <button class="nav-link px-0" id="settings-tab" data-bs-toggle="pill" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Настройки</button>
-                        </div>
-                    </div>
                 </div>
                 <!-- right column -->
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="d-flex flex-column-reverse flex-md-row flex-wrap justify-content-between mb-4">
-                        <h1 class="h2">Новое объявление</h1>
+                        <h1 class="h2">Редактирование предложения</h1>
                         <a href="#" class="fw_5 d-inline-flex align-items-center">
                             <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19 12H5" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M12 19L5 12L12 5" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Все объявления</span>
+                            <span>Все предложения</span>
                         </a>
                     </div>
                     <!-- category -->
-                    <fieldset class="d-flex flex-column flex-xl-row align-items-cente mb-4">
+                    <fieldset class="d-flex flex-column flex-sm-row align-items-cente mb-3">
                         <label for="proposal-cat" class="fs-20 c-black me-4 mb-2 col-sm-2">Категория</label>
                         <select id="proposal-cat" class="form-select" required>
                             <option value="">Спецтехника</option>
@@ -192,23 +175,150 @@
                         </select>
                     </fieldset>
                     <!-- title -->
-                    <fieldset class="d-flex flex-column flex-xl-row align-items-cent mb-4">
-                        <label for="proposal-title" class="fs-20 c-black me-4 mb-2 col-xl-2">Название</label>
+                    <fieldset class="d-flex flex-column flex-sm-row align-items-cent mb-3">
+                        <label for="proposal-title" class="fs-20 c-black me-4 mb-2 col-sm-2">Название</label>
                         <input id="proposal-title" type="text" class="form-control" placeholder="Например, экскаватор-погрузчик" required>
                     </fieldset>
-                    <!-- date -->
-                    <fieldset class="d-flex flex-column flex-xl-row align-items-start mb-4">
-                        <label for="proposal-title" class="fs-20 c-black me-4 mb-2 col-xl-auto">Дата исполнения</label>
-                        <div class="col-lg-6 col-xl-4">
-                            <input id="proposal-title" type="date" class="form-control" required>
+                    <!-- VIN только для спецтехники! -->
+                    <fieldset class="d-flex flex-column flex-sm-row align-items-cent mb-4">
+                        <label for="proposal-vin" class="fs-20 c-black me-4 mb-2 text-nowrap col-sm-2">VIN-код</label>
+                        <input id="proposal-vin" type="number" class="form-control" placeholder="Например, XTA210990Y2766389" required>
+                    </fieldset>
+
+                    <!-- photo upload -->
+                    <fieldset class="img-upload d-flex flex-column mb-3 mb-md-4">
+                        <div class="d-flex flex-wrap justify-content-between mb-3 mb-md-4">
+                            <label for="" class="fs-20 c-black me-4">Загрузите фотографию:</label>
+                            <div class="position-relative c-accent fw_5">
+                                <input type="file" class="w-100 h-100" multiple>
+                                <span class="d-flex align-items-center">
+                                    <svg class="me-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5 12H19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Добавить</span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- drop img -->
+                        <div class="img-drop position-relative rounded-3 border align-self-start">
+                            <input type="file" class="top-0 start-0 w-100 h-100">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" transform="translate(24) rotate(90)" fill="white"/>
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10L12 15L17 10" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15V3" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </fieldset>
+
+                    <!-- photo uploaded -->
+                    <fieldset class="img-upload d-flex flex-column mb-3 mb-md-4">
+                        <div class="d-flex flex-wrap justify-content-between mb-3 mb-md-4">
+                            <label for="" class="fs-20 c-black me-4">Загрузите фотографию:</label>
+                            <div class="position-relative c-accent fw_5">
+                                <input type="file" class="w-100 h-100" multiple>
+                                <span class="d-flex align-items-center">
+                                    <svg class="me-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5 12H19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Добавить</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Выберите фотографию, которая будет на обложке.</p>
+                        </div>
+                        <!-- drop img -->
+                        <div class="row row-cols-4 g-3 col-11">
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="" checked>
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/mechanism.png" alt="">
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="">
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/category3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="">
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/mechanism.png" alt="">
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="">
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/category2.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="">
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/category4.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <input class="w-100 h-100 position-absolute start-0" type="radio" name="main-img" id="">
+                                <div class="border rounded-3 w-100 h-100 position-relative">
+                                    <button class="btn p-0 position-absolute end-0 me-2 mt-2">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12.4941" cy="12" r="12" fill="#3C3939" fill-opacity="0.6"/>
+                                            <path d="M7.24414 8.5H8.41081H17.7441" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.1611 8.5V7.33333C10.1611 7.02391 10.284 6.72717 10.5028 6.50837C10.7216 6.28958 11.0184 6.16666 11.3278 6.16666H13.6611C13.9706 6.16666 14.2673 6.28958 14.4861 6.50837C14.7049 6.72717 14.8278 7.02391 14.8278 7.33333V8.5M16.5778 8.5V16.6667C16.5778 16.9761 16.4549 17.2728 16.2361 17.4916C16.0173 17.7104 15.7206 17.8333 15.4111 17.8333H9.5778C9.26838 17.8333 8.97163 17.7104 8.75284 17.4916C8.53405 17.2728 8.41113 16.9761 8.41113 16.6667V8.5H16.5778Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                        
+                                    </button>
+                                    <img class="w-100 h-100" src="images/img/mechanism.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </fieldset>
 
                     <!-- description -->
-                    <fieldset class="d-flex flex-column flex-xl-row align-items-start mb-4">
-                        <label for="proposal-desc" class="fs-20 c-black me-4 mb-2 col-xl-2">Описание</label>
+                    <fieldset class="d-flex flex-column flex-sm-row align-items-start mb-4">
+                        <label for="proposal-desc" class="fs-20 c-black me-4 mb-2 col-sm-2">Описание</label>
                         <textarea id="proposal-desc" rows="4" class="form-control" placeholder="Начните ввод..."></textarea>
                     </fieldset>
+
                     <!-- address edit -->
                     <fieldset class="d-flex flex-column mb-4">
                         <div class="d-flex flex-column flex-xxl-row align-items- mb-4">
@@ -230,8 +340,9 @@
                         </div>
                         <button class="btn btn_1 mx-auto px-4">OK</button>
                     </fieldset>
+
                     <!-- address -->
-                    <fieldset class="d-flex flex-column mb_40">
+                    <fieldset class="d-flex flex-column mb-4">
                         <div class="d-flex flex-column flex-xxl-row align-items- mb-4">
                             <label for="proposal-address" class="fs-20 c-black me-4 mb-2 col-sm-2">Адрес</label>
                             <!-- search input -->
@@ -247,9 +358,79 @@
                         </div>
                     </fieldset>
 
-                    <button class="btn btn-lg btn_1 w-100">Опубликовать</button>
-                </div>
+                    <!-- price -->
+                    <fieldset class="mb-4 d-flex flex-wrap align-items-sm-center">
+                        <label class="form-label me-4 mb-sm-0 col-12 col-sm-auto fs-20 c-black col-sm-2" for="price">Стоимость:</label>
+                        <div class="row gx-2 gx-md-3">
+                            <div class="col-6">
+                                <input id="price" type="number" class="form-control form-control-sm d-inline-block" placeholder="Цена" required>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select form-select-sm d-inline-block" aria-label="Выбор категории" required>
+                                    <option selected>руб./час</option>
+                                    <option>за услугу</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
 
+                    <!-- parameters -->
+                    <legend class="h5 mb-3">Параметры</legend>
+                    <fieldset class="mb-5 col-lg-10 add-param-block flex-column">
+                        <!-- hidden param group -->
+                        <fieldset class="mb-4">
+                            <fieldset class="mb-3">
+                                <label for="parameters-name" class="c-black mb-2">Введите название параметра:</label>
+                                <div class="d-flex flex-nowrap align-items-center">
+                                    <input id="parameters-name" type="text" class="form-control col-10" placeholder="Например, масса">
+                                    <!-- delete param group -->
+                                    <button class="p-0 btn flex-shrink-0 ms-4 col-auto">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 6H5H21" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                    
+                                    </button>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label for="parameters-value" class="c-black mb-2">Введите значение параметра:</label>
+                                <input id="parameters-value" type="text" class="form-control" placeholder="Например, 10кг">
+                            </fieldset>
+                        </fieldset>
+
+                        <!-- visible param group -->
+                        <fieldset class="mb-4">
+                            <fieldset class="mb-3">
+                                <label for="parameters-name" class="c-black mb-2">Введите название параметра:</label>
+                                <div class="d-flex flex-nowrap align-items-center">
+                                    <input id="parameters-name" type="text" class="form-control col-10" placeholder="Например, масса">
+                                    <!-- delete param group -->
+                                    <button class="p-0 btn flex-shrink-0 ms-4 col-auto">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 6H5H21" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                    
+                                    </button>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label for="parameters-value" class="c-black mb-2">Введите значение параметра:</label>
+                                <input id="parameters-value" type="text" class="form-control" placeholder="Например, 10кг">
+                            </fieldset>
+                        </fieldset>
+
+                        <!-- add param group btn -->
+                        <button type="button" class="btn btn-outline-2 order-last p-0 border-0 add-param-group" onclick="addInput(this)">
+                            <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 12H19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Добавить параметр</span>
+                        </button>
+
+                    </fieldset>
+                    <button type="submit" class="mt-auto btn btn-lg btn_1 w-100">Опубликовать</button>
+                </div>
             </div>
         </div>
     </main>
@@ -462,32 +643,27 @@
     <div class="modal fade" id="logInModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-small">
             <div class="modal-content br_10">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title" id="logInModalLabel">Вход</h5>
-                    <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="ms-auto btn p-0" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M6 6L18 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        </svg>                            
                     </button>
                 </div>
-                <div class="modal-body col-lg-7 mx-auto">
-                    <input class="form-control mb-3" type="tel" placeholder="Номер телефона">
-                    <div class="position-relative mb-3">
-                        <input class="form-control" type="password" placeholder="Пароль">
-                        <button class="btn p-0 position-absolute end-0 me-3 h-100 top-0">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.41268 9.41334C9.22958 9.60984 9.00878 9.76744 8.76345 9.87676C8.51812 9.98607 8.25328 10.0448 7.98474 10.0496C7.7162 10.0543 7.44946 10.0049 7.20042 9.90433C6.95139 9.80374 6.72516 9.65403 6.53525 9.46411C6.34533 9.27419 6.19561 9.04797 6.09502 8.79893C5.99443 8.5499 5.94503 8.28315 5.94977 8.01461C5.95451 7.74607 6.01329 7.48124 6.1226 7.23591C6.23191 6.99057 6.38952 6.76977 6.58602 6.58667M11.9593 11.96C10.8197 12.8287 9.43209 13.3099 7.99935 13.3333C3.33268 13.3333 0.666016 8.00001 0.666016 8.00001C1.49528 6.4546 2.64544 5.10441 4.03935 4.04001L11.9593 11.96ZM6.59935 2.82667C7.05824 2.71926 7.52806 2.66557 7.99935 2.66667C12.666 2.66667 15.3327 8.00001 15.3327 8.00001C14.928 8.75708 14.4454 9.46983 13.8927 10.1267L6.59935 2.82667Z" stroke="#3C3939" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M0.666016 0.666656L15.3327 15.3333" stroke="#3C3939" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
+                <div class="modal-body pt-0 col-lg-7 mx-auto text-center">
+                    <h5 class="modal-title mb-4" id="logInModalLabel">Вход</h5>
+                    <input class="form-control mb-3" type="email" placeholder="Введите Ваш e-mail">
+                    <div class="position-relative flex-fill mb-3">
+                        <input type="password" class="form-control" placeholder="Пароль" id="pass-inp">
+                        <button data-state="invisible" type="button" class="btn p-0 px-3 position-absolute end-0 top-0 bg-white h-100 pass_btn"></button>
                     </div>
                     <div class="form-check">
                         <input id="remPass" type="checkbox" class="form-check-input me-2">
                         <label for="remPass">Запомнить пароль</label>
                     </div>
                 </div>
-                <div class="modal-footer flex-column border-0">
+                <div class="modal-footer pb-5 flex-column border-0">
                     <button class="btn btn_1 px-5">Войти</button>
                     <button class="btn c_blue fw_5" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#passRecModal">Забыли пароль?</button>
                     <button class="btn c_blue fw_5" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signInModal">Зарегистрироваться</button>
@@ -523,20 +699,18 @@
     <div class="modal fade" id="signInModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-small">
             <div class="modal-content br_10">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title" id="signInModalLabel">Регистрация</h5>
-                    <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn p-0 ms-auto" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M6 6L18 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <input class="form-control" type="tel" placeholder="Номер телефона">
-                </div>
-                <div class="modal-footer flex-column border-0">
-                    <button class="btn btn_1 px-4 mb-4" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signIn2Modal">Продолжить</button>
+                <div class="modal-body col-lg-8 mx-auto text-center pt-0">
+                    <h5 class="modal-title mb-4" id="signInModalLabel">Регистрация</h5>
+                    <input class="form-control mb-4" type="email" placeholder="Введите Ваш e-mail">
+                    <button class="btn btn_1 px-4 w-100 mb-4" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signIn2Modal">Продолжить</button>
                     <p><span>У вас есть учетная запись?</span> <button class="btn p-0 c_blue border-0" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#logInModal">Войти</button></p>
                 </div>
             </div>
@@ -547,23 +721,23 @@
     <div class="modal fade" id="signIn2Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="signIn2ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-small">
             <div class="modal-content br_10">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title" id="signIn2ModalLabel">Подтвердите номер телефона</h5>
-                    <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close">
+                <div class="modal-header pb-0 border-0">
+                    <button type="button" class="btn p-0 ms-auto" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M6 6L18 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <p>В течение 2 минут вы получите смс с кодом подтверждения на номер <span>+7 917 123-45-67</span></p>
-                    <input class="form-control mb-1" type="text" placeholder="Код подтверждения">
-                    <button class="btn p-0 c_blue fw-normal">Получить новый код</button>
-                </div>
-                <div class="modal-footer flex-column border-0">
-                    <button class="btn btn_1 px-4 mb-3" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signIn3Modal">Подтвердить</button>
-                    <button class="btn btn-outline-2" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signInModal">Изменить номер</button>
+                <div class="modal-body pt-0 pb-5 text-center col-9 mx-auto">
+                    <h5 class="modal-title mb-3" id="signIn2ModalLabel">Подтвердите Вашу эл. почту</h5>
+                    <p>В течение 2 минут вы получите сообщение с кодом подтверждения на эл. почту <span>gavrilov@mail.ru</span></p>
+                    <input class="form-control mb-2" type="text" placeholder="Код подтверждения">
+                    <button class="btn d-flex p-0 c_blue fw-normal text-start w-auto mb-4">Получить новый код</button>
+                    <div>
+                        <button class="btn btn_1 px-4 mb-3 w-100" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signIn3Modal">Подтвердить</button>
+                        <button class="btn btn-outline-2 w-100" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signInModal">Изменить E-mail</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -573,29 +747,22 @@
     <div class="modal fade" id="signIn3Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="signIn3ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-small">
             <div class="modal-content br_10">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title" id="signIn3ModalLabel">Регистрация</h5>
-                    <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close">
+                <div class="modal-header pb-0 border-0">
+                    <button type="button" class="btn p-0 ms-auto" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M6 6L18 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body col-8 mx-auto text-center pt-0 pb-5">
+                    <h5 class="modal-title mb-3" id="signIn3ModalLabel">Регистрация</h5>
                     <input class="form-control mb-3" type="text" placeholder="Имя профиля">
-                    <div class="position-relative">
-                        <input class="form-control" type="password" placeholder="Придумайте пароль">
-                        <button class="btn p-0 position-absolute end-0 me-3 h-100 top-0">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.41268 9.41334C9.22958 9.60984 9.00878 9.76744 8.76345 9.87676C8.51812 9.98607 8.25328 10.0448 7.98474 10.0496C7.7162 10.0543 7.44946 10.0049 7.20042 9.90433C6.95139 9.80374 6.72516 9.65403 6.53525 9.46411C6.34533 9.27419 6.19561 9.04797 6.09502 8.79893C5.99443 8.5499 5.94503 8.28315 5.94977 8.01461C5.95451 7.74607 6.01329 7.48124 6.1226 7.23591C6.23191 6.99057 6.38952 6.76977 6.58602 6.58667M11.9593 11.96C10.8197 12.8287 9.43209 13.3099 7.99935 13.3333C3.33268 13.3333 0.666016 8.00001 0.666016 8.00001C1.49528 6.4546 2.64544 5.10441 4.03935 4.04001L11.9593 11.96ZM6.59935 2.82667C7.05824 2.71926 7.52806 2.66557 7.99935 2.66667C12.666 2.66667 15.3327 8.00001 15.3327 8.00001C14.928 8.75708 14.4454 9.46983 13.8927 10.1267L6.59935 2.82667Z" stroke="#3C3939" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M0.666016 0.666656L15.3327 15.3333" stroke="#3C3939" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
+                    <div class="position-relative flex-fill mb-4">
+                        <input type="password" class="form-control" placeholder="Придумайте пароль" id="pass-create">
+                        <button data-state="invisible" type="button" class="btn p-0 px-3 position-absolute end-0 top-0 bg-white h-100 pass_btn"></button>
                     </div>
-                </div>
-                <div class="modal-footer flex-column border-0">
-                    <button class="btn btn_1 px-4 mb-5">Продолжить</button>
+                    <button class="btn btn_1 px-4 mb-5 w-100">Продолжить</button>
                     <p><span>У вас есть учетная запись?</span> <button class="btn p-0 c_blue border-0" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#logInModal">Войти</button></p>
                 </div>
             </div>
@@ -605,13 +772,13 @@
     <!-- DELETE ACCOUNT Modal -->
     <div class="modal fade" id="deleteAccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteAccountLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-small">
-            <div class="modal-content text-center">
-                <div class="modal-header">
+            <div class="modal-content br_10 text-center">
+                <div class="modal-header pb-0">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body pb-5">
-                    <h5 class="modal-title mb-4" id="deleteAccountLabel">Вы уверены, что хотите удалить Вашу учетную запись</h5>
-                    <p>Все Ваши данные будут утеряны безвозвратно.</p>
+                <div class="modal-body pt-0 pb-5">
+                    <h5 class="modal-title mb-3" id="deleteAccountLabel">Вы уверены, что хотите удалить Вашу учетную запись?</h5>
+                    <p class="mb-4">Все Ваши данные будут утеряны безвозвратно.</p>
                     <button type="button" class="btn px-4 btn-danger">Удалить</button>
                 </div>
             </div>
@@ -621,12 +788,12 @@
     <!-- DELETE PROPOSAL Modal -->
     <div class="modal fade" id="deleteProposal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteProposalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-small">
-            <div class="modal-content text-center br_10 py-4">
-                <div class="modal-header px-lg-5 c-black">
-                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content text-center br_10">
+                <div class="modal-header pb-0 c-black">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body pb-5">
-                    <h5 class="modal-title mb-4" id="deleteProposalLabel">Вы уверены, что хотите удалить Ваше предложение?</h5>
+                <div class="modal-body pt-0 pb-5">
+                    <h5 class="modal-title mb-4" id="deleteProposalLabel">Вы уверены, что хотите удалить Ваше предложение?</h5>
                     <button type="button" class="btn px-4 btn-danger">Удалить</button>
                 </div>
             </div>
@@ -636,12 +803,12 @@
     <!-- DELETE ANNOUNCEMENT Modal -->
     <div class="modal fade" id="deleteAnnouncement" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteAnnouncementLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-small">
-            <div class="modal-content text-center br_10 py-4">
-                <div class="modal-header px-lg-5 c-black">
-                    <h5 class="modal-title" id="deleteAnnouncementLabel">Вы уверены, что хотите удалить Ваше объявление?</h5>
-                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content text-center br_10">
+                <div class="modal-header pb-0 c-black">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body pt-0 pb-5">
+                    <h5 class="modal-title mb-4" id="deleteAnnouncementLabel">Вы уверены, что хотите удалить Ваше объявление?</h5>
                     <button type="button" class="btn px-4 btn-danger">Удалить</button>
                 </div>
             </div>
