@@ -1,3 +1,7 @@
+$(".search_trigger").on('click', function() {
+    $(".search_block").removeClass('d-none')
+});
+
 // write review on user page
 $(".write-review-btn").on('click', function() {
     $(".write-review-btn").prop('disabled', 'true');
@@ -48,13 +52,6 @@ $elem.on('click', () => {
     $elem2.toggleClass('d-none', numOfClicks % 2 !== 0);
 });
 
-/* adding new parametres inputs */
-function addInput(elem) {
-    let cloneInput = elem.previousElementSibling.cloneNode(true);
-    elem.before(cloneInput);
-}
-
-
 /* password button state change */
 let passBtn = Array.from(document.querySelectorAll('.pass_btn'));
 passBtn.forEach(function(item, i, arr) {
@@ -96,13 +93,6 @@ document.addEventListener('click', function(e) {
     if (!currentDiv && !currentBtn) {
         closeDiv(item);
     }
-});
-
-// forum page show topic description
-$('.btn_desc').on('click', function() {
-    $(this).addClass('d-none');
-    $(this).next(".topic_link").removeClass('d-none');
-    $(this).closest(".br_10").children(".topic_desc").removeClass('d-none');
 });
 
 /* выбор полей через селект */

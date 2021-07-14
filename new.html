@@ -31,25 +31,25 @@
 </head>
 
 <body>
+
     <!-- HEADER -->
-    <header class="py-4 fs-20">
-        <div class="container">
+    <header class="position-relative">
+        <div class="container py-4 fs-5">
             <nav class="d-flex flex-wrap align-items-center position-relative">
                 <!-- расположение -->
-                <a href="" class="me-4">
+                <button data-bs-toggle="modal" data-bs-target="#cityModal" class="me-4">
                     <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 7.33331L14.6667 1.33331L8.66667 14L7.33333 8.66665L2 7.33331Z" fill="#FF6600" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>Казань<svg class="ms-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 6L8 10L12 6" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                </a>
-                <!-- меню -->
-                <a href="" class="me-auto">
+                </button>
+
+                <!-- форум -->
+                <a href="forum.html" class="me-auto">
                     <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 12H21" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3 6H21" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3 18H21" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg><span>Меню</span>
+                        <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg><span>Форум</span>
                 </a>
                 <!-- logo -->
                 <a title="Главная страница" class="position-absolute top-50 start-50 translate-middle" href="index.html">
@@ -63,37 +63,69 @@
                     </svg>
                 </a>
                 <!-- search -->
-                <a href="search.html">
+                <button class="btn p-0 search_trigger">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M21 21L16.65 16.65" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                </a>
+                </button>
                 <!-- messages -->
-                <a class="ms-4" title="Сообщения" href="messages.html">
+                <a class="ms-4" title="Сообщения" href="account.html">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M22 6L12 13L2 6" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                 <!-- favorites -->
-                <a href="favorites.html" class="mx-4 me-5">
+                <a href="account.html" class="mx-4 me-5">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.84 4.60999C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.60999L12 5.66999L10.94 4.60999C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.60999C2.1283 5.64169 1.54871 7.04096 1.54871 8.49999C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.49999C22.4518 7.77751 22.3095 7.0621 22.0329 6.39464C21.7563 5.72718 21.351 5.12075 20.84 4.60999V4.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                 <!-- login and signin -->
                 <button class="d-flex align-items-center btn p-0" data-bs-toggle="modal" data-bs-target="#logInModal">
-                    <span class="d-none d-md-block">Вход/регистрация</span>
+                    <span class="fs-5 fw-normal">Вход/регистрация</span>
                     <svg class="ms-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M10 17L15 12L10 7" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M15 12H3" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
+                <!-- authorized user -->
+                <a href="account.html" class="d-none d-flex align-items-center fs-5">
+                    <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Геннадий С.</span>
+                </a>
             </nav>
         </div>
+
+
     </header>
+
+    <div class="search_block col-10 mx-auto d-none py-4 position-sticky start-0 end-0 bg-white zi_20">
+        <div class="mx-lg-auto col-xl-10 d-flex">
+            <div class="input-group main-search-group flex-row me-3">
+                <select class="form-select" aria-label="Выбор категории">
+                <option value="Любая категория" selected>Любая категория</option>
+                <option value="Спецтехника">Спецтехника</option>
+                <option value="Инструменты">Инструменты</option>
+                <option value="Материалы">Материалы</option>
+            </select>
+                <input type="text" class="form-control" placeholder="Поиск по предложениям...">
+                <button class="form-select text-start" data-bs-toggle="modal" data-bs-target="#searchModal">Радиус, метро, район</button>
+                <button class="btn btn_1 px-4 mb-2 mb-md-0">Найти</button>
+            </div>
+            <button class="btn btn_2 text-body flex-shrink-0">
+                <svg class="me-2" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.125 6.66669C13.125 11.3334 7.5 15.3334 7.5 15.3334C7.5 15.3334 1.875 11.3334 1.875 6.66669C1.875 5.07539 2.46763 3.54926 3.52252 2.42405C4.57742 1.29883 6.00816 0.666687 7.5 0.666687C8.99184 0.666687 10.4226 1.29883 11.4775 2.42405C12.5324 3.54926 13.125 5.07539 13.125 6.66669Z" stroke="#FF6600" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 8.66669C8.53553 8.66669 9.375 7.77126 9.375 6.66669C9.375 5.56212 8.53553 4.66669 7.5 4.66669C6.46447 4.66669 5.625 5.56212 5.625 6.66669C5.625 7.77126 6.46447 8.66669 7.5 8.66669Z" stroke="#FF6600" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>Показать на карте
+            </button>
+        </div>
+    </div>
 
     <!-- MAIN -->
     <main class="container py-5">
@@ -167,6 +199,42 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- CITY CHOOSE -->
+    <div class="modal fade" id="cityModal" tabindex="-1" aria-labelledby="cityModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-small">
+            <div class="modal-content br_10">
+                <div class="modal-header pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pt-0">
+                    <h5 class="modal-title mb-3" id="cityModalLabel">Выберите город</h5>
+                    <div class="position-relative">
+                        <input class="form-control mb-4" type="text" placeholder="Ваш город">
+                        <button class="btn end-0 position-absolute top-0">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="#3C3939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </button>
+                    </div>
+                    <p class="c_gray">По Вашему запросу ничего не найдено</p>
+                    <div class="d-flex flex-column align-items-start fw-normal">
+                        <button class="btn p-0 fw-normal c-accent mb-2">Москва</button>
+                        <button class="btn p-0 fw-normal mb-2">Санкт-Петербург</button>
+                        <button class="btn p-0 fw-normal mb-2">Казань</button>
+                        <button class="btn p-0 fw-normal mb-2">Нижний Новгород</button>
+                        <button class="btn p-0 fw-normal mb-2">Пермь</button>
+                        <button class="btn p-0 fw-normal mb-2">Ижевск</button>
+                        <button class="btn p-0 fw-normal mb-2">Новосибирск</button>
+                        <button class="btn p-0 fw-normal mb-2">Ростов-на-Дону</button>
+                        <button class="btn p-0 fw-normal mb-2">Самара</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- SEARCH MODAL -->
     <div class="modal fade" id="searchModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
@@ -379,7 +447,7 @@
                     <input class="form-control mb-3" type="email" placeholder="Введите Ваш e-mail">
                     <div class="position-relative flex-fill mb-3">
                         <input type="password" class="form-control" placeholder="Пароль" id="pass-inp">
-                        <button data-state="invisible" type="button" class="btn p-0 px-3 position-absolute end-0 top-0 bg-white h-100 pass_btn"></button>
+                        <button data-state="invisible" type="button" class="btn p-0 px-3 position-absolute end-0 top-0 h-100 pass_btn"></button>
                     </div>
                     <div class="form-check">
                         <input id="remPass" type="checkbox" class="form-check-input me-2">
@@ -500,7 +568,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body pt-0 pb-5">
-                    <h5 class="modal-title mb-3" id="deleteAccountLabel">Вы уверены, что хотите удалить Вашу учетную запись?</h5>
+                    <h5 class="modal-title lh-sm mb-3" id="deleteAccountLabel">Вы уверены, что хотите удалить Вашу учетную запись?</h5>
                     <p class="mb-4">Все Ваши данные будут утеряны безвозвратно.</p>
                     <button type="button" class="btn px-4 btn-danger">Удалить</button>
                 </div>
@@ -511,12 +579,12 @@
     <!-- DELETE PROPOSAL Modal -->
     <div class="modal fade" id="deleteProposal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteProposalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-small">
-            <div class="modal-content text-center br_10">
-                <div class="modal-header pb-0 c-black">
-                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content text-center br_10 py-4">
+                <div class="modal-header px-lg-5 c-black">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body pt-0 pb-5">
-                    <h5 class="modal-title mb-4" id="deleteProposalLabel">Вы уверены, что хотите удалить Ваше предложение?</h5>
+                <div class="modal-body pb-5">
+                    <h5 class="modal-title lh-sm mb-4" id="deleteProposalLabel">Вы уверены, что хотите удалить Ваше предложение?</h5>
                     <button type="button" class="btn px-4 btn-danger">Удалить</button>
                 </div>
             </div>
@@ -526,17 +594,115 @@
     <!-- DELETE ANNOUNCEMENT Modal -->
     <div class="modal fade" id="deleteAnnouncement" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteAnnouncementLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-small">
-            <div class="modal-content text-center br_10">
-                <div class="modal-header pb-0 c-black">
-                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content text-center br_10 py-4">
+                <div class="modal-header px-lg-5 c-black">
+                    <h5 class="modal-title lh-sm" id="deleteAnnouncementLabel">Вы уверены, что хотите удалить Ваше объявление?</h5>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body pt-0 pb-5">
-                    <h5 class="modal-title mb-4" id="deleteAnnouncementLabel">Вы уверены, что хотите удалить Ваше объявление?</h5>
+                <div class="modal-body">
                     <button type="button" class="btn px-4 btn-danger">Удалить</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- EMAIL VERIFICATION -->
+    <div class="modal fade" id="emailVerificationModal" tabindex="-1" aria-labelledby="emailVerificationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-small">
+            <div class="modal-content text-center br_10">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-0 fs_14 c_black">
+                    <p>Операция выполнена успешно. На ваш электронный адрес отправлено письмо.</p>
+                    <p class="m-2">Проверьте свою почту для подтверждения вашего электронного адреса.</p>
+                </div>
+                <div class="modal-footer justify-content-center pb-4 border-0">
+                    <button type="button" class="btn btn_1" data-bs-dismiss="modal">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADD ANSWER -->
+    <div class="modal fade" id="addAnswer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addAnswerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content br_10 py-4">
+                <div class="modal-header px-lg-5 c-black">
+                    <h5 class="modal-title" id="addAnswerLabel">Рухнула дорога на улице Шоссейная</h5>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-lg-5">
+                    <textarea rows="8" class="form-control mb-4" placeholder="Начните вводить текст..."></textarea>
+                    <button type="button" class="btn btn_1">Добавить ответ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ANSWER TO ANSWER -->
+    <div class="modal fade" id="answerToAnswer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="answerToAnswerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content br_10 py-4">
+                <div class="modal-header px-lg-5 c-black">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-lg-5">
+                    <h6 class="modal-title mb-2" id="answerToAnswerLabel">Евгения Ф.</h6>
+                    <blockquote class="fst-italic">Противоположная точка зрения подразумевает, что действия представителей оппозиции, которые представляют собой яркий пример континентально-европейского типа политической культуры.</blockquote>
+                    <div class="text-end mb-4 ms-auto">
+                        <button class="text-danger btn p-0">Удалить цитату</button></div>
+                    <textarea rows="8" class="form-control mb-4" placeholder="Начните вводить текст..."></textarea>
+                    <button type="button" class="btn btn_1">Добавить ответ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADD NEW TOPIC -->
+    <div class="modal fade" id="addTopic" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addTopicLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content br_10 py-4">
+                <div class="modal-header px-lg-5 c-black">
+                    <h5 class="modal-title" id="addTopicLabel">Новая тема</h5>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-lg-5">
+                    <input type="text" class="form-control mb-3" placeholder="Название темы">
+
+                    <div class="img-upload d-flex flex-column mb-4">
+
+                        <div class="d-flex justify-content-between mb-4">
+                            <div class="fs-5">Загрузите фотографию:</div>
+                            <div class="img-upload">
+                                <div class="position-relative">
+                                    <input type="file" class="w-100 h-100">
+                                    <svg class="me-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 5V19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M5 12H19" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="img-drop position-relative rounded-3 border align-self-start">
+                            <input type="file" class="top-0 start-0 w-100 h-100">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" transform="translate(24) rotate(90)" fill="white"/>
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10L12 15L17 10" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15V3" stroke="#4DA9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <textarea rows="8" class="form-control mb-4" placeholder="Опишите тему подробнее..."></textarea>
+                    <button type="button" class="btn btn_1">Добавить тему</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- scripts -->
     <script src="js/jquery-3.6.0.min.js"></script>

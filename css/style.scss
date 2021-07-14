@@ -33,6 +33,11 @@ body {
 
 header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.search_block {
+    z-index: 9;
 }
 
 .z-index-10 {
@@ -213,12 +218,6 @@ header {
         &:focus {
             color: $accent;
         }
-    }
-}
-
-.popular-list {
-    .h6 {
-        line-height: 20px !important;
     }
 }
 
@@ -466,9 +465,6 @@ a {
     font-weight: 500;
     white-space: nowrap;
     border-radius: 10px;
-    &-sm {
-        padding: 10px 16px;
-    }
     &_1 {
         background-color: $accent;
         color: $white;
@@ -515,9 +511,12 @@ a {
         }
     }
     &-lg {
-        padding: 12px 32px 14px 32px;
+        padding: 13px 32px 13px 32px;
         line-height: 1em;
         font-size: 20px;
+    }
+    &-sm {
+        padding: 11px 16px;
     }
     &-white {
         background-color: $white;
@@ -540,6 +539,75 @@ a {
         color: $primary;
         padding: 6px 0 6px 32px;
         background: url('../images/icons/trash.svg') no-repeat left center;
+    }
+    &_del_photo {
+        background: url(../images/icons/del_photo.svg) no-repeat center;
+        background-size: contain;
+    }
+}
+
+// add parametres to proposal
+.dynamic-fieldset {
+    .fieldset-clone {
+        &:last-child {
+            display: none;
+        }
+        .btn-delete {
+            padding: 0;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            border: none;
+            padding: 0px;
+            background: none;
+            cursor: pointer;
+            svg {
+                width: 24px;
+                height: 24px;
+                fill: none;
+                path {
+                    stroke: #3C3939;
+                    stroke-width: 2px;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+            }
+            &:hover svg path,
+            &:focus svg path {
+                stroke: $accent;
+            }
+            &:active svg path {
+                stroke: $danger;
+            }
+        }
+    }
+    .btn-add {
+        border: 0;
+        padding: 0px;
+        background: none;
+        color: $accent;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: none;
+            margin-right: .5em;
+            path {
+                stroke: currentColor;
+                stroke-width: 2px;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            color: $danger;
+            cursor: pointer;
+        }
     }
 }
 
@@ -701,10 +769,6 @@ img {
     }
 }
 
-span.checked {
-    color: $yellow;
-}
-
 input[type=date] {
     background-color: $white;
     background-repeat: no-repeat;
@@ -800,6 +864,7 @@ input[type=date] {
     >div {
         background-color: $white;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        overflow: visible;
         &.unread {
             background-color: rgba($accent, 0.05);
             box-shadow: none;
@@ -814,6 +879,21 @@ input[type=date] {
         }
         button {
             z-index: 3;
+            position: relative;
+            &:hover {
+                &::before {
+                    content: 'Удалить переписку';
+                    padding: 4px 16px;
+                    color: $danger;
+                    background-color: $white;
+                    border-radius: 10px;
+                    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+                    position: absolute;
+                    top: -32px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
         }
     }
     .rounded-circle {
