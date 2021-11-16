@@ -34,10 +34,10 @@
 
     <!-- HEADER -->
     <header class="position-relative">
-        <div class="container py-4 fs-5">
+        <div class="container py-sm-4 fs-5">
             <nav class="d-flex flex-wrap align-items-center position-relative">
                 <!-- расположение -->
-                <button data-bs-toggle="modal" data-bs-target="#cityModal" class="me-4">
+                <button data-bs-toggle="modal" data-bs-target="#cityModal" class="p-0 me-2 me-sm-4">
                     <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 7.33331L14.6667 1.33331L8.66667 14L7.33333 8.66665L2 7.33331Z" fill="#FF6600" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>Казань<svg class="ms-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,10 +49,11 @@
                 <a href="forum.html" class="me-auto">
                     <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg><span>Форум</span>
+                    </svg>
+                    <span class="d-none d-md-inline">Форум</span>
                 </a>
                 <!-- logo -->
-                <a title="Главная страница" class="position-absolute top-50 start-50 translate-middle" href="index.html">
+                <a title="Главная страница" class="logo position-absolute top-50 start-50 translate-middle" href="index.html">
                     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.5599 49.201C20.3466 49.121 20.1333 49.0144 19.9466 48.8277C19.6266 48.5077 19.4666 48.1344 19.4666 47.7077V33.8144C19.4933 33.3877 19.6533 33.0144 19.9466 32.6944C20.1333 32.5077 20.3466 32.401 20.5599 32.321V31.9744H19.4666H19.3866H15.7599H15.6799H14.2666V32.241C14.6133 32.2944 14.9333 32.4277 15.1733 32.6944C15.4933 33.0144 15.6533 33.3877 15.6533 33.8144V47.7077C15.6266 48.1344 15.4666 48.5077 15.1733 48.8277C14.9066 49.0944 14.6133 49.2277 14.2666 49.281V49.5477H15.6799H15.7599H19.3599H19.4666H20.5599V49.201Z" fill="black"/>
                         <path d="M36.2396 31.9733L30.9062 44.2133L26.6396 33.84C26.4529 33.3333 26.4796 32.96 26.7196 32.6667C26.9329 32.4267 27.1729 32.2933 27.4396 32.2667V32H20.5596V32.32C20.7729 32.3733 20.9862 32.48 21.2262 32.6133C21.6262 32.8533 21.9729 33.2533 22.2396 33.84L29.5196 49.5467L30.1062 49.52C30.1062 49.52 31.1729 46.88 31.2262 46.7733L38.1329 31.9733H36.2396Z" fill="black"/>
@@ -70,21 +71,21 @@
                     </svg>
                 </button>
                 <!-- messages -->
-                <a class="ms-4" title="Сообщения" href="account.html">
+                <a class="d-flex ms-2 ms-sm-4" title="Сообщения" href="account.html">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M22 6L12 13L2 6" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                 <!-- favorites -->
-                <a href="account.html" class="mx-4 me-5">
+                <a href="account.html" class="d-flex mx-2 mx-sm-4 me-md-5">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.84 4.60999C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.60999L12 5.66999L10.94 4.60999C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.60999C2.1283 5.64169 1.54871 7.04096 1.54871 8.49999C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.49999C22.4518 7.77751 22.3095 7.0621 22.0329 6.39464C21.7563 5.72718 21.351 5.12075 20.84 4.60999V4.60999Z" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                 <!-- login and signin -->
                 <button class="d-flex align-items-center btn p-0" data-bs-toggle="modal" data-bs-target="#logInModal">
-                    <span class="fs-5 fw-normal">Вход/регистрация</span>
+                    <span class="fs-5 fw-normal d-none d-lg-inline">Вход/регистрация</span>
                     <svg class="ms-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M10 17L15 12L10 7" stroke="#FF6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -129,7 +130,7 @@
 
     <!-- MAIN -->
     <main>
-        <nav class="container mx-auto d-none d-md-block">
+        <nav class="container mx-auto">
             <div class="mx-auto nav nav-tabs text-body position-absolute border-0 py-4" style="z-index: 30;" id="nav-tab" role="tablist">
                 <button class="switch active position-relative me-3 mb-4 active" id="customer-tab" data-bs-toggle="tab" data-bs-target="#customer" type="button" role="tab" aria-controls="customer" aria-selected="true">Заказчикам</button>
                 <button class="switch position-relative mb-4" id="implementer-tab" data-bs-toggle="tab" data-bs-target="#implementer" type="button" role="tab" aria-controls="implementer" aria-selected="false">Исполнителям</button>
@@ -139,7 +140,7 @@
             <!-- ЗАКАЗЧИКАМ -->
             <article class="tab-pane show active" id="customer" role="tabpanel" aria-labelledby="customer-tab">
                 <section class="position-relative py-5">
-                    <div class="container d-flex flex-column justify-content-center pb-5">
+                    <div class="container d-flex flex-column justify-content-center pb-sm-5">
                         <div class="d-flex  mx-auto align-items-center mb-3">
                             <div>
                                 <img class="w-100" src="images/img/hero-img-1.png" alt="">
@@ -151,7 +152,7 @@
                                 <img class="w-100" src="images/img/hero-img-2.png" alt="">
                             </div>
                         </div>
-                        <div class="mx-lg-auto col-xl-10 d-flex">
+                        <div class="mx-lg-auto col-xl-10 d-lg-flex">
                             <div class="input-group main-search-group flex-row me-3">
                                 <select class="form-select" aria-label="Выбор категории">
                                     <option value="Любая категория" selected>Любая категория</option>
@@ -161,20 +162,21 @@
                                 </select>
                                 <input type="text" class="form-control" placeholder="Поиск по предложениям...">
                                 <button class="form-select text-start" data-bs-toggle="modal" data-bs-target="#searchModal">Радиус, метро, район</button>
-                                <button class="btn btn_1 px-4 mb-2 mb-md-0">Найти</button>
+                                <button class="btn btn_1 px-4">Найти</button>
                             </div>
-                            <button class="btn btn_2 text-body flex-shrink-0">
+                            <button  class="btn btn_2 text-body flex-shrink-0 d-block mx-auto mx-lg-0 mt-3 mt-lg-0">
                                 <svg class="me-2" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.125 6.66669C13.125 11.3334 7.5 15.3334 7.5 15.3334C7.5 15.3334 1.875 11.3334 1.875 6.66669C1.875 5.07539 2.46763 3.54926 3.52252 2.42405C4.57742 1.29883 6.00816 0.666687 7.5 0.666687C8.99184 0.666687 10.4226 1.29883 11.4775 2.42405C12.5324 3.54926 13.125 5.07539 13.125 6.66669Z" stroke="#FF6600" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M7.5 8.66669C8.53553 8.66669 9.375 7.77126 9.375 6.66669C9.375 5.56212 8.53553 4.66669 7.5 4.66669C6.46447 4.66669 5.625 5.56212 5.625 6.66669C5.625 7.77126 6.46447 8.66669 7.5 8.66669Z" stroke="#FF6600" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>Показать на карте
+                                </svg>
+                                Показать на карте
                             </button>
                         </div>
                     </div>
                 </section>
 
                 <!-- список категорий -->
-                <section class="categories-list container pb-5 d-none d-md-block">
+                <section class="categories-list container pb-5">
                     <ul class="fs-20 list-unstyled fw_5 text-decoration-none text-center row row-cols-1 row-cols-sm-3 row-cols-xxl-3 g-3 g-sm-3 g-xxl-5 text-white col-xl-10 mx-auto">
                         <li>
                             <a class="shad_box p-3 py-lg-4 h-100 d-flex flex-column align-items-center" href="search.html">
@@ -192,7 +194,7 @@
                                     </clipPath>
                                     </defs>
                                 </svg>
-                                <span class="mt-4">Техника</span>
+                                <span class="mt-3 mt-md-4">Техника</span>
                             </a>
                         </li>
                         <li>
@@ -214,7 +216,7 @@
                                     </clipPath>
                                     </defs>
                                 </svg>
-                                <span class="mt-4">Инструменты</span>
+                                <span class="mt-3 mt-md-4">Инструменты</span>
                             </a>
                         </li>
                         <li>
@@ -230,7 +232,7 @@
                                     </clipPath>
                                     </defs>
                                 </svg>
-                                <span class="mt-4">Материалы</span>
+                                <span class="mt-3 mt-md-4">Материалы</span>
                             </a>
                         </li>
                     </ul>
@@ -239,11 +241,11 @@
                 <!-- AUCTION SECTION -->
                 <section class="auction bg-gray text-center py-5">
                     <div class="container position-relative">
-                        <div class="row row-cols-2 align-items-center">
+                        <div class="row row-cols-md-2 align-items-center">
                             <div class="mh-100">
                                 <img class="mw-100" alt="" src="images/img/auction.png" loading="lazy">
                             </div>
-                            <div class="py-5 auction-text">
+                            <div class="py-lg-5 auction-text">
                                 <h2 class="d-none d-sm-block mb-4 mt-5">Аукцион</h2>
                                 <h5 class="mb-2 mb-lg-4">Вы не нашли подходящего исполнителя?</h5>
                                 <p class="col-xl-10 mx-auto mb-5">И нет сомнений, что некоторые особенности внутренней политики являются только методом политического участия и объединены в целые кластеры себе подобных. Кстати, базовые сценарии поведения пользователей лишь добавляют фракционных
@@ -258,21 +260,17 @@
                 <section class="find-on-map container py-5">
                     <h2 class="mb-3">Найти на карте</h2>
                     <p class="mb-4 col-xl-10">А также стремящиеся вытеснить традиционное производство, нанотехнологии являются только методом политического участия и смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности</p>
-                    <div class="input-group align-items-center shad_box z-index-10">
-                        <div class="col-2 col-lg-3 col-xxl-2 d-none d-md-block">
-                            <select class="form-select" aria-label="Выбор категории">
-                                <option selected>Любая категория</option>
-                                <option value="Спецтехника">Спецтехника</option>
-                                <option value="Инструменты">Инструменты</option>
-                                <option value="Материалы">Материалы</option>
-                            </select>
-                        </div>
+                    <div class="input-group shad_box z-index-10">
+                        <select class="form-select" aria-label="Выбор категории">
+                            <option selected>Любая категория</option>
+                            <option value="Спецтехника">Спецтехника</option>
+                            <option value="Инструменты">Инструменты</option>
+                            <option value="Материалы">Материалы</option>
+                        </select>
                         <input type="text" class="form-control" placeholder="Поиск по предложениям...">
-                        <div class="col-2 col-lg-3 col-xxl-2 d-none d-md-block">
-                            <button class="form-select text-start" data-bs-toggle="modal" data-bs-target="#searchModal">Радиус, метро, район</button>
-                        </div>
+                        <button class="form-select text-start" data-bs-toggle="modal" data-bs-target="#searchModal">Радиус, метро, район</button>
                         <button class="btn btn_1 px-4">
-                            <span class="d-none d-lg-block">Показать на карте</span>
+                            <span>Показать на карте</span>
                         </button>
                     </div>
                     <!-- map -->
@@ -284,7 +282,7 @@
                 <!-- POPULAR PROPOSAL SECTION -->
                 <section class="bg-gray py-5">
                     <div class="container py-xl-5">
-                        <div class="d-flex flex-column flex-xl-row justify-content-between align-items-xl-center mb-5">
+                        <div class="d-flex flex-column flex-xl-row justify-content-between align-items-xl-center mb-4 mb-md-5">
                             <h2 class="flex-fill mb-4 mb-xl-0">Популярные предложения</h2>
                             <!-- filter -->
                             <div class="d-flex pop-cat-tabs py-3 py-md-0">
@@ -299,13 +297,13 @@
                             </div>
                         </div>
                         <!-- cards -->
-                        <div class="row row-cols-4 row-cols-xxl-6 g-3 g-xxl-4 mb-5 text-center">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-6 g-2 g-sm-3 g-xxl-4 mb-4 mb-sm-5 text-center">
                             <!-- card -->
                             <div>
                                 <div class="card">
                                     <button class="btn-fav btn-i" data-bs-toggle="button"></button>
                                     <div class="img">
-                                        <img src="https://seanews.ru/wp-content/uploads/2020/09/glavnaja.jpg" alt="">
+                                        <img src="images/img/new.jpeg" alt="">
                                     </div>
                                     <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
                                         <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
@@ -330,7 +328,7 @@
                                 <div class="card">
                                     <button class="btn-fav btn-i" data-bs-toggle="button"></button>
                                     <div class="img">
-                                        <img src="https://os1.ru/article/6852-dva-vzglyada-na-obsledovanie-konstruktsii-strelovogo-krana-chto-proveryat/Images/01.jpg" alt="">
+                                        <img src="images/img/new.jpeg" alt="">
                                     </div>
                                     <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
                                         <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Эвакуатор до 5 т</a>
@@ -355,7 +353,7 @@
                                 <div class="card">
                                     <button class="btn-fav btn-i" data-bs-toggle="button"></button>
                                     <div class="img">
-                                        <img src="https://www.cmz.ru/upload/resize_cache/iblock/6f9/1200_1200_1/dsc_0092.jpg" alt="#">
+                                        <img src="images/img/new.jpeg" alt="#">
                                     </div>
                                     <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
                                         <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Китайские вилочные погрузчики</a>
@@ -372,7 +370,7 @@
                                 <div class="card">
                                     <button class="btn-fav btn-i" data-bs-toggle="button"></button>
                                     <div class="img">
-                                        <img src="https://seanews.ru/wp-content/uploads/2020/09/glavnaja.jpg" alt="">
+                                        <img src="images/img/new.jpeg" alt="">
                                     </div>
                                     <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
                                         <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
@@ -397,7 +395,7 @@
                                 <div class="card">
                                     <button class="btn-fav btn-i" data-bs-toggle="button"></button>
                                     <div class="img">
-                                        <img src="https://os1.ru/article/6852-dva-vzglyada-na-obsledovanie-konstruktsii-strelovogo-krana-chto-proveryat/Images/01.jpg" alt="">
+                                        <img src="images/img/new.jpeg" alt="">
                                     </div>
                                     <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
                                         <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Эвакуатор до 5 т</a>
@@ -422,7 +420,7 @@
                                 <div class="card">
                                     <button class="btn-fav btn-i" data-bs-toggle="button"></button>
                                     <div class="img">
-                                        <img src="https://www.cmz.ru/upload/resize_cache/iblock/6f9/1200_1200_1/dsc_0092.jpg" alt="#">
+                                        <img src="images/img/new.jpeg" alt="#">
                                     </div>
                                     <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
                                         <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Китайские вилочные погрузчики</a>
@@ -439,7 +437,7 @@
                                 <div class="card">
                                     <button class="btn-fav btn-i" data-bs-toggle="button"></button>
                                     <div class="img">
-                                        <img src="https://seanews.ru/wp-content/uploads/2020/09/glavnaja.jpg" alt="">
+                                        <img src="images/img/new.jpeg" alt="">
                                     </div>
                                     <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
                                         <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Экскаватор-погрузчик с гидромолотом</a>
@@ -464,7 +462,7 @@
                                 <div class="card">
                                     <button class="btn-fav btn-i" data-bs-toggle="button"></button>
                                     <div class="img">
-                                        <img src="https://os1.ru/article/6852-dva-vzglyada-na-obsledovanie-konstruktsii-strelovogo-krana-chto-proveryat/Images/01.jpg" alt="">
+                                        <img src="images/img/new.jpeg" alt="">
                                     </div>
                                     <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
                                         <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Эвакуатор до 5 т</a>
@@ -489,7 +487,7 @@
                                 <div class="card">
                                     <button class="btn-fav btn-i" data-bs-toggle="button"></button>
                                     <div class="img">
-                                        <img src="https://www.cmz.ru/upload/resize_cache/iblock/6f9/1200_1200_1/dsc_0092.jpg" alt="#">
+                                        <img src="images/img/new.jpeg" alt="#">
                                     </div>
                                     <div class="card-body d-flex flex-column align-items-center p-2 pb-3 p-xl-3">
                                         <a class="card-title stretched-link c_blue fw_5 m-auto" href="proposal.html">Китайские вилочные погрузчики</a>
@@ -512,8 +510,8 @@
             <!-- ИСПОЛНИТЕЛЯМ -->
             <article class="tab-pane" id="implementer" role="tabpanel" aria-labelledby="implementer-tab">
                 <section class="position-relative py-5 mb-5 main-2">
-                    <div class="container py-5 my-4">
-                        <div class="col-9 col-xl-6 col-xxl-5 c-black">
+                    <div class="container pt-5 py-md-5 my-md-4">
+                        <div class="col-md-9 col-xl-6 col-xxl-5 c-black">
                             <h2 class="mb-4">Хотите стать исполнителем?</h2>
                             <p class="fs-5 mb-5">Разнообразный и богатый опыт говорит нам, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует повышению качества приоритизации разума над эмоциями. </p>
                         </div>
@@ -523,15 +521,17 @@
 
                 <!-- аукцион объявлений -->
                 <section class="auction container pt-5">
-                    <div class="d-flex flex-wrap flex-lg-nowrap justify-content-between align-items-center mb-5">
-                        <h2 class="mb-0 me-auto">Аукцион объявлений</h2>
-                        <select class="form-select fs-5 border-0 w-auto me-2">
-                            <option value="Любая категория" selected>Любая категория</option>
-                            <option value="Спецтехника">Спецтехника</option>
-                            <option value="Инструменты">Инструменты</option>
-                            <option value="Материалы">Материалы</option>
-                        </select>
-                        <button class="form-select text-start fs-5 border-0 w-auto" data-bs-toggle="modal" data-bs-target="#searchModal">Радиус, метро, район</button>
+                    <div class="d-lg-flex justify-content-between align-items-center mb-4 mb-sm-5">
+                        <h2 class="mb-3 mb-sm-4 mb-lg-0 me-auto">Аукцион объявлений</h2>
+                        <div class="d-sm-flex">
+                            <select class="form-select fs-5 border-0 w-auto me-2">
+                                <option value="Любая категория" selected>Любая категория</option>
+                                <option value="Спецтехника">Спецтехника</option>
+                                <option value="Инструменты">Инструменты</option>
+                                <option value="Материалы">Материалы</option>
+                            </select>
+                            <button class="form-select text-start fs-5 border-0 w-auto" data-bs-toggle="modal" data-bs-target="#searchModal">Радиус, метро, район</button>
+                        </div>
                     </div>
                     <div class="container">
                         <!-- объявление -->
@@ -684,11 +684,11 @@
             <div class="row mx-0 mb-4">
 
                 <!-- new preview -->
-                <div class="d-flex mb-4">
-                    <div class="col-4 col-xl-3">
+                <div class="d-md-flex mb-4">
+                    <div class="col-md-4 col-xl-3">
                         <img class="br_10 w-100" src="https://randomwordgenerator.com/img/picture-generator/57e8d5474e54ab14f1dc8460962e33791c3ad6e04e507440752f78d0964bc2_640.jpg" alt="" loading="lazy">
                     </div>
-                    <div class="col-7 ps-md-3 ps-xl-4 d-flex flex-column">
+                    <div class="col-md-8 col-lg-7 ps-md-3 ps-xl-4 d-flex flex-column">
                         <time class="c_gray mb-auto" datetime="2021-03-31">31.03.21</time>
                         <a href="new.html" class="h5 mb-3">Как определить лучшего исполнителя</a>
                         <div class="mb-3">Есть над чем задуматься: сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и объективно рассмотрены соответствующими инстанциями. В своём стремлении повысить качество жизни, они забывают, что высокотехнологичная
@@ -699,11 +699,11 @@
                 </div>
 
                 <!-- new preview -->
-                <div class="d-flex mb-4">
-                    <div class="col-4 col-xl-3">
+                <div class="d-md-flex mb-4">
+                    <div class="col-md-4 col-xl-3">
                         <img class="br_10 w-100" src="https://randomwordgenerator.com/img/picture-generator/57e8d1434f50aa14f1dc8460962e33791c3ad6e04e50744077277dd19449c3_640.jpg" alt="" loading="lazy">
                     </div>
-                    <div class="col-7 ps-md-3 ps-xl-4 d-flex flex-column">
+                    <div class="col-md-8 col-lg-7 ps-md-3 ps-xl-4 d-flex flex-column">
                         <time class="c_gray mb-auto" datetime="2021-03-31">31.03.21</time>
                         <a href="new.html" class="h5 mb-3">Как определить лучшего исполнителя</a>
                         <div class="mb-3">Есть над чем задуматься: сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и объективно рассмотрены соответствующими инстанциями. В своём стремлении повысить качество жизни, они забывают, что высокотехнологичная
