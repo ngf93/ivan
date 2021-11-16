@@ -1500,6 +1500,9 @@ button {
     height: 300px;
     margin-bottom: 1em;
   }
+  .pagination .page-link {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1541,6 +1544,30 @@ button {
   }
   .news-list img {
     height: 60vw;
+  }
+  .pagination .page-link {
+    font-size: 14px;
+  }
+  .modal-content .nav button {
+    font-size: 16px !important;
+  }
+  .modal-content .btn-group .btn {
+    padding: 4px 8px;
+  }
+  .modal {
+    padding-right: 0px !important;
+  }
+  button[aria-label="Close"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .map-container {
+    height: 300px;
+  }
+  .map-container .map-circle {
+    height: 100px;
+    width: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
